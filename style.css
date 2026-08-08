@@ -555,6 +555,10 @@ button {
   padding: 18px 20px;
 }
 
+.paquete-card .calendar-cta {
+  margin-top: 12px;
+}
+
 .paquete-foot-note {
   text-align: center;
   color: #9a9b98;
@@ -983,10 +987,19 @@ button {
 @media (min-width: 640px) {
   .hero-actions {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .hero-actions .btn {
     width: auto;
+  }
+
+  .hero-actions .btn-whatsapp {
+    flex: 1 1 100%;
+  }
+
+  .hero-actions .btn-outline {
+    flex: 1 1 auto;
   }
 
   .paquete-card {
