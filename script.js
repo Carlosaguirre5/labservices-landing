@@ -11,6 +11,29 @@
     el.setAttribute("rel", "noopener");
   });
 
+  // Google Ads conversion tracking on WhatsApp / Calendar CTAs.
+  // These links open in a new tab (target="_blank"), so the click is never
+  // blocked or delayed waiting on the tag — no preventDefault, no timeout.
+  if (typeof gtag === "function") {
+    document.querySelectorAll(".whatsapp-cta").forEach(function (el) {
+      el.addEventListener("click", function () {
+        gtag('event', 'conversion', {
+          'send_to': 'G-GEQRF93HDH/whatsapp_click',
+          'event_callback': function () {}
+        });
+      });
+    });
+
+    document.querySelectorAll(".calendar-cta").forEach(function (el) {
+      el.addEventListener("click", function () {
+        gtag('event', 'conversion', {
+          'send_to': 'G-GEQRF93HDH/calendar_click',
+          'event_callback': function () {}
+        });
+      });
+    });
+  }
+
   // Reveal-on-scroll for elements marked .reveal
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {
