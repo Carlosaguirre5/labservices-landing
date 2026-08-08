@@ -17,19 +17,13 @@
   if (typeof gtag === "function") {
     document.querySelectorAll(".whatsapp-cta").forEach(function (el) {
       el.addEventListener("click", function () {
-        gtag('event', 'conversion', {
-          'send_to': 'G-GEQRF93HDH/whatsapp_click',
-          'event_callback': function () {}
-        });
+        gtag('event', 'conversion', {'send_to': 'AW-18269468785/ZSN7COiAuN4cEPHwx4dE'});
       });
     });
 
     document.querySelectorAll(".calendar-cta").forEach(function (el) {
       el.addEventListener("click", function () {
-        gtag('event', 'conversion', {
-          'send_to': 'G-GEQRF93HDH/calendar_click',
-          'event_callback': function () {}
-        });
+        gtag('event', 'conversion', {'send_to': 'AW-18269468785/K6vjCOuAuN4cEPHwx4dE'});
       });
     });
   }
