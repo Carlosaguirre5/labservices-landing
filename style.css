@@ -774,6 +774,70 @@ button {
 }
 
 /* ==========================================================================
+   Servicios empresariales
+   ========================================================================== */
+
+.empresas {
+  padding: 56px 0 60px;
+  background: var(--c-white);
+}
+
+.empresas-copy {
+  margin-bottom: 32px;
+}
+
+.empresas-copy h2 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 12px;
+}
+
+.empresas-copy p {
+  color: #5c5d5a;
+  max-width: 46ch;
+  margin-bottom: 22px;
+}
+
+.empresas-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.empresas-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--c-gray-soft);
+  border: 1px solid var(--c-gray-light);
+  border-radius: var(--radius-md);
+  padding: 18px;
+}
+
+.empresas-item .icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--c-white);
+  color: var(--c-green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.empresas-item-text h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.empresas-item-text p {
+  font-size: 0.88rem;
+  color: #63645f;
+  margin: 0;
+}
+
+/* ==========================================================================
    Horarios y cómo llegar
    ========================================================================== */
 
@@ -1049,6 +1113,23 @@ button {
 
   .why-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .empresas-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .empresas-copy {
+    margin-bottom: 0;
+  }
+
+  .empresas-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .horarios-grid {
