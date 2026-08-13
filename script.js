@@ -28,6 +28,59 @@
     });
   }
 
+  // Contact form — submits to Web3Forms via fetch so we stay on-page.
+  var contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    var statusEl = document.getElementById("contact-status");
+    var submitBtn = document.getElementById("contact-submit");
+    var submitLabel = document.getElementById("contact-submit-label");
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Honeypot: if this hidden field got filled, it's a bot — silently drop.
+      if (contactForm.botcheck && contactForm.botcheck.value) {
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitLabel.textContent = "Enviando...";
+      statusEl.textContent = "";
+      statusEl.className = "form-status";
+
+      var formData = new FormData(contactForm);
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: formData
+      })
+        .then(function (response) {
+          return response.json().then(function (data) {
+            return { ok: response.ok, data: data };
+          });
+        })
+        .then(function (result) {
+          if (result.ok && result.data.success) {
+            contactForm.reset();
+            statusEl.textContent = "¡Gracias! Recibimos tu mensaje y te contactaremos pronto.";
+            statusEl.classList.add("is-success");
+          } else {
+            statusEl.textContent = "No pudimos enviar tu mensaje. Intenta de nuevo o escríbenos por WhatsApp.";
+            statusEl.classList.add("is-error");
+          }
+        })
+        .catch(function () {
+          statusEl.textContent = "No pudimos enviar tu mensaje. Intenta de nuevo o escríbenos por WhatsApp.";
+          statusEl.classList.add("is-error");
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitLabel.textContent = "Enviar mensaje";
+        });
+    });
+  }
+
   // Reveal-on-scroll for elements marked .reveal
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {

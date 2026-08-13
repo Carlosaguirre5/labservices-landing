@@ -574,6 +574,59 @@
     </div>
   </section>
 
+  <!-- ==================== CONTÁCTANOS ==================== -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="section-head reveal contact-head">
+          <span class="section-eyebrow">Contáctanos</span>
+          <h2>¿Prefieres que te contactemos nosotros?</h2>
+          <p>Ideal si representas una empresa y quieres cotizar, o si simplemente prefieres dejarnos tus datos en vez de escribir por WhatsApp. Te respondemos a la brevedad.</p>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <input type="hidden" name="access_key" value="b64c5ee9-4a10-4525-84c1-1d5200dfe057">
+          <input type="hidden" name="subject" value="Nuevo contacto desde labservicecr.com">
+          <input type="hidden" name="from_name" value="Formulario LabServices">
+          <input type="text" name="botcheck" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-name">Nombre completo</label>
+              <input type="text" id="cf-name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-company">Empresa <span>(opcional)</span></label>
+              <input type="text" id="cf-company" name="company">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-email">Correo electrónico</label>
+              <input type="email" id="cf-email" name="email" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-phone">Teléfono</label>
+              <input type="tel" id="cf-phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="cf-message">¿En qué podemos ayudarte?</label>
+            <textarea id="cf-message" name="message" rows="4" required placeholder="Ej: Quisiera cotizar exámenes ocupacionales para 15 empleados"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp btn-block" id="contact-submit">
+            <span id="contact-submit-label">Enviar mensaje</span>
+          </button>
+
+          <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <!-- ==================== FOOTER ==================== -->

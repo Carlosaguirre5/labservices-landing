@@ -1020,6 +1020,122 @@ button {
 }
 
 /* ==========================================================================
+   Contáctanos (form)
+   ========================================================================== */
+
+.contact {
+  padding: 56px 0 60px;
+  background: var(--c-gray-soft);
+}
+
+.contact-head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.contact-head p {
+  color: #5c5d5a;
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-light);
+  border-radius: var(--radius-lg);
+  padding: 28px 22px;
+  box-shadow: var(--shadow-md);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  left: -9999px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--c-ink);
+}
+
+.form-field label span {
+  font-weight: 400;
+  color: var(--c-gray);
+}
+
+.form-field input,
+.form-field textarea,
+.contact-form > textarea {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  color: var(--c-ink);
+  background: var(--c-white);
+  border: 1.5px solid var(--c-gray-light);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color 0.15s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--c-green);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form > .form-field {
+  margin-bottom: 20px;
+}
+
+.contact-form .btn {
+  margin-top: 4px;
+}
+
+.contact-form .btn[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-status {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 14px 0 0;
+  min-height: 1.2em;
+}
+
+.form-status.is-success {
+  color: var(--c-green-dark);
+}
+
+.form-status.is-error {
+  color: #b3261e;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -1128,6 +1244,18 @@ button {
 
   .partners-track {
     gap: 64px;
+  }
+
+  .contact-form {
+    padding: 36px 40px;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-row .form-field {
+    flex: 1;
   }
 
   .hero-actions {
