@@ -334,6 +334,79 @@ button {
 }
 
 /* ==========================================================================
+   Empresas que confían en nosotros (logo marquee)
+   ========================================================================== */
+
+.partners {
+  padding: 30px 0 34px;
+  background: var(--c-white);
+  border-top: 1px solid var(--c-gray-light);
+  border-bottom: 1px solid var(--c-gray-light);
+  overflow: hidden;
+}
+
+.partners-label {
+  text-align: center;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--c-gray);
+  margin: 0 0 20px;
+}
+
+.partners-track-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 8%, black 92%, transparent 100%);
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: max-content;
+  animation: partners-scroll 24s linear infinite;
+}
+
+.partners-track:hover {
+  animation-play-state: paused;
+}
+
+.partners-logo {
+  height: 34px;
+  width: auto;
+  flex-shrink: 0;
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+}
+
+.partners-logo:hover {
+  opacity: 1;
+}
+
+@keyframes partners-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partners-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partners-track-wrap {
+    overflow-x: auto;
+  }
+}
+
+/* ==========================================================================
    Sticky floating WhatsApp bubble
    ========================================================================== */
 
@@ -1049,6 +1122,14 @@ button {
    ========================================================================== */
 
 @media (min-width: 640px) {
+  .partners-logo {
+    height: 44px;
+  }
+
+  .partners-track {
+    gap: 64px;
+  }
+
   .hero-actions {
     flex-direction: row;
     flex-wrap: wrap;
