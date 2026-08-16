@@ -28,12 +28,38 @@
   var SLOT_STEP_MIN = 10;
   var FASTING_HOURS = 12;
 
-  var ADDONS = [
-    { id: "addon1", label: "Examen adicional 1", price: 0 }, // TODO: precios reales
-    { id: "addon2", label: "Examen adicional 2", price: 0 }, // TODO: precios reales
-    { id: "addon3", label: "Examen adicional 3", price: 0 }, // TODO: precios reales
-    { id: "addon4", label: "Examen adicional 4", price: 0 }  // TODO: precios reales
-  ];
+  var DESCUENTO_ADDONS = 0.20; // solo informativo, para el rótulo — los precios reales van fijos abajo
+
+  var ADDONS = {
+    hba1c: {
+      nombre: "Hemoglobina glicosilada (HbA1c)",
+      desc: "Muestra cómo estuvo tu azúcar en los últimos 3 meses, no solo hoy.",
+      precio_lista: 17000,
+      precio: 13600
+    },
+    acido_urico: {
+      nombre: "Ácido úrico",
+      desc: "Se relaciona con dolor e inflamación en pies, rodillas y dedos.",
+      precio_lista: 7000,
+      precio: 5600
+    },
+    b12: {
+      nombre: "Vitamina B12",
+      desc: "Se relaciona con cansancio, hormigueo y falta de concentración.",
+      precio_lista: 21000,
+      precio: 16800
+    },
+    vitamina_d: {
+      nombre: "Vitamina D",
+      desc: "Se relaciona con la salud de los huesos y las defensas.",
+      precio_lista: 35000,
+      precio: 28000
+    }
+  };
+
+  // TODO: confirmar con RR.HH. de Omega.
+  // null = sin tope, no se muestra ningún aviso.
+  var TOPE_DEDUCCION_QUINCENAL = null; // ej. 60000
 
   if (typeof emailjs !== "undefined") {
     emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
@@ -190,35 +216,86 @@
 
   var addonsList = document.getElementById("addons-list");
   if (addonsList) {
-    ADDONS.forEach(function (addon) {
+    Object.keys(ADDONS).forEach(function (id) {
+      var addon = ADDONS[id];
+      var isPending = !addon.precio;
       var row = document.createElement("div");
-      row.className = "addon-row";
+      row.className = "addon-row" + (isPending ? " is-disabled" : "");
+
+      var priceHtml = isPending
+        ? '<span class="addon-price-pending">Próximamente</span>'
+        : '<span class="addon-price-list">' + formatColones(addon.precio_lista) + '</span>' +
+          '<span class="addon-price-omega">' + formatColones(addon.precio) + '</span>';
+
       row.innerHTML =
-        '<input type="checkbox" id="' + addon.id + '" name="addons" value="' + addon.id + '" data-price="' + addon.price + '">' +
-        '<label for="' + addon.id + '">' + addon.label + "</label>" +
-        '<span class="addon-price">' + formatColones(addon.price) + "</span>";
+        '<input type="checkbox" id="addon-' + id + '" name="addons" value="' + id + '"' + (isPending ? ' disabled' : '') + '>' +
+        '<label for="addon-' + id + '">' +
+          '<span class="addon-name">' + addon.nombre + '</span>' +
+          '<span class="addon-desc">' + addon.desc + '</span>' +
+        '</label>' +
+        '<span class="addon-price-block">' + priceHtml + '</span>';
       addonsList.appendChild(row);
     });
   }
 
   var totalAmountEl = document.getElementById("total-amount");
   var totalTractsEl = document.getElementById("total-tracts");
+  var addonsSavingsEl = document.getElementById("addons-savings");
+  var topeAvisoEl = document.getElementById("tope-aviso");
+  var topeAvisoTextEl = document.getElementById("tope-aviso-text");
+
+  // Suma de precio_lista - precio de los add-ons marcados.
+  function calcAddonsTotals() {
+    var total = 0;
+    var savings = 0;
+    document.querySelectorAll('input[name="addons"]:checked').forEach(function (el) {
+      var addon = ADDONS[el.value];
+      if (!addon) return;
+      total += addon.precio;
+      savings += addon.precio_lista - addon.precio;
+    });
+    return { total: total, savings: savings };
+  }
+
+  // El primer tracto se lleva el colón extra cuando el total es impar.
+  function calcTractos(total) {
+    return { tracto1: Math.ceil(total / 2), tracto2: Math.floor(total / 2) };
+  }
+
+  function updateTopeAviso(tracto1) {
+    var isPlanilla = document.getElementById("pago-planilla").checked;
+    if (TOPE_DEDUCCION_QUINCENAL === null || !isPlanilla || tracto1 <= TOPE_DEDUCCION_QUINCENAL) {
+      topeAvisoEl.classList.remove("is-visible");
+      return;
+    }
+    var diferencia = tracto1 - TOPE_DEDUCCION_QUINCENAL;
+    topeAvisoTextEl.innerHTML =
+      "<strong>Tu tracto quincenal es de " + formatColones(tracto1) + " y el máximo que Omega deduce es " + formatColones(TOPE_DEDUCCION_QUINCENAL) + ".</strong> " +
+      "Podés dejar " + formatColones(TOPE_DEDUCCION_QUINCENAL) + " por planilla y cubrir la diferencia de " + formatColones(diferencia) + " por SINPE o efectivo el día de la jornada. Al confirmar tu inscripción te escribimos para coordinarlo.";
+    topeAvisoEl.classList.add("is-visible");
+  }
 
   function updateTotal() {
     var selectedPkg = document.querySelector('input[name="paquete"]:checked');
     var base = selectedPkg ? parseInt(selectedPkg.getAttribute("data-price"), 10) : 0;
-    var tract = selectedPkg ? parseInt(selectedPkg.getAttribute("data-tract"), 10) : 0;
 
-    var addonsTotal = 0;
-    document.querySelectorAll('input[name="addons"]:checked').forEach(function (el) {
-      addonsTotal += parseInt(el.getAttribute("data-price"), 10) || 0;
-    });
-
-    var total = base + addonsTotal;
-    var tractTotal = tract + Math.round(addonsTotal / 2);
+    var addonsTotals = calcAddonsTotals();
+    var total = base + addonsTotals.total;
+    var tractos = calcTractos(total);
 
     totalAmountEl.textContent = formatColones(total);
-    totalTractsEl.textContent = "2 tractos de " + formatColones(tractTotal);
+    totalTractsEl.textContent = tractos.tracto1 === tractos.tracto2
+      ? "2 tractos de " + formatColones(tractos.tracto1)
+      : "Tracto 1: " + formatColones(tractos.tracto1) + " · Tracto 2: " + formatColones(tractos.tracto2);
+
+    if (addonsTotals.savings > 0) {
+      addonsSavingsEl.textContent = "✓ Estás ahorrando " + formatColones(addonsTotals.savings) + " con el precio Omega";
+      addonsSavingsEl.classList.add("is-visible");
+    } else {
+      addonsSavingsEl.classList.remove("is-visible");
+    }
+
+    updateTopeAviso(tractos.tracto1);
   }
 
   document.querySelectorAll('input[name="paquete"]').forEach(function (el) {
@@ -267,6 +344,7 @@
         planillaCheck.checked = false;
         clearError("planilla-check");
       }
+      updateTotal();
     });
   });
 
@@ -474,6 +552,14 @@
     });
     var horarioMin = horarioSelect.value ? parseInt(horarioSelect.value, 10) : null;
 
+    var base = selectedPkg ? parseInt(selectedPkg.getAttribute("data-price"), 10) : 0;
+    var addonsTotals = calcAddonsTotals();
+    var total = base + addonsTotals.total;
+    var tractos = calcTractos(total);
+    var isPlanilla = document.getElementById("pago-planilla").checked;
+    var excedeTope = TOPE_DEDUCCION_QUINCENAL !== null && isPlanilla && tractos.tracto1 > TOPE_DEDUCCION_QUINCENAL;
+    var diferencia = excedeTope ? tractos.tracto1 - TOPE_DEDUCCION_QUINCENAL : 0;
+
     return {
       timestamp: new Date().toISOString(),
       origen: "landing-omega",
@@ -485,13 +571,18 @@
       email: document.getElementById("email").value.trim(),
       departamento: document.getElementById("departamento").value,
       paquete: selectedPkg ? selectedPkg.value : "",
-      total_colones: parseInt(totalAmountEl.textContent.replace(/[^\d]/g, ""), 10) || 0,
       addons: addons,
+      addons_ahorro_colones: addonsTotals.savings,
+      total_colones: total,
+      tracto_1: tractos.tracto1,
+      tracto_2: tractos.tracto2,
       horario_min: horarioMin,
       horario: horarioMin !== null ? minutesToLabel(horarioMin) : "",
       hora_limite_ayuno: horarioMin !== null ? calcAyunoLimite(horarioMin) : "",
       pago: (document.querySelector('input[name="pago"]:checked') || {}).value || "",
       autorizacion_planilla: !!planillaCheck.checked,
+      excede_tope_deduccion: excedeTope,
+      diferencia_colones: diferencia,
       notas: document.getElementById("notas").value.trim()
     };
   }
@@ -577,11 +668,15 @@
     fd.append("departamento", payload.departamento);
     fd.append("paquete", payload.paquete);
     fd.append("addons", payload.addons.join(", ") || "ninguno");
+    fd.append("addons_ahorro_colones", String(payload.addons_ahorro_colones));
     fd.append("total_colones", String(payload.total_colones));
+    fd.append("tracto_1", String(payload.tracto_1));
+    fd.append("tracto_2", String(payload.tracto_2));
     fd.append("horario", payload.horario);
     fd.append("hora_limite_ayuno", payload.hora_limite_ayuno);
     fd.append("pago", payload.pago);
     fd.append("autorizacion_planilla", payload.autorizacion_planilla ? "sí" : "no");
+    fd.append("excede_tope_deduccion", payload.excede_tope_deduccion ? "sí (diferencia: " + formatColones(payload.diferencia_colones) + ")" : "no");
     fd.append("notas", payload.notas || "(sin notas)");
     return fetch("https://api.web3forms.com/submit", {
       method: "POST",

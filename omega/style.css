@@ -1158,18 +1158,35 @@ fieldset {
   margin-top: 6px;
 }
 
+.addons-discount-label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--lime);
+  margin: 0 0 10px;
+}
+
 .addon-row {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 12px;
   border: 1px solid var(--line);
   border-radius: var(--radius-input);
   padding: 12px 14px;
 }
 
+.addon-row.is-disabled {
+  opacity: 0.55;
+}
+
+.addon-row.is-disabled input {
+  pointer-events: none;
+}
+
 .addon-row input {
   width: 22px;
   height: 22px;
+  margin-top: 2px;
   accent-color: var(--lime);
   flex-shrink: 0;
 }
@@ -1177,15 +1194,49 @@ fieldset {
 .addon-row label {
   flex: 1;
   margin: 0;
-  font-weight: 500;
-  font-size: 0.9rem;
+  min-width: 0;
 }
 
-.addon-price {
+.addon-name {
+  display: block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.addon-desc {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.addon-price-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.addon-price-list {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.addon-price-omega {
   font-family: var(--font-display);
   font-weight: 800;
   color: var(--navy);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
+}
+
+.addon-price-pending {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .total-bar {
@@ -1202,6 +1253,41 @@ fieldset {
 
 .total-bar .amount {
   color: var(--lime-2);
+}
+
+.addons-savings {
+  display: none;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--lime);
+  margin: 8px 0 0;
+}
+
+.addons-savings.is-visible {
+  display: block;
+}
+
+.tope-aviso {
+  display: none;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--amber-wash);
+  border: 2px solid var(--amber);
+  border-radius: var(--radius-input);
+  padding: 12px 14px;
+  margin-top: 14px;
+  font-size: 0.86rem;
+  color: var(--amber-deep);
+}
+
+.tope-aviso.is-visible {
+  display: flex;
+}
+
+.tope-aviso svg {
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .fasting-dynamic {
