@@ -5,6 +5,8 @@
      Constantes editables
      ======================================================================== */
 
+  var WHATSAPP_NUMBER = "50683291379"; // +506 8329 1379 — canal de contacto, no se usa para confirmar la cita
+
   // Notificación a LabServices cuando alguien se inscribe (mismo servicio que
   // usa el formulario de contacto del sitio principal).
   var WEB3FORMS_ACCESS_KEY = "b64c5ee9-4a10-4525-84c1-1d5200dfe057";
@@ -451,6 +453,11 @@
     return false;
   }
 
+  function isValidPhone(value) {
+    var digits = value.replace(/[\s-]/g, "");
+    return /^[678]\d{7}$/.test(digits);
+  }
+
   function validateField(fieldId) {
     var input = document.getElementById(fieldId);
     if (!input) return true;
@@ -466,6 +473,11 @@
       return false;
     }
 
+    if (fieldId === "telefono" && value && !isValidPhone(value)) {
+      showError(fieldId);
+      return false;
+    }
+
     if (fieldId === "email" && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
       showError(fieldId);
       return false;
@@ -475,7 +487,7 @@
     return true;
   }
 
-  ["nombre", "identificacion", "fecha-nacimiento", "email", "horario"].forEach(function (id) {
+  ["nombre", "identificacion", "fecha-nacimiento", "telefono", "email", "horario"].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) el.addEventListener("blur", function () { validateField(id); });
   });
@@ -510,7 +522,7 @@
 
   function validateAll() {
     var ok = true;
-    ["nombre", "identificacion", "fecha-nacimiento", "email", "horario"].forEach(function (id) {
+    ["nombre", "identificacion", "fecha-nacimiento", "telefono", "email", "horario"].forEach(function (id) {
       if (!validateField(id)) ok = false;
     });
     if (!validateRadioGroup("sexo", "sexo-error")) ok = false;
@@ -530,6 +542,7 @@
   var submitError = document.getElementById("submit-error");
   var retryBtn = document.getElementById("retry-btn");
   var emailFallback = document.getElementById("email-fallback");
+  var waFallback = document.getElementById("wa-fallback");
   var confirmScreen = document.getElementById("confirm-screen");
 
   function buildPayload() {
@@ -555,6 +568,7 @@
       identificacion: document.getElementById("identificacion").value.trim(),
       fecha_nacimiento: document.getElementById("fecha-nacimiento").value,
       sexo: (document.querySelector('input[name="sexo"]:checked') || {}).value || "",
+      telefono: document.getElementById("telefono").value.trim(),
       email: document.getElementById("email").value.trim(),
       paquete: selectedPkg ? selectedPkg.value : "",
       addons: addons,
@@ -646,6 +660,7 @@
     fd.append("identificacion", payload.identificacion);
     fd.append("fecha_nacimiento", payload.fecha_nacimiento);
     fd.append("sexo", payload.sexo);
+    fd.append("telefono", payload.telefono);
     fd.append("email", payload.email);
     fd.append("paquete", payload.paquete);
     fd.append("addons", payload.addons.join(", ") || "ninguno");
@@ -701,6 +716,8 @@
           var subject = "Inscripción Jornada Omega — " + (payload.nombre || "");
           var body = "Hola, quiero inscribirme a la Jornada Omega.\n\nNombre: " + (payload.nombre || "") + "\nPaquete: " + (payload.paquete || "");
           emailFallback.href = "mailto:info@labservicecr.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+          var waMsg = "Hola, quiero inscribirme a la Jornada Omega. Mi nombre es " + (payload.nombre || "") + " y elegí el paquete " + (payload.paquete || "") + ".";
+          waFallback.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waMsg);
           submitError.classList.add("is-visible");
           submitError.scrollIntoView({ behavior: "smooth", block: "center" });
         }

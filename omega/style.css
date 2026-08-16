@@ -1468,3 +1468,16 @@ fieldset {
   color: var(--muted);
   font-size: 0.82rem;
 }
+
+.omega-footer p {
+  margin: 0 0 6px;
+}
+
+.omega-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.omega-footer a {
+  color: var(--navy);
+  font-weight: 600;
+}
