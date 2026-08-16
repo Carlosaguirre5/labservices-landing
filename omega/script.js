@@ -487,7 +487,7 @@
     return true;
   }
 
-  ["nombre", "identificacion", "fecha-nacimiento", "whatsapp", "email", "departamento", "horario"].forEach(function (id) {
+  ["nombre", "identificacion", "fecha-nacimiento", "whatsapp", "email", "horario"].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) el.addEventListener("blur", function () { validateField(id); });
   });
@@ -522,7 +522,7 @@
 
   function validateAll() {
     var ok = true;
-    ["nombre", "identificacion", "fecha-nacimiento", "whatsapp", "email", "departamento", "horario"].forEach(function (id) {
+    ["nombre", "identificacion", "fecha-nacimiento", "whatsapp", "email", "horario"].forEach(function (id) {
       if (!validateField(id)) ok = false;
     });
     if (!validateRadioGroup("sexo", "sexo-error")) ok = false;
@@ -569,7 +569,6 @@
       sexo: (document.querySelector('input[name="sexo"]:checked') || {}).value || "",
       whatsapp: document.getElementById("whatsapp").value.trim(),
       email: document.getElementById("email").value.trim(),
-      departamento: document.getElementById("departamento").value,
       paquete: selectedPkg ? selectedPkg.value : "",
       addons: addons,
       addons_ahorro_colones: addonsTotals.savings,
@@ -665,7 +664,6 @@
     fd.append("sexo", payload.sexo);
     fd.append("whatsapp", payload.whatsapp);
     fd.append("email", payload.email);
-    fd.append("departamento", payload.departamento);
     fd.append("paquete", payload.paquete);
     fd.append("addons", payload.addons.join(", ") || "ninguno");
     fd.append("addons_ahorro_colones", String(payload.addons_ahorro_colones));
