@@ -1436,6 +1436,18 @@ fieldset {
   margin-top: 20px;
 }
 
+.confirm-contact-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 16px 0 0;
+}
+
+.confirm-contact-note a {
+  color: var(--navy);
+  font-weight: 600;
+}
+
 @media (min-width: 640px) {
   .confirm-actions {
     flex-direction: row;

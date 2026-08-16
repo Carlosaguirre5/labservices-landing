@@ -5,8 +5,6 @@
      Constantes editables
      ======================================================================== */
 
-  var WHATSAPP_NUMBER = "50683291379"; // +506 8329 1379
-
   // Notificación a LabServices cuando alguien se inscribe (mismo servicio que
   // usa el formulario de contacto del sitio principal).
   var WEB3FORMS_ACCESS_KEY = "b64c5ee9-4a10-4525-84c1-1d5200dfe057";
@@ -453,11 +451,6 @@
     return false;
   }
 
-  function isValidPhone(value) {
-    var digits = value.replace(/[\s-]/g, "");
-    return /^[678]\d{7}$/.test(digits);
-  }
-
   function validateField(fieldId) {
     var input = document.getElementById(fieldId);
     if (!input) return true;
@@ -473,11 +466,6 @@
       return false;
     }
 
-    if (fieldId === "whatsapp" && value && !isValidPhone(value)) {
-      showError(fieldId);
-      return false;
-    }
-
     if (fieldId === "email" && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
       showError(fieldId);
       return false;
@@ -487,7 +475,7 @@
     return true;
   }
 
-  ["nombre", "identificacion", "fecha-nacimiento", "whatsapp", "email", "horario"].forEach(function (id) {
+  ["nombre", "identificacion", "fecha-nacimiento", "email", "horario"].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) el.addEventListener("blur", function () { validateField(id); });
   });
@@ -522,7 +510,7 @@
 
   function validateAll() {
     var ok = true;
-    ["nombre", "identificacion", "fecha-nacimiento", "whatsapp", "email", "horario"].forEach(function (id) {
+    ["nombre", "identificacion", "fecha-nacimiento", "email", "horario"].forEach(function (id) {
       if (!validateField(id)) ok = false;
     });
     if (!validateRadioGroup("sexo", "sexo-error")) ok = false;
@@ -541,7 +529,7 @@
   var submitLabel = document.getElementById("submit-label");
   var submitError = document.getElementById("submit-error");
   var retryBtn = document.getElementById("retry-btn");
-  var waFallback = document.getElementById("wa-fallback");
+  var emailFallback = document.getElementById("email-fallback");
   var confirmScreen = document.getElementById("confirm-screen");
 
   function buildPayload() {
@@ -567,7 +555,6 @@
       identificacion: document.getElementById("identificacion").value.trim(),
       fecha_nacimiento: document.getElementById("fecha-nacimiento").value,
       sexo: (document.querySelector('input[name="sexo"]:checked') || {}).value || "",
-      whatsapp: document.getElementById("whatsapp").value.trim(),
       email: document.getElementById("email").value.trim(),
       paquete: selectedPkg ? selectedPkg.value : "",
       addons: addons,
@@ -607,9 +594,6 @@
     document.getElementById("confirm-horario").textContent = payload.horario;
     document.getElementById("confirm-fasting").textContent =
       "No se te olvide: el " + getDayBeforeLabel() + ", tu última comida debe ser antes de las " + payload.hora_limite_ayuno + " Después, solo agua.";
-
-    var waMsg = "Hola, ya llené el formulario de la Jornada Omega. Mi nombre es " + payload.nombre + " y elegí el paquete " + payload.paquete + ".";
-    document.getElementById("confirm-wa").href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waMsg);
 
     form.style.display = "none";
     confirmScreen.classList.add("is-visible");
@@ -662,7 +646,6 @@
     fd.append("identificacion", payload.identificacion);
     fd.append("fecha_nacimiento", payload.fecha_nacimiento);
     fd.append("sexo", payload.sexo);
-    fd.append("whatsapp", payload.whatsapp);
     fd.append("email", payload.email);
     fd.append("paquete", payload.paquete);
     fd.append("addons", payload.addons.join(", ") || "ninguno");
@@ -715,8 +698,9 @@
         if (attendeeOk) {
           showConfirmScreen(payload);
         } else {
-          var waMsg = "Hola, quiero inscribirme a la Jornada Omega. Mi nombre es " + (payload.nombre || "") + " y elegí el paquete " + (payload.paquete || "") + ".";
-          waFallback.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waMsg);
+          var subject = "Inscripción Jornada Omega — " + (payload.nombre || "");
+          var body = "Hola, quiero inscribirme a la Jornada Omega.\n\nNombre: " + (payload.nombre || "") + "\nPaquete: " + (payload.paquete || "");
+          emailFallback.href = "mailto:info@labservicecr.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
           submitError.classList.add("is-visible");
           submitError.scrollIntoView({ behavior: "smooth", block: "center" });
         }

@@ -37,7 +37,6 @@
   <symbol id="icon-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></symbol>
   <symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></symbol>
   <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
-  <symbol id="icon-whatsapp" viewBox="0 0 32 32"><path d="M16.04 3C9.37 3 3.98 8.39 3.98 15.06c0 2.23.6 4.35 1.73 6.22L3 29l7.9-2.61a12.02 12.02 0 0 0 5.14 1.15h.01c6.67 0 12.06-5.39 12.06-12.06C28.11 8.81 22.71 3 16.04 3zm0 21.9h-.01c-1.68 0-3.33-.45-4.77-1.3l-.34-.2-4.69 1.55 1.57-4.57-.22-.36a9.87 9.87 0 0 1-1.51-5.26C6.07 9.6 10.6 5.08 16.05 5.08c2.62 0 5.08 1.02 6.94 2.88a9.77 9.77 0 0 1 2.87 6.94c0 5.45-4.53 9.99-9.82 9.99zm5.66-7.44c-.31-.16-1.83-.9-2.11-1.01-.28-.1-.49-.16-.69.16-.2.31-.79 1.01-.97 1.22-.18.2-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.53-.92-.82-1.53-1.83-1.71-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.2-.31.31-.51.1-.2.05-.39-.03-.55-.08-.16-.69-1.67-.95-2.28-.25-.6-.5-.52-.69-.53-.18-.01-.39-.01-.59-.01-.2 0-.55.08-.83.39-.28.31-1.09 1.07-1.09 2.6 0 1.54 1.12 3.02 1.27 3.23.16.2 2.2 3.36 5.33 4.71.75.32 1.33.51 1.79.66.75.24 1.43.2 1.97.12.6-.09 1.83-.75 2.09-1.47.26-.72.26-1.34.18-1.47-.08-.13-.28-.2-.59-.35z"/></symbol>
 </svg>
 
 <!-- ==================== BARRA DE MARCA ==================== -->
@@ -216,7 +215,7 @@
           <span class="guarantee-icon"><svg><use href="#icon-clock"/></svg></span>
           <div>
             <h3>Resultados en 48 horas</h3>
-            <p>Por WhatsApp, en PDF con clave. Te explicamos qué significa cada resultado.</p>
+            <p>Por correo, en PDF con clave. Te explicamos qué significa cada resultado.</p>
           </div>
         </div>
         <div class="guarantee-item">
@@ -238,7 +237,7 @@
         <!-- Encabezado + progreso -->
         <div class="form-header" id="form-header">
           <h2>Reservar tu espacio</h2>
-          <p>Toma 2 minutos. Te confirmamos tu hora exacta por WhatsApp.</p>
+          <p>Toma 2 minutos. Te confirmamos tu hora exacta por correo.</p>
           <p class="cupos-note">Solo 40 cupos. Inscripción abierta hasta el jueves 27 de agosto.</p>
           <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
           <span class="progress-label" id="progress-label">Paso 1 de 5</span>
@@ -287,16 +286,9 @@
             </fieldset>
 
             <div class="field">
-              <label for="whatsapp">Número de WhatsApp</label>
-              <input type="tel" id="whatsapp" name="whatsapp" inputmode="tel" required aria-describedby="whatsapp-hint">
-              <p class="field-hint" id="whatsapp-hint">Aquí te enviamos la confirmación de tu hora y, después, tus resultados.</p>
-              <p class="field-error" id="whatsapp-error">Ingresá un número válido de 8 dígitos.</p>
-            </div>
-
-            <div class="field">
               <label for="email">Correo electrónico</label>
               <input type="email" id="email" name="email" required aria-describedby="email-hint">
-              <p class="field-hint" id="email-hint">Lo necesitamos para tu factura electrónica y para enviarte la invitación de calendario de tu cita.</p>
+              <p class="field-hint" id="email-hint">Aquí te confirmamos tu hora, te mandamos la invitación de calendario y, después, tus resultados. También lo necesitamos para tu factura electrónica.</p>
               <p class="field-error" id="email-error">Ingresá un correo válido.</p>
             </div>
 
@@ -362,7 +354,7 @@
             <div class="field">
               <label for="horario">Franja horaria</label>
               <select id="horario" name="horario" required aria-describedby="horario-hint"></select>
-              <p class="field-hint" id="horario-hint">Te confirmamos tu hora exacta por WhatsApp. Recordá que estás en ayunas: entre más temprano, mejor.</p>
+              <p class="field-hint" id="horario-hint">Te confirmamos tu hora exacta por correo. Recordá que estás en ayunas: entre más temprano, mejor.</p>
               <p class="field-error" id="horario-error">Elegí una franja horaria.</p>
               <div class="fasting-dynamic" id="fasting-dynamic"></div>
             </div>
@@ -430,10 +422,10 @@
               <span id="submit-label">Confirmar mi inscripción</span>
             </button>
             <div class="submit-error" id="submit-error">
-              <p>No pudimos enviar tu inscripción. Revisá tu conexión e intentá de nuevo, o escribinos por WhatsApp.</p>
+              <p>No pudimos enviar tu inscripción. Revisá tu conexión e intentá de nuevo, o escribinos a info@labservicecr.com.</p>
               <button type="button" class="btn btn-outline" id="retry-btn">Intentar de nuevo</button>
-              <a href="#" class="btn btn-primary" id="wa-fallback" target="_blank" rel="noopener" style="margin-top:10px">
-                <svg width="18" height="18"><use href="#icon-whatsapp"/></svg> Escribirnos por WhatsApp
+              <a href="#" class="btn btn-primary" id="email-fallback" style="margin-top:10px">
+                Escribirnos por correo
               </a>
             </div>
           </div>
@@ -443,7 +435,7 @@
         <div class="confirm-screen" id="confirm-screen">
           <span class="confirm-icon"><svg><use href="#icon-check"/></svg></span>
           <h2>Listo. Tu cupo quedó reservado.</h2>
-          <p>En las próximas 24 horas te escribimos por WhatsApp con tu hora exacta.</p>
+          <p>En las próximas 24 horas te confirmamos tu hora exacta por correo.</p>
           <p id="confirm-fasting"></p>
           <p>Nos vemos el <strong>viernes 28</strong>. Son 10 minutos.</p>
 
@@ -454,13 +446,11 @@
           </dl>
 
           <div class="confirm-actions">
-            <button type="button" class="btn btn-outline" id="add-calendar-btn">
+            <button type="button" class="btn btn-primary" id="add-calendar-btn">
               <svg width="18" height="18"><use href="#icon-calendar"/></svg> Agregar a mi calendario
             </button>
-            <a href="#" class="btn btn-primary" id="confirm-wa" target="_blank" rel="noopener">
-              <svg width="18" height="18"><use href="#icon-whatsapp"/></svg> Escribirnos por WhatsApp
-            </a>
           </div>
+          <p class="confirm-contact-note">¿Alguna duda? Escribinos a <a href="mailto:info@labservicecr.com">info@labservicecr.com</a></p>
         </div>
 
       </div>
