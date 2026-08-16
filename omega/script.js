@@ -5,13 +5,23 @@
      Constantes editables
      ======================================================================== */
 
-  var WEBHOOK_URL = "https://TU-N8N/webhook/omega-inscripcion"; // TODO: reemplazar cuando el flujo de n8n esté listo
   var WHATSAPP_NUMBER = "50683291379"; // +506 8329 1379
+
+  // Notificación a LabServices cuando alguien se inscribe (mismo servicio que
+  // usa el formulario de contacto del sitio principal).
+  var WEB3FORMS_ACCESS_KEY = "b64c5ee9-4a10-4525-84c1-1d5200dfe057";
+
+  // Confirmación automática por correo a quien se inscribe, con enlaces para
+  // agregar la cita a su calendario. Cuenta gratuita de EmailJS.
+  var EMAILJS_PUBLIC_KEY = "rVrDyiGVherZWFCdj";
+  var EMAILJS_SERVICE_ID = "service_mrpdgir";
+  var EMAILJS_TEMPLATE_ID = "template_ctkpofo";
 
   var EVENT_DATE_ISO = "2026-08-28"; // ajustar si cambia el año/fecha del evento; el texto "viernes 28" en el HTML también debe actualizarse a mano
   var EVENT_START = "07:00";
   var EVENT_END = "11:00";
   var EVENT_LOCATION = "Planta Omega, Santa Ana";
+  var EVENT_UTC_OFFSET = "-06:00"; // Costa Rica, sin horario de verano
 
   var SLOT_START_MIN = 7 * 60; // 7:00 a.m.
   var SLOT_END_MIN = 10 * 60 + 50; // último inicio de franja: 10:50 a.m. (dura 10 min, termina 11:00)
@@ -25,9 +35,70 @@
     { id: "addon4", label: "Examen adicional 4", price: 0 }  // TODO: precios reales
   ];
 
+  if (typeof emailjs !== "undefined") {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+
   /* ========================================================================
      Utilidades
      ======================================================================== */
+
+  function pad2(n) {
+    return n < 10 ? "0" + n : String(n);
+  }
+
+  function minutesTo24h(mins) {
+    var h = Math.floor(mins / 60) % 24;
+    var m = mins % 60;
+    return pad2(h) + ":" + pad2(m);
+  }
+
+  // Convierte minutos-del-día en hora local de Costa Rica (evento) a un
+  // timestamp UTC "YYYYMMDDTHHMMSSZ", como lo requiere Google Calendar.
+  function buildUtcStamp(dateIso, localMinutes) {
+    var offsetHours = 6; // CR es UTC-6
+    var utcMinutes = localMinutes + offsetHours * 60;
+    var dayOffset = 0;
+    if (utcMinutes >= 24 * 60) {
+      utcMinutes -= 24 * 60;
+      dayOffset = 1;
+    }
+    var d = new Date(dateIso + "T00:00:00Z");
+    d.setUTCDate(d.getUTCDate() + dayOffset);
+    var stamp =
+      d.getUTCFullYear() +
+      pad2(d.getUTCMonth() + 1) +
+      pad2(d.getUTCDate()) +
+      "T" +
+      pad2(Math.floor(utcMinutes / 60)) +
+      pad2(utcMinutes % 60) +
+      "00Z";
+    return stamp;
+  }
+
+  function buildGoogleCalLink(startMin, endMin, title, details, location) {
+    var params = new URLSearchParams({
+      action: "TEMPLATE",
+      text: title,
+      dates: buildUtcStamp(EVENT_DATE_ISO, startMin) + "/" + buildUtcStamp(EVENT_DATE_ISO, endMin),
+      details: details,
+      location: location
+    });
+    return "https://calendar.google.com/calendar/render?" + params.toString();
+  }
+
+  function buildOutlookCalLink(startMin, endMin, title, details, location) {
+    var params = new URLSearchParams({
+      path: "/calendar/action/compose",
+      rru: "addevent",
+      startdt: EVENT_DATE_ISO + "T" + minutesTo24h(startMin) + ":00" + EVENT_UTC_OFFSET,
+      enddt: EVENT_DATE_ISO + "T" + minutesTo24h(endMin) + ":00" + EVENT_UTC_OFFSET,
+      subject: title,
+      body: details,
+      location: location
+    });
+    return "https://outlook.live.com/calendar/0/deeplink/compose?" + params.toString();
+  }
 
   function formatColones(n) {
     // Se formatea a mano (punto como separador de miles) en vez de usar
@@ -401,7 +472,7 @@
     document.querySelectorAll('input[name="addons"]:checked').forEach(function (el) {
       addons.push(el.value);
     });
-    var horarioVal = horarioSelect.value;
+    var horarioMin = horarioSelect.value ? parseInt(horarioSelect.value, 10) : null;
 
     return {
       timestamp: new Date().toISOString(),
@@ -416,8 +487,9 @@
       paquete: selectedPkg ? selectedPkg.value : "",
       total_colones: parseInt(totalAmountEl.textContent.replace(/[^\d]/g, ""), 10) || 0,
       addons: addons,
-      horario: horarioVal ? minutesToLabel(parseInt(horarioVal, 10)) : "",
-      hora_limite_ayuno: horarioVal ? calcAyunoLimite(parseInt(horarioVal, 10)) : "",
+      horario_min: horarioMin,
+      horario: horarioMin !== null ? minutesToLabel(horarioMin) : "",
+      hora_limite_ayuno: horarioMin !== null ? calcAyunoLimite(horarioMin) : "",
       pago: (document.querySelector('input[name="pago"]:checked') || {}).value || "",
       autorizacion_planilla: !!planillaCheck.checked,
       notas: document.getElementById("notas").value.trim()
@@ -428,6 +500,14 @@
     submitBtn.disabled = isLoading;
     submitBtn.classList.toggle("is-loading", isLoading);
     submitLabel.textContent = isLoading ? "Enviando…" : "Confirmar mi inscripción";
+  }
+
+  function eventTitleAndDetails(payload) {
+    var title = "Jornada de Salud Preventiva — LabServices";
+    var details =
+      "Chequeo de salud preventiva LabServices en Refrigeración Omega. Paquete: " +
+      payload.paquete + ". Recordá llegar en ayuno de 12 horas.";
+    return { title: title, details: details };
   }
 
   function showConfirmScreen(payload) {
@@ -448,22 +528,25 @@
 
     var addCalendarBtn = document.getElementById("add-calendar-btn");
     addCalendarBtn.addEventListener("click", function () {
-      downloadIcs();
+      downloadIcs(payload);
     });
   }
 
-  function downloadIcs() {
-    var start = EVENT_DATE_ISO.replace(/-/g, "") + "T" + EVENT_START.replace(":", "") + "00";
-    var end = EVENT_DATE_ISO.replace(/-/g, "") + "T" + EVENT_END.replace(":", "") + "00";
+  function downloadIcs(payload) {
+    var startMin = payload.horario_min !== null ? payload.horario_min : SLOT_START_MIN;
+    var endMin = startMin + SLOT_STEP_MIN;
+    var start = buildUtcStamp(EVENT_DATE_ISO, startMin);
+    var end = buildUtcStamp(EVENT_DATE_ISO, endMin);
+    var meta = eventTitleAndDetails(payload);
     var ics = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
       "BEGIN:VEVENT",
-      "SUMMARY:Jornada de Salud Preventiva — LabServices",
+      "SUMMARY:" + meta.title,
       "DTSTART:" + start,
       "DTEND:" + end,
       "LOCATION:" + EVENT_LOCATION,
-      "DESCRIPTION:Chequeo de salud preventiva LabServices en Refrigeración Omega.",
+      "DESCRIPTION:" + meta.details,
       "END:VEVENT",
       "END:VCALENDAR"
     ].join("\r\n");
@@ -479,27 +562,71 @@
     URL.revokeObjectURL(url);
   }
 
+  // Notifica a LabServices por correo (vía Web3Forms) que alguien se inscribió.
+  function sendStaffNotification(payload) {
+    var fd = new FormData();
+    fd.append("access_key", WEB3FORMS_ACCESS_KEY);
+    fd.append("subject", "Nueva inscripción — Jornada Omega");
+    fd.append("from_name", "Formulario Jornada Omega");
+    fd.append("nombre", payload.nombre);
+    fd.append("identificacion", payload.identificacion);
+    fd.append("fecha_nacimiento", payload.fecha_nacimiento);
+    fd.append("sexo", payload.sexo);
+    fd.append("whatsapp", payload.whatsapp);
+    fd.append("email", payload.email);
+    fd.append("departamento", payload.departamento);
+    fd.append("paquete", payload.paquete);
+    fd.append("addons", payload.addons.join(", ") || "ninguno");
+    fd.append("total_colones", String(payload.total_colones));
+    fd.append("horario", payload.horario);
+    fd.append("hora_limite_ayuno", payload.hora_limite_ayuno);
+    fd.append("pago", payload.pago);
+    fd.append("autorizacion_planilla", payload.autorizacion_planilla ? "sí" : "no");
+    fd.append("notas", payload.notas || "(sin notas)");
+    return fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: fd
+    });
+  }
+
+  // Envía la confirmación con enlaces de calendario a quien se inscribió.
+  function sendAttendeeConfirmation(payload) {
+    var startMin = payload.horario_min;
+    var endMin = startMin + SLOT_STEP_MIN;
+    var meta = eventTitleAndDetails(payload);
+    var googleLink = buildGoogleCalLink(startMin, endMin, meta.title, meta.details, EVENT_LOCATION);
+    var outlookLink = buildOutlookCalLink(startMin, endMin, meta.title, meta.details, EVENT_LOCATION);
+
+    return emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      to_email: payload.email,
+      to_name: payload.nombre,
+      paquete: payload.paquete.charAt(0).toUpperCase() + payload.paquete.slice(1),
+      total: formatColones(payload.total_colones),
+      horario: payload.horario,
+      hora_limite: payload.hora_limite_ayuno,
+      google_cal_link: googleLink,
+      outlook_cal_link: outlookLink
+    });
+  }
+
   function submitInscripcion() {
     var payload = buildPayload();
     setLoading(true);
     submitError.classList.remove("is-visible");
 
-    fetch(WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    })
-      .then(function (res) {
-        if (!res.ok) throw new Error("bad status");
+    Promise.allSettled([sendStaffNotification(payload), sendAttendeeConfirmation(payload)])
+      .then(function (results) {
         setLoading(false);
-        showConfirmScreen(payload);
-      })
-      .catch(function () {
-        setLoading(false);
-        var waMsg = "Hola, quiero inscribirme a la Jornada Omega. Mi nombre es " + (payload.nombre || "") + " y elegí el paquete " + (payload.paquete || "") + ".";
-        waFallback.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waMsg);
-        submitError.classList.add("is-visible");
-        submitError.scrollIntoView({ behavior: "smooth", block: "center" });
+        var attendeeOk = results[1].status === "fulfilled";
+        if (attendeeOk) {
+          showConfirmScreen(payload);
+        } else {
+          var waMsg = "Hola, quiero inscribirme a la Jornada Omega. Mi nombre es " + (payload.nombre || "") + " y elegí el paquete " + (payload.paquete || "") + ".";
+          waFallback.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waMsg);
+          submitError.classList.add("is-visible");
+          submitError.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
       });
   }
 
