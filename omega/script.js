@@ -61,6 +61,14 @@
   // null = sin tope, no se muestra ningún aviso.
   var TOPE_DEDUCCION_QUINCENAL = null; // ej. 60000
 
+  var PAGO_LABELS = {
+    planilla_quincenal: "Planilla quincenal (2 tractos)",
+    planilla_semanal: "Planilla semanal (4 tractos)",
+    efectivo: "Efectivo el mismo día",
+    tarjeta: "Tarjeta el mismo día",
+    sinpe: "SINPE Móvil el mismo día"
+  };
+
   if (typeof emailjs !== "undefined") {
     emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
   }
@@ -257,20 +265,44 @@
     return { total: total, savings: savings };
   }
 
-  // El primer tracto se lleva el colón extra cuando el total es impar.
-  function calcTractos(total) {
-    return { tracto1: Math.ceil(total / 2), tracto2: Math.floor(total / 2) };
+  // Reparte el total en n tractos; los primeros se llevan el colón extra
+  // cuando el total no es divisible exactamente.
+  function calcTractos(total, n) {
+    var base = Math.floor(total / n);
+    var resto = total % n;
+    var tractos = [];
+    for (var i = 0; i < n; i++) {
+      tractos.push(base + (i < resto ? 1 : 0));
+    }
+    return tractos;
   }
 
-  function updateTopeAviso(tracto1) {
-    var isPlanilla = document.getElementById("pago-planilla").checked;
-    if (TOPE_DEDUCCION_QUINCENAL === null || !isPlanilla || tracto1 <= TOPE_DEDUCCION_QUINCENAL) {
+  function isPlanillaQuincenal() {
+    return document.getElementById("pago-planilla-quincenal").checked;
+  }
+
+  function isPlanillaSemanal() {
+    return document.getElementById("pago-planilla-semanal").checked;
+  }
+
+  function isPlanilla() {
+    return isPlanillaQuincenal() || isPlanillaSemanal();
+  }
+
+  // Número de tractos a mostrar/calcular: semanal = 4, quincenal o sin elegir
+  // pago todavía = 2 (referencia por defecto).
+  function numTractos() {
+    return isPlanillaSemanal() ? 4 : 2;
+  }
+
+  function updateTopeAviso(tracto1Quincenal) {
+    if (TOPE_DEDUCCION_QUINCENAL === null || !isPlanillaQuincenal() || tracto1Quincenal <= TOPE_DEDUCCION_QUINCENAL) {
       topeAvisoEl.classList.remove("is-visible");
       return;
     }
-    var diferencia = tracto1 - TOPE_DEDUCCION_QUINCENAL;
+    var diferencia = tracto1Quincenal - TOPE_DEDUCCION_QUINCENAL;
     topeAvisoTextEl.innerHTML =
-      "<strong>Tu tracto quincenal es de " + formatColones(tracto1) + " y el máximo que Omega deduce es " + formatColones(TOPE_DEDUCCION_QUINCENAL) + ".</strong> " +
+      "<strong>Tu tracto quincenal es de " + formatColones(tracto1Quincenal) + " y el máximo que Omega deduce es " + formatColones(TOPE_DEDUCCION_QUINCENAL) + ".</strong> " +
       "Podés dejar " + formatColones(TOPE_DEDUCCION_QUINCENAL) + " por planilla y cubrir la diferencia de " + formatColones(diferencia) + " por SINPE o efectivo el día de la jornada. Al confirmar tu inscripción te escribimos para coordinarlo.";
     topeAvisoEl.classList.add("is-visible");
   }
@@ -281,12 +313,13 @@
 
     var addonsTotals = calcAddonsTotals();
     var total = base + addonsTotals.total;
-    var tractos = calcTractos(total);
+    var n = numTractos();
+    var tractos = calcTractos(total, n);
 
     totalAmountEl.textContent = formatColones(total);
-    totalTractsEl.textContent = tractos.tracto1 === tractos.tracto2
-      ? "2 tractos de " + formatColones(tractos.tracto1)
-      : "Tracto 1: " + formatColones(tractos.tracto1) + " · Tracto 2: " + formatColones(tractos.tracto2);
+    totalTractsEl.textContent = tractos.every(function (t) { return t === tractos[0]; })
+      ? n + " tractos de " + formatColones(tractos[0])
+      : tractos.map(function (t, i) { return "Tracto " + (i + 1) + ": " + formatColones(t); }).join(" · ");
 
     if (addonsTotals.savings > 0) {
       addonsSavingsEl.textContent = "✓ Estás ahorrando " + formatColones(addonsTotals.savings) + " con el precio Omega";
@@ -295,7 +328,7 @@
       addonsSavingsEl.classList.remove("is-visible");
     }
 
-    updateTopeAviso(tractos.tracto1);
+    updateTopeAviso(calcTractos(total, 2)[0]);
   }
 
   document.querySelectorAll('input[name="paquete"]').forEach(function (el) {
@@ -334,15 +367,20 @@
 
   var planillaAuth = document.getElementById("planilla-auth");
   var planillaCheck = document.getElementById("planilla-check");
+  var planillaCheckLabel = document.getElementById("planilla-check-label");
 
   document.querySelectorAll('input[name="pago"]').forEach(function (el) {
     el.addEventListener("change", function () {
-      var isPlanilla = document.getElementById("pago-planilla").checked;
-      planillaAuth.classList.toggle("is-visible", isPlanilla);
-      planillaCheck.required = isPlanilla;
-      if (!isPlanilla) {
+      var planilla = isPlanilla();
+      planillaAuth.classList.toggle("is-visible", planilla);
+      planillaCheck.required = planilla;
+      if (!planilla) {
         planillaCheck.checked = false;
         clearError("planilla-check");
+      } else {
+        planillaCheckLabel.textContent = isPlanillaSemanal()
+          ? "Autorizo a Refrigeración Omega a deducir de mi salario el monto del paquete que elegí, en cuatro tractos semanales, y entiendo que esta autorización aplica únicamente para este servicio."
+          : "Autorizo a Refrigeración Omega a deducir de mi salario el monto del paquete que elegí, en dos tractos de quincena, y entiendo que esta autorización aplica únicamente para este servicio.";
       }
       updateTotal();
     });
@@ -556,10 +594,11 @@
     var base = selectedPkg ? parseInt(selectedPkg.getAttribute("data-price"), 10) : 0;
     var addonsTotals = calcAddonsTotals();
     var total = base + addonsTotals.total;
-    var tractos = calcTractos(total);
-    var isPlanilla = document.getElementById("pago-planilla").checked;
-    var excedeTope = TOPE_DEDUCCION_QUINCENAL !== null && isPlanilla && tractos.tracto1 > TOPE_DEDUCCION_QUINCENAL;
-    var diferencia = excedeTope ? tractos.tracto1 - TOPE_DEDUCCION_QUINCENAL : 0;
+    var n = numTractos();
+    var tractos = calcTractos(total, n);
+    var tracto1Quincenal = calcTractos(total, 2)[0];
+    var excedeTope = TOPE_DEDUCCION_QUINCENAL !== null && isPlanillaQuincenal() && tracto1Quincenal > TOPE_DEDUCCION_QUINCENAL;
+    var diferencia = excedeTope ? tracto1Quincenal - TOPE_DEDUCCION_QUINCENAL : 0;
 
     return {
       timestamp: new Date().toISOString(),
@@ -574,8 +613,8 @@
       addons: addons,
       addons_ahorro_colones: addonsTotals.savings,
       total_colones: total,
-      tracto_1: tractos.tracto1,
-      tracto_2: tractos.tracto2,
+      num_tractos: n,
+      tractos: tractos,
       horario_min: horarioMin,
       horario: horarioMin !== null ? minutesToLabel(horarioMin) : "",
       hora_limite_ayuno: horarioMin !== null ? calcAyunoLimite(horarioMin) : "",
@@ -666,11 +705,11 @@
     fd.append("addons", payload.addons.join(", ") || "ninguno");
     fd.append("addons_ahorro_colones", String(payload.addons_ahorro_colones));
     fd.append("total_colones", String(payload.total_colones));
-    fd.append("tracto_1", String(payload.tracto_1));
-    fd.append("tracto_2", String(payload.tracto_2));
+    fd.append("num_tractos", String(payload.num_tractos));
+    fd.append("tractos", payload.tractos.map(function (t) { return formatColones(t); }).join(" · "));
     fd.append("horario", payload.horario);
     fd.append("hora_limite_ayuno", payload.hora_limite_ayuno);
-    fd.append("pago", payload.pago);
+    fd.append("pago", PAGO_LABELS[payload.pago] || payload.pago);
     fd.append("autorizacion_planilla", payload.autorizacion_planilla ? "sí" : "no");
     fd.append("excede_tope_deduccion", payload.excede_tope_deduccion ? "sí (diferencia: " + formatColones(payload.diferencia_colones) + ")" : "no");
     fd.append("notas", payload.notas || "(sin notas)");

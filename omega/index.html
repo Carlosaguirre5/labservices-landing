@@ -223,7 +223,7 @@
           <span class="guarantee-icon"><svg><use href="#icon-card"/></svg></span>
           <div>
             <h3>No adelantás nada</h3>
-            <p>Deducción de planilla en 2 quincenas. También efectivo, tarjeta o SINPE.</p>
+            <p>Deducción de planilla quincenal o semanal. También efectivo, tarjeta o SINPE.</p>
           </div>
         </div>
       </div>
@@ -375,8 +375,12 @@
               <legend class="visually-hidden">Método de pago</legend>
               <div class="radio-row" role="radiogroup" style="flex-direction:column;align-items:stretch">
                 <span class="radio-pill" style="width:100%">
-                  <input type="radio" id="pago-planilla" name="pago" value="planilla" required>
-                  <label for="pago-planilla" style="justify-content:flex-start;text-align:left">Deducción de planilla en 2 quincenas — no adelantás nada</label>
+                  <input type="radio" id="pago-planilla-quincenal" name="pago" value="planilla_quincenal" required>
+                  <label for="pago-planilla-quincenal" style="justify-content:flex-start;text-align:left"><strong>Planilla quincenal:</strong> deducción en 2 quincenas — no adelantás nada</label>
+                </span>
+                <span class="radio-pill" style="width:100%">
+                  <input type="radio" id="pago-planilla-semanal" name="pago" value="planilla_semanal" required>
+                  <label for="pago-planilla-semanal" style="justify-content:flex-start;text-align:left"><strong>Planilla semanal:</strong> deducción en 4 semanas — no adelantás nada</label>
                 </span>
                 <span class="radio-pill" style="width:100%">
                   <input type="radio" id="pago-efectivo" name="pago" value="efectivo" required>
@@ -396,7 +400,7 @@
 
             <div class="check-row planilla-auth" id="planilla-auth">
               <input type="checkbox" id="planilla-check" name="autorizacion_planilla">
-              <label for="planilla-check">Autorizo a Refrigeración Omega a deducir de mi salario el monto del paquete que elegí, en dos tractos de quincena, y entiendo que esta autorización aplica únicamente para este servicio.</label>
+              <label for="planilla-check" id="planilla-check-label">Autorizo a Refrigeración Omega a deducir de mi salario el monto del paquete que elegí, en dos tractos de quincena, y entiendo que esta autorización aplica únicamente para este servicio.</label>
             </div>
             <p class="field-error" id="planilla-check-error">Necesitamos esta autorización para continuar.</p>
           </div>
