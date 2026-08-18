@@ -510,6 +510,12 @@
     "precio": 11900
   },
   {
+    "codigo": "sexo",
+    "descripcion": "BABY CHECK (SEXO FETAL)",
+    "descripcionNormalizada": "baby check (sexo fetal)",
+    "precio": 55000
+  },
+  {
     "codigo": "B OSEO",
     "descripcion": "BALANCE OSEO",
     "descripcionNormalizada": "balance oseo",
@@ -1606,12 +1612,6 @@
     "descripcion": "SEROLOGIA POR DENGUE",
     "descripcionNormalizada": "serologia por dengue",
     "precio": 29500
-  },
-  {
-    "codigo": "sexo",
-    "descripcion": "SEXO FETAL",
-    "descripcionNormalizada": "sexo fetal",
-    "precio": 55000
   },
   {
     "codigo": "SHBG",

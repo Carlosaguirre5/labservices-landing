@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/examenes/sexo-fetal",
+      "destination": "/examenes/baby-check-sexo-fetal",
+      "permanent": true
+    },
+    {
+      "source": "/examenes/sexo-fetal/",
+      "destination": "/examenes/baby-check-sexo-fetal/",
+      "permanent": true
+    }
+  ]
+}
