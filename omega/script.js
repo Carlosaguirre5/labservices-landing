@@ -81,12 +81,6 @@
     return n < 10 ? "0" + n : String(n);
   }
 
-  function minutesTo24h(mins) {
-    var h = Math.floor(mins / 60) % 24;
-    var m = mins % 60;
-    return pad2(h) + ":" + pad2(m);
-  }
-
   // Convierte minutos-del-día en hora local de Costa Rica (evento) a un
   // timestamp UTC "YYYYMMDDTHHMMSSZ", como lo requiere Google Calendar.
   function buildUtcStamp(dateIso, localMinutes) {
@@ -108,30 +102,6 @@
       pad2(utcMinutes % 60) +
       "00Z";
     return stamp;
-  }
-
-  function buildGoogleCalLink(startMin, endMin, title, details, location) {
-    var params = new URLSearchParams({
-      action: "TEMPLATE",
-      text: title,
-      dates: buildUtcStamp(EVENT_DATE_ISO, startMin) + "/" + buildUtcStamp(EVENT_DATE_ISO, endMin),
-      details: details,
-      location: location
-    });
-    return "https://calendar.google.com/calendar/render?" + params.toString();
-  }
-
-  function buildOutlookCalLink(startMin, endMin, title, details, location) {
-    var params = new URLSearchParams({
-      path: "/calendar/action/compose",
-      rru: "addevent",
-      startdt: EVENT_DATE_ISO + "T" + minutesTo24h(startMin) + ":00" + EVENT_UTC_OFFSET,
-      enddt: EVENT_DATE_ISO + "T" + minutesTo24h(endMin) + ":00" + EVENT_UTC_OFFSET,
-      subject: title,
-      body: details,
-      location: location
-    });
-    return "https://outlook.live.com/calendar/0/deeplink/compose?" + params.toString();
   }
 
   function formatColones(n) {
@@ -720,23 +690,17 @@
     });
   }
 
-  // Envía la confirmación con enlaces de calendario a quien se inscribió.
+  // Envía la confirmación por correo a quien se inscribió. El botón "Agregar
+  // a calendario" de la pantalla de confirmación cubre el .ics; el correo ya
+  // no lleva enlaces de Google/Outlook.
   function sendAttendeeConfirmation(payload) {
-    var startMin = payload.horario_min;
-    var endMin = startMin + SLOT_STEP_MIN;
-    var meta = eventTitleAndDetails(payload);
-    var googleLink = buildGoogleCalLink(startMin, endMin, meta.title, meta.details, EVENT_LOCATION);
-    var outlookLink = buildOutlookCalLink(startMin, endMin, meta.title, meta.details, EVENT_LOCATION);
-
     return emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
       to_email: payload.email,
       to_name: payload.nombre,
       paquete: payload.paquete.charAt(0).toUpperCase() + payload.paquete.slice(1),
       total: formatColones(payload.total_colones),
       horario: payload.horario,
-      hora_limite: payload.hora_limite_ayuno,
-      google_cal_link: googleLink,
-      outlook_cal_link: outlookLink
+      hora_limite: payload.hora_limite_ayuno
     });
   }
 
