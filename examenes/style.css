@@ -171,3 +171,126 @@
     align-items: start;
   }
 }
+
+/* Índice de /examenes/ — lista completa navegable por letra */
+
+.examenes-index-hero {
+  padding: 40px 0 8px;
+  text-align: center;
+}
+
+.examenes-index-hero .container {
+  max-width: 640px;
+}
+
+.examenes-index-hero h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4em;
+}
+
+.examenes-index-hero p {
+  color: var(--c-gray);
+}
+
+.examenes-index-hero a {
+  color: var(--c-green-dark);
+  font-weight: 600;
+}
+
+.examenes-index-hero a:hover {
+  text-decoration: underline;
+}
+
+.examenes-index-contenido {
+  padding: 8px 0 60px;
+}
+
+.examenes-index-alfabeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin: 20px 0 32px;
+  position: sticky;
+  top: 65px;
+  background: var(--c-white);
+  padding: 10px 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--c-gray-light);
+}
+
+.examenes-index-alfabeto a {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--c-gray-soft);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--c-ink);
+}
+
+.examenes-index-alfabeto a:hover {
+  background: var(--c-green-light);
+  color: var(--c-green-dark);
+}
+
+.examenes-index-grupo {
+  margin-bottom: 32px;
+  scroll-margin-top: 110px;
+}
+
+.examenes-index-grupo h2 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--c-green-dark);
+  border-bottom: 2px solid var(--c-green-light);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.examenes-index-lista {
+  display: grid;
+  gap: 2px;
+}
+
+.examenes-index-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.examenes-index-item:hover {
+  background: var(--c-gray-soft);
+}
+
+.examenes-index-nombre {
+  font-size: 0.9rem;
+  color: var(--c-ink);
+  font-weight: 500;
+}
+
+.examenes-index-precio {
+  font-size: 0.82rem;
+  color: var(--c-gray);
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .examenes-index-lista {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px 28px;
+  }
+}
+
+@media (min-width: 960px) {
+  .examenes-index-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -52,11 +52,22 @@ def limpiar_espacios(texto):
     return " ".join(texto.split())
 
 
-def slug(codigo):
-    """Código de examen -> id HTML válido (ej. 'CA19-9' -> 'ca19-9')."""
-    base = normalizar(codigo).replace(" ", "-")
+SLUG_MAXLEN = 60
+
+
+def slug(texto):
+    """Nombre del examen -> slug de URL/id HTML. Mismo criterio que
+    build_paginas_examenes.py: '<'/'>' se traducen a palabras y se trunca
+    en un guión para no generar identificadores kilométricos."""
+    texto = texto.replace("<", " menos de ").replace(">", " mas de ")
+    base = normalizar(texto).replace(" ", "-")
     base = re.sub(r"[^a-z0-9\-]", "-", base)
     base = re.sub(r"-+", "-", base).strip("-")
+    if len(base) > SLUG_MAXLEN:
+        cortado = base[:SLUG_MAXLEN]
+        if "-" in cortado:
+            cortado = cortado.rsplit("-", 1)[0]
+        base = cortado or base[:SLUG_MAXLEN]
     return base or "examen"
 
 
@@ -79,11 +90,12 @@ def construir_filas_html(examenes):
     con_pagina = codigos_con_pagina_propia()
     filas = []
     for ex in examenes:
-        fila_id = "examen-" + slug(ex["codigo"])
+        s = slug(ex["descripcion"])
+        fila_id = "examen-" + s
         nombre = html.escape(ex["descripcion"])
         precio = formatear_colones(ex["precio"])
         if ex["codigo"] in con_pagina:
-            nombre += f' <a href="/examenes/{slug(ex["codigo"])}/" class="lista-completa-ficha">Ver ficha →</a>'
+            nombre += f' <a href="/examenes/{s}/" class="lista-completa-ficha">Ver ficha →</a>'
         filas.append(f'            <tr id="{fila_id}"><td>{nombre}</td><td>{precio}</td></tr>')
     return "\n".join(filas)
 
@@ -98,7 +110,7 @@ def construir_json_ld(examenes):
                 "@type": "Product",
                 "position": i + 1,
                 "name": ex["descripcion"],
-                "url": SITE_URL + "#examen-" + slug(ex["codigo"]),
+                "url": SITE_URL + "#examen-" + slug(ex["descripcion"]),
                 "offers": {
                     "@type": "Offer",
                     "price": ex["precio"],
@@ -196,11 +208,11 @@ def main():
 
     slugs_vistos = {}
     for ex in examenes:
-        s = slug(ex["codigo"])
+        s = slug(ex["descripcion"])
         if s in slugs_vistos:
             advertencias.append(
                 f"ids HTML duplicados: '{ex['codigo']}' y '{slugs_vistos[s]}' generan el mismo slug '{s}' "
-                "— la tabla estática tendrá dos <tr id> iguales, revisar los códigos"
+                "— la tabla estática tendrá dos <tr id> iguales, revisar los nombres"
             )
         slugs_vistos[s] = ex["codigo"]
 

@@ -86,6 +86,20 @@
   margin: 10px 0 0;
 }
 
+.buscador-index-link {
+  font-size: 0.86rem;
+  margin: 0 0 18px;
+}
+
+.buscador-index-link a {
+  color: var(--c-green-dark);
+  font-weight: 600;
+}
+
+.buscador-index-link a:hover {
+  text-decoration: underline;
+}
+
 .resultados-lista {
   margin-top: 10px;
   max-height: 420px;

@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 EXAMENES_JSON = ROOT / "data" / "examenes.json"
 CONTENIDO_JSON = ROOT / "data" / "examenes-contenido.json"
 PLANTILLA = ROOT / "scripts" / "plantilla-examen.html"
+PLANTILLA_INDICE = ROOT / "scripts" / "plantilla-examenes-index.html"
 SALIDA_DIR = ROOT / "examenes"
 SITE_URL = "https://labservicecr.com"
 
@@ -47,10 +48,23 @@ def normalizar(texto):
     return " ".join(sin_acentos.lower().split())
 
 
-def slug(codigo):
-    base = normalizar(codigo).replace(" ", "-")
+SLUG_MAXLEN = 60
+
+
+def slug(texto):
+    """Nombre del examen -> slug de URL. '<'/'>' se traducen a palabras
+    (si no, 'ADULTO <40' y 'ADULTO >40' generarían el mismo slug al
+    perder el símbolo). Se trunca en un guión para no generar URLs
+    kilométricas con los paquetes de nombre largo."""
+    texto = texto.replace("<", " menos de ").replace(">", " mas de ")
+    base = normalizar(texto).replace(" ", "-")
     base = re.sub(r"[^a-z0-9\-]", "-", base)
     base = re.sub(r"-+", "-", base).strip("-")
+    if len(base) > SLUG_MAXLEN:
+        cortado = base[:SLUG_MAXLEN]
+        if "-" in cortado:
+            cortado = cortado.rsplit("-", 1)[0]
+        base = cortado or base[:SLUG_MAXLEN]
     return base or "examen"
 
 
@@ -88,7 +102,7 @@ def construir_relacionados_html(relacionados_codigos, examenes_por_codigo):
             '        <a class="examen-relacionado-card" href="/examenes/{slug}/">'
             '<span class="examen-relacionado-nombre">{nombre}</span>'
             '<span class="examen-relacionado-precio">{precio}</span></a>'.format(
-                slug=slug(ex["codigo"]),
+                slug=slug(ex["descripcion"]),
                 nombre=html.escape(ex["descripcion"]),
                 precio=formatear_colones(ex["precio"])
             )
@@ -103,6 +117,54 @@ def construir_relacionados_html(relacionados_codigos, examenes_por_codigo):
         '        </div>\n'
         '      </div>\n'
     )
+
+
+def generar_pagina_indice(generadas):
+    """examenes/index.html: lista completa navegable por letra, para que
+    cualquier persona (o un crawler) pueda llegar a cada ficha con un clic
+    sin depender del buscador de /precios."""
+    if not PLANTILLA_INDICE.exists():
+        print(f"AVISO: no se encontró {PLANTILLA_INDICE.relative_to(ROOT)}, se omite el índice.")
+        return
+
+    # generadas: lista de (slug, nombre, url, precio_fmt), ya en el orden
+    # alfabético en que vinieron de contenido_data (que a su vez viene
+    # ordenado por build_examenes.py).
+    grupos = {}
+    for s, nombre, url, precio_fmt in generadas:
+        letra = normalizar(nombre)[:1].upper()
+        if not letra.isalpha():
+            letra = "#"
+        grupos.setdefault(letra, []).append((s, nombre, url, precio_fmt))
+
+    letras_ordenadas = sorted(grupos.keys())
+
+    nav_html = "\n".join(
+        f'        <a href="#letra-{l if l != "#" else "num"}">{l}</a>' for l in letras_ordenadas
+    )
+
+    bloques = []
+    for letra in letras_ordenadas:
+        items_html = "\n".join(
+            f'          <a class="examenes-index-item" href="/examenes/{s}/">'
+            f'<span class="examenes-index-nombre">{html.escape(nombre)}</span>'
+            f'<span class="examenes-index-precio">{precio_fmt}</span></a>'
+            for s, nombre, url, precio_fmt in sorted(grupos[letra], key=lambda t: normalizar(t[1]))
+        )
+        ancla = letra if letra != "#" else "num"
+        bloques.append(
+            f'      <div class="examenes-index-grupo" id="letra-{ancla}">\n'
+            f'        <h2>{letra}</h2>\n'
+            f'        <div class="examenes-index-lista">\n{items_html}\n        </div>\n'
+            f'      </div>'
+        )
+
+    pagina = PLANTILLA_INDICE.read_text(encoding="utf-8")
+    pagina = pagina.replace("{{ALFABETO_NAV}}", nav_html)
+    pagina = pagina.replace("{{GRUPOS_HTML}}", "\n\n".join(bloques))
+
+    (SALIDA_DIR / "index.html").write_text(pagina, encoding="utf-8")
+    print(f"OK: índice /examenes/ generado con {len(generadas)} exámenes en {len(letras_ordenadas)} grupos.")
 
 
 def main():
@@ -120,6 +182,7 @@ def main():
 
     generadas = []
     advertencias = []
+    slugs_usados = {}
 
     for contenido in contenido_data["examenes"]:
         codigo = contenido["codigo"]
@@ -136,9 +199,15 @@ def main():
             advertencias.append(f"Categoría desconocida '{contenido['categoria']}' para '{codigo}' — se usa ícono genérico")
             icono = ICONOS["otro"]
 
-        s = slug(codigo)
-        url = f"{SITE_URL}/examenes/{s}/"
         nombre = ex["descripcion"]
+        s = slug(nombre)
+        if s in slugs_usados:
+            advertencias.append(
+                f"Slug duplicado '{s}': '{codigo}' y '{slugs_usados[s]}' generan la misma URL "
+                f"/examenes/{s}/ — la segunda sobrescribe a la primera, hay que diferenciar los nombres"
+            )
+        slugs_usados[s] = codigo
+        url = f"{SITE_URL}/examenes/{s}/"
         precio_fmt = formatear_colones(ex["precio"])
 
         pagina = plantilla
@@ -164,9 +233,25 @@ def main():
         destino = SALIDA_DIR / s
         destino.mkdir(parents=True, exist_ok=True)
         (destino / "index.html").write_text(pagina, encoding="utf-8")
-        generadas.append((s, nombre, url))
+        generadas.append((s, nombre, url, precio_fmt))
+
+    # Limpia carpetas de corridas anteriores que ya no corresponden a ningún
+    # slug actual (ej. quedaron de códigos viejos tras cambiar el esquema de
+    # slugs), para no dejar páginas huérfanas/duplicadas publicadas.
+    slugs_actuales = {s for s, _, _, _ in generadas}
+    eliminadas = 0
+    if SALIDA_DIR.exists():
+        for carpeta in SALIDA_DIR.iterdir():
+            if carpeta.is_dir() and carpeta.name not in slugs_actuales:
+                import shutil
+                shutil.rmtree(carpeta)
+                eliminadas += 1
+
+    generar_pagina_indice(generadas)
 
     print(f"OK: {len(generadas)} páginas generadas en {SALIDA_DIR.relative_to(ROOT)}/")
+    if eliminadas:
+        print(f"OK: {eliminadas} carpeta(s) obsoleta(s) eliminada(s)")
     if advertencias:
         print(f"\n{len(advertencias)} advertencia(s):")
         for a in advertencias:

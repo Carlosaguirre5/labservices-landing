@@ -11,397 +11,402 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/1160/</loc>
+    <loc>https://labservicecr.com/examenes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labservicecr.com/examenes/glucosa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/glic/</loc>
+    <loc>https://labservicecr.com/examenes/hemoglobina-glicosilada/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/1122/</loc>
+    <loc>https://labservicecr.com/examenes/hemograma-completo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/tiro/</loc>
+    <loc>https://labservicecr.com/examenes/perfil-tiroideo-completo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/30/</loc>
+    <loc>https://labservicecr.com/examenes/tsh-hormona-estimulante-tiroides/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/2737/</loc>
+    <loc>https://labservicecr.com/examenes/perfil-hepatico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/2738/</loc>
+    <loc>https://labservicecr.com/examenes/perfil-renal-bun-crea/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/1875/</loc>
+    <loc>https://labservicecr.com/examenes/examen-general-de-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/1136/</loc>
+    <loc>https://labservicecr.com/examenes/examen-de-orina-general/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/601/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-hiv/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/mt/</loc>
+    <loc>https://labservicecr.com/examenes/monotest/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/905/</loc>
+    <loc>https://labservicecr.com/examenes/acido-urico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/psa/</loc>
+    <loc>https://labservicecr.com/examenes/antigeno-prostatico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/5/</loc>
+    <loc>https://labservicecr.com/examenes/antigeno-prostatico-libre/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/6/</loc>
+    <loc>https://labservicecr.com/examenes/antigeno-prostatico-total-libre/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/hf/</loc>
+    <loc>https://labservicecr.com/examenes/hormonal-femenino-fsh-lh-estradiol-progesterona/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dr6/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-drogas/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/630/</loc>
+    <loc>https://labservicecr.com/examenes/deteccion-molecular-de-papiloma-humano/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/877/</loc>
+    <loc>https://labservicecr.com/examenes/grupo-sanguineo-y-rh/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/nino/</loc>
+    <loc>https://labservicecr.com/examenes/nino-sano/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/400/</loc>
+    <loc>https://labservicecr.com/examenes/troponina-cuantificada/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/quan/</loc>
+    <loc>https://labservicecr.com/examenes/quantiferon/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cel/</loc>
+    <loc>https://labservicecr.com/examenes/celiaco/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/300/</loc>
+    <loc>https://labservicecr.com/examenes/tiempo-de-protrombina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/alerg/</loc>
+    <loc>https://labservicecr.com/examenes/alergenos-individuales/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/2739/</loc>
+    <loc>https://labservicecr.com/examenes/perfil-de-lipidos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/emb/</loc>
+    <loc>https://labservicecr.com/examenes/hcg-sub-unidad-beta-cualitativa-prueba-embarazo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/vit-d/</loc>
+    <loc>https://labservicecr.com/examenes/vitamina-d/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/b12/</loc>
+    <loc>https://labservicecr.com/examenes/vitamina-b12/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fol/</loc>
+    <loc>https://labservicecr.com/examenes/acido-folico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/876/</loc>
+    <loc>https://labservicecr.com/examenes/ferritina-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/875/</loc>
+    <loc>https://labservicecr.com/examenes/hierro-serico-y-capacidad-de-fijacion/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dq/</loc>
+    <loc>https://labservicecr.com/examenes/prueba-genetica-enfermedad-celiaca-dq2-dq8/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/710/</loc>
+    <loc>https://labservicecr.com/examenes/testosterona-total/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/703/</loc>
+    <loc>https://labservicecr.com/examenes/estradiol/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/prl/</loc>
+    <loc>https://labservicecr.com/examenes/prolactina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/306/</loc>
+    <loc>https://labservicecr.com/examenes/colesterol-total/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/60/</loc>
+    <loc>https://labservicecr.com/examenes/trigliceridos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/58/</loc>
+    <loc>https://labservicecr.com/examenes/creatinina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/405/</loc>
+    <loc>https://labservicecr.com/examenes/proteina-c-reactiva/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/873/</loc>
+    <loc>https://labservicecr.com/examenes/velocidad-de-eritrosedimentacion/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/uro/</loc>
+    <loc>https://labservicecr.com/examenes/urocultivo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/628/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-chlamydia-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/17-ohpr/</loc>
+    <loc>https://labservicecr.com/examenes/17-oh-alfa-progesterona/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/608/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-core-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/617/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-epstein-barr-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/610/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-hepatitis-a-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/613/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-hepatitis-c/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/musc-liso-lkm1/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-musculo-liso-lkm1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/511/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-cardiolipina-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/510/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-cardiolipina-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/627/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-chlamydia-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/622/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-citomegalovirus-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/621/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-citomegalovirus-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/609/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-core-total/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/512/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-endomisiales/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/618/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-epstein-barr-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/515/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-gliadina-iga/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/516/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-gliadina-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/606/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-hbe/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/624/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-herpes-simple-i-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/623/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-herpes-simple-i-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/626/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-herpes-simple-ii-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/625/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-herpes-simple-ii-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pcc/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-peptido-ciclico-citrulinado/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/620/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-rubeola-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/619/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-rubeola-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/615/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-toxoplasma-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/614/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-toxoplasma-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/513/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-trasglutaminasa-iga/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/514/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-trasglutaminasa-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/607/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-core-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/604/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-hbsag/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/503/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-dna-ds/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/505/</loc>
+    <loc>https://labservicecr.com/examenes/ac-anti-enas/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/au-or/</loc>
+    <loc>https://labservicecr.com/examenes/acido-urico-orina-24h/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/valp/</loc>
+    <loc>https://labservicecr.com/examenes/acido-valproico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/van/</loc>
+    <loc>https://labservicecr.com/examenes/acido-vandil-mandelico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/acla/</loc>
+    <loc>https://labservicecr.com/examenes/aclaramiento-endogeno-de-creatinina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -411,177 +416,177 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/adulto-2/</loc>
+    <loc>https://labservicecr.com/examenes/adulto-menos-de-40-anos-completo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/adulto-3/</loc>
+    <loc>https://labservicecr.com/examenes/adulto-mas-de-40-anos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/adulto-4/</loc>
+    <loc>https://labservicecr.com/examenes/adulto-mas-de-40-anos-completo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/adulto-1/</loc>
+    <loc>https://labservicecr.com/examenes/adultos-menos-de-40-anos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ald/</loc>
+    <loc>https://labservicecr.com/examenes/aldosterona/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/alim/</loc>
+    <loc>https://labservicecr.com/examenes/alergocheck-alimentos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/carne/</loc>
+    <loc>https://labservicecr.com/examenes/alergocheck-mariscos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/afp/</loc>
+    <loc>https://labservicecr.com/examenes/alfa-feto-proteina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/906/</loc>
+    <loc>https://labservicecr.com/examenes/amilasa-serica/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/amon/</loc>
+    <loc>https://labservicecr.com/examenes/amonio/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/507/</loc>
+    <loc>https://labservicecr.com/examenes/anca-p/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/506/</loc>
+    <loc>https://labservicecr.com/examenes/anca-c/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/andros/</loc>
+    <loc>https://labservicecr.com/examenes/androstenediona/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/37/</loc>
+    <loc>https://labservicecr.com/examenes/anti-microsomas-anti-tpo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ro/</loc>
+    <loc>https://labservicecr.com/examenes/anti-ro/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/36/</loc>
+    <loc>https://labservicecr.com/examenes/anti-tiroglobulina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/lup/</loc>
+    <loc>https://labservicecr.com/examenes/anticoagulante-lupico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/502/</loc>
+    <loc>https://labservicecr.com/examenes/anticuerpos-antinucleares/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fta/</loc>
+    <loc>https://labservicecr.com/examenes/anticuerpos-antitreponemicos-fta/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/aso/</loc>
+    <loc>https://labservicecr.com/examenes/antiestreptolisina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cea/</loc>
+    <loc>https://labservicecr.com/examenes/antigeno-carcinoembrionico-cea/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/603/</loc>
+    <loc>https://labservicecr.com/examenes/antigeno-hepatitis-b-hbsag/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/605/</loc>
+    <loc>https://labservicecr.com/examenes/antigeno-hbeag/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/antigeno/</loc>
+    <loc>https://labservicecr.com/examenes/antigenos-covid/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ag/</loc>
+    <loc>https://labservicecr.com/examenes/antigenos-covid-para-viajar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/an/</loc>
+    <loc>https://labservicecr.com/examenes/analisis-de-laboratorio/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/apo-a1/</loc>
+    <loc>https://labservicecr.com/examenes/apolipoproteina-a1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/apob/</loc>
+    <loc>https://labservicecr.com/examenes/apolipoproteina-b/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/83/</loc>
+    <loc>https://labservicecr.com/examenes/azucares-reductores-y-no-reductores/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/metil/</loc>
+    <loc>https://labservicecr.com/examenes/acido-metilmalonico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/febril/</loc>
+    <loc>https://labservicecr.com/examenes/aglutinaciones-febriles/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/albu/</loc>
+    <loc>https://labservicecr.com/examenes/albumina-serica/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ige-alergeno/</loc>
+    <loc>https://labservicecr.com/examenes/alergeno-ige/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/jo-1/</loc>
+    <loc>https://labservicecr.com/examenes/anti-jo-1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/mi-2/</loc>
+    <loc>https://labservicecr.com/examenes/anti-mi-2/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -591,62 +596,62 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/scl-70/</loc>
+    <loc>https://labservicecr.com/examenes/anti-scl-70/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/nucleo/</loc>
+    <loc>https://labservicecr.com/examenes/anti-nucleosomas/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/centromero/</loc>
+    <loc>https://labservicecr.com/examenes/anticuerpos-anti-centromero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/psa-zf/</loc>
+    <loc>https://labservicecr.com/examenes/antigeno-prostatico-zona-franca/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/b-oseo/</loc>
+    <loc>https://labservicecr.com/examenes/balance-oseo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/beta2/</loc>
+    <loc>https://labservicecr.com/examenes/beta-2-glicoproteina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/74/</loc>
+    <loc>https://labservicecr.com/examenes/bilirrubina-totales-y-fraccionadas/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/bnp/</loc>
+    <loc>https://labservicecr.com/examenes/bnp-peptido-natriuretico-b/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/bas/</loc>
+    <loc>https://labservicecr.com/examenes/basico-hemograma-perfil-de-lipidos-glucosa-ego/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ca15-3/</loc>
+    <loc>https://labservicecr.com/examenes/ca-15-3/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ca19-9/</loc>
+    <loc>https://labservicecr.com/examenes/ca-19-9/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ca-72-4/</loc>
+    <loc>https://labservicecr.com/examenes/ca-72-4-colonrectal-ovario-estomago/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -656,72 +661,72 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/62/</loc>
+    <loc>https://labservicecr.com/examenes/calcio-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cal-or/</loc>
+    <loc>https://labservicecr.com/examenes/calcio-orina-24h/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cal/</loc>
+    <loc>https://labservicecr.com/examenes/calcitonina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/calculo/</loc>
+    <loc>https://labservicecr.com/examenes/calculos-renales-o-biliares/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/calp/</loc>
+    <loc>https://labservicecr.com/examenes/calprotectina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/carba/</loc>
+    <loc>https://labservicecr.com/examenes/carbamazepina-tegretol/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/car/</loc>
+    <loc>https://labservicecr.com/examenes/cariotipo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/le/</loc>
+    <loc>https://labservicecr.com/examenes/celulas-le/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cer/</loc>
+    <loc>https://labservicecr.com/examenes/ceruloplasmina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/poli/</loc>
+    <loc>https://labservicecr.com/examenes/chequeo-fuerza-publica/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/401/</loc>
+    <loc>https://labservicecr.com/examenes/ck-total/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/402/</loc>
+    <loc>https://labservicecr.com/examenes/ck-mb/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/312/</loc>
+    <loc>https://labservicecr.com/examenes/cloruros-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/clost/</loc>
+    <loc>https://labservicecr.com/examenes/clostriduim-toxina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -731,252 +736,252 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/coc-cual/</loc>
+    <loc>https://labservicecr.com/examenes/cocaina-cualitativa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/coc-cuant/</loc>
+    <loc>https://labservicecr.com/examenes/cocaina-cuantitativa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/colico/</loc>
+    <loc>https://labservicecr.com/examenes/colico-lactante/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/319/</loc>
+    <loc>https://labservicecr.com/examenes/colinesterasa-eritrocitica/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/318/</loc>
+    <loc>https://labservicecr.com/examenes/colinesterasa-serica/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/508/</loc>
+    <loc>https://labservicecr.com/examenes/complemento-c3/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/509/</loc>
+    <loc>https://labservicecr.com/examenes/complemento-c4/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fememino/</loc>
+    <loc>https://labservicecr.com/examenes/control-femenino-40-hemograma-perfil-de-lipidos-glucosa-ca/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/masc/</loc>
+    <loc>https://labservicecr.com/examenes/control-masculino-40-hemograma-perfil-de-lipidos-glucosa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cd/</loc>
+    <loc>https://labservicecr.com/examenes/coombs-directo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ci/</loc>
+    <loc>https://labservicecr.com/examenes/coombs-indirecto/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/copro/</loc>
+    <loc>https://labservicecr.com/examenes/coprocultivo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cort/</loc>
+    <loc>https://labservicecr.com/examenes/cortisol/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ctx/</loc>
+    <loc>https://labservicecr.com/examenes/ctx-telopeptidos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cfs/</loc>
+    <loc>https://labservicecr.com/examenes/cultivo-fosas-nasales/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ctg-75/</loc>
+    <loc>https://labservicecr.com/examenes/curva-tolerancia-glucosa-75g/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/campy/</loc>
+    <loc>https://labservicecr.com/examenes/campylobacter-en-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/coag/</loc>
+    <loc>https://labservicecr.com/examenes/coagulacion-tp-ttp/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/cobre-orina/</loc>
+    <loc>https://labservicecr.com/examenes/cobre-en-orina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/deport/</loc>
+    <loc>https://labservicecr.com/examenes/control-deportista-hemograma-perfil-de-lipidos-glucosa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/comp/</loc>
+    <loc>https://labservicecr.com/examenes/control-salud-completo-hemograma-perfil-de-lipidos-glucosa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dep/</loc>
+    <loc>https://labservicecr.com/examenes/deportista/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/404/</loc>
+    <loc>https://labservicecr.com/examenes/deshidrogenasa-lactica-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/629/</loc>
+    <loc>https://labservicecr.com/examenes/deteccion-molecular-de-ets-9-agentes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dheas/</loc>
+    <loc>https://labservicecr.com/examenes/dheas-so4/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dim/</loc>
+    <loc>https://labservicecr.com/examenes/dimero-d/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dht-total/</loc>
+    <loc>https://labservicecr.com/examenes/dihidrotestosterona/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dht-libre/</loc>
+    <loc>https://labservicecr.com/examenes/dihidrotestosterona-libre/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/317/</loc>
+    <loc>https://labservicecr.com/examenes/electrolitos-sodio-potasio-cloruros-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/eos/</loc>
+    <loc>https://labservicecr.com/examenes/eosinofilos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/esper/</loc>
+    <loc>https://labservicecr.com/examenes/espermograma/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ets-comp/</loc>
+    <loc>https://labservicecr.com/examenes/ets-completo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/electro/</loc>
+    <loc>https://labservicecr.com/examenes/electroforesis-de-proteinas/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/electro-hemo/</loc>
+    <loc>https://labservicecr.com/examenes/electroforesis-de-hemoglobina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/trombo/</loc>
+    <loc>https://labservicecr.com/examenes/estudio-trombofilias/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/eta/</loc>
+    <loc>https://labservicecr.com/examenes/etanol/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/501/</loc>
+    <loc>https://labservicecr.com/examenes/factor-reumatico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/304/</loc>
+    <loc>https://labservicecr.com/examenes/fibrinogeno/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/78/</loc>
+    <loc>https://labservicecr.com/examenes/fosfatasa-alcalina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/64/</loc>
+    <loc>https://labservicecr.com/examenes/fosforo-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fosf-or/</loc>
+    <loc>https://labservicecr.com/examenes/fosforo-orina-24h/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fb/</loc>
+    <loc>https://labservicecr.com/examenes/frotis-bacteriologico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fro-he/</loc>
+    <loc>https://labservicecr.com/examenes/frotis-de-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ff/</loc>
+    <loc>https://labservicecr.com/examenes/frotis-y-cultivo-faringeo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fcb/</loc>
+    <loc>https://labservicecr.com/examenes/frotis-y-cultivo-por-bacterias/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/hongos/</loc>
+    <loc>https://labservicecr.com/examenes/frotis-y-cultivo-por-hongos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fu/</loc>
+    <loc>https://labservicecr.com/examenes/frotis-y-cultivo-uretral/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fv/</loc>
+    <loc>https://labservicecr.com/examenes/frotis-y-cultivo-vaginal/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fsh/</loc>
+    <loc>https://labservicecr.com/examenes/fsh-hormona-foliculo-estimulante/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/fen/</loc>
+    <loc>https://labservicecr.com/examenes/fenitoina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -986,52 +991,52 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/77/</loc>
+    <loc>https://labservicecr.com/examenes/ggtp/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/tiroxina/</loc>
+    <loc>https://labservicecr.com/examenes/globulina-fijadora-de-tiroxina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/97/</loc>
+    <loc>https://labservicecr.com/examenes/glucosa-1h-post-carga-50g/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/99/</loc>
+    <loc>https://labservicecr.com/examenes/glucosa-2h-post-carga-100g/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/98/</loc>
+    <loc>https://labservicecr.com/examenes/glucosa-2h-post-carga-75g/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/96/</loc>
+    <loc>https://labservicecr.com/examenes/glucosa-2h-post-prandial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/grah/</loc>
+    <loc>https://labservicecr.com/examenes/grasas-en-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/611/</loc>
+    <loc>https://labservicecr.com/examenes/hav-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/705/</loc>
+    <loc>https://labservicecr.com/examenes/hcg-sub-unidad-beta-cuantificada/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/307/</loc>
+    <loc>https://labservicecr.com/examenes/hdl-colesterol/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1041,102 +1046,102 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/871/</loc>
+    <loc>https://labservicecr.com/examenes/hematocrito-hemoglobina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/hg/</loc>
+    <loc>https://labservicecr.com/examenes/higado-graso/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/homo/</loc>
+    <loc>https://labservicecr.com/examenes/homocisteina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/mul/</loc>
+    <loc>https://labservicecr.com/examenes/hormona-antimulleriana/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/crec/</loc>
+    <loc>https://labservicecr.com/examenes/hormona-de-crecimiento/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/helico-igg/</loc>
+    <loc>https://labservicecr.com/examenes/helicobacter-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/81/</loc>
+    <loc>https://labservicecr.com/examenes/helicobacter-pylori-en-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/hemopromo/</loc>
+    <loc>https://labservicecr.com/examenes/hemograma-promocion/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/hav-g/</loc>
+    <loc>https://labservicecr.com/examenes/hepatitis-a-igg/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/igf-1/</loc>
+    <loc>https://labservicecr.com/examenes/igf-1-somatomedina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/igf-bp3/</loc>
+    <loc>https://labservicecr.com/examenes/igf-bp3-proteina-3-de-union-al-factor-de-crecimiento/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ia/</loc>
+    <loc>https://labservicecr.com/examenes/indice-androgenico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/homa/</loc>
+    <loc>https://labservicecr.com/examenes/indice-de-homa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/iga/</loc>
+    <loc>https://labservicecr.com/examenes/inmunoglobina-a/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ige/</loc>
+    <loc>https://labservicecr.com/examenes/inmunoglobulina-e/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/igg/</loc>
+    <loc>https://labservicecr.com/examenes/inmunoglobulina-g/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/igm/</loc>
+    <loc>https://labservicecr.com/examenes/inmunoglobulina-m/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/708/</loc>
+    <loc>https://labservicecr.com/examenes/insulina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/709/</loc>
+    <loc>https://labservicecr.com/examenes/insulina-post-carga/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/ige-aler/</loc>
+    <loc>https://labservicecr.com/examenes/ige-alergenos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1146,137 +1151,137 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/li/</loc>
+    <loc>https://labservicecr.com/examenes/litio/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/lepto/</loc>
+    <loc>https://labservicecr.com/examenes/leptospirosis-igg-igm/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/lipa/</loc>
+    <loc>https://labservicecr.com/examenes/lipasa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/63/</loc>
+    <loc>https://labservicecr.com/examenes/magnesio-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/mar-cual/</loc>
+    <loc>https://labservicecr.com/examenes/marihuana-cualitativa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/mar-cuant/</loc>
+    <loc>https://labservicecr.com/examenes/marihuana-cuantitativa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/micro/</loc>
+    <loc>https://labservicecr.com/examenes/microalbuminuria/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/micro-creat/</loc>
+    <loc>https://labservicecr.com/examenes/microalbuminuria-creatinuria/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/mthfr/</loc>
+    <loc>https://labservicecr.com/examenes/mutacion-mthfr/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/363/</loc>
+    <loc>https://labservicecr.com/examenes/nitrogeno-ureico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/407/</loc>
+    <loc>https://labservicecr.com/examenes/nt-probnp/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/nico/</loc>
+    <loc>https://labservicecr.com/examenes/nicotina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/sed/</loc>
+    <loc>https://labservicecr.com/examenes/orina-y-sedimento-tenido/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/oxalato/</loc>
+    <loc>https://labservicecr.com/examenes/oxalato-en-orina-de-24h/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/omeg/</loc>
+    <loc>https://labservicecr.com/examenes/omega-3-y-6/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pmc14/</loc>
+    <loc>https://labservicecr.com/examenes/panel-metabolico-completo-14/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pb/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-basico-promocion/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pc/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-completo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/papa/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-dia-del-padre/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/diab-seg/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-diabetes-seguimiento-glucosa-hemoglobina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/policia/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-fuerza-publica/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/sad/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-salud-adolescente/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pth/</loc>
+    <loc>https://labservicecr.com/examenes/paratohormona-pth/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pcr-neisseria/</loc>
+    <loc>https://labservicecr.com/examenes/pcr-por-neisseria-gonorrhoeae/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pcr-trichomonas/</loc>
+    <loc>https://labservicecr.com/examenes/pcr-por-trichomonas-vaginalis/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pep-c/</loc>
+    <loc>https://labservicecr.com/examenes/peptido-c/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/316/</loc>
+    <loc>https://labservicecr.com/examenes/potasio-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1286,7 +1291,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pq/</loc>
+    <loc>https://labservicecr.com/examenes/prequirurgico/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1296,207 +1301,207 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/704/</loc>
+    <loc>https://labservicecr.com/examenes/progesterona/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/jun/</loc>
+    <loc>https://labservicecr.com/examenes/promocion-junio/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/406/</loc>
+    <loc>https://labservicecr.com/examenes/proteina-c-reactiva-ultrasensible/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/73/</loc>
+    <loc>https://labservicecr.com/examenes/proteinas-totales-y-fraccionadas-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/prot/</loc>
+    <loc>https://labservicecr.com/examenes/proteinuria-24h/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/psamov/</loc>
+    <loc>https://labservicecr.com/examenes/psa-movember/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/aler75/</loc>
+    <loc>https://labservicecr.com/examenes/panel-completo-75-alergenos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/diab-pre/</loc>
+    <loc>https://labservicecr.com/examenes/paquete-diabetes-preventivo-hemoglobina-glicosilada-indica/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/prp/</loc>
+    <loc>https://labservicecr.com/examenes/plasma-rico-en-plaquetas/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/pdr/</loc>
+    <loc>https://labservicecr.com/examenes/promo-dia-padre-psa-hemograma/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/protc/</loc>
+    <loc>https://labservicecr.com/examenes/proteina-c/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/872/</loc>
+    <loc>https://labservicecr.com/examenes/reticulocitos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/85/</loc>
+    <loc>https://labservicecr.com/examenes/rotavirus-adenovirus-en-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/soh/</loc>
+    <loc>https://labservicecr.com/examenes/sangre-oculta-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/eg-3/</loc>
+    <loc>https://labservicecr.com/examenes/serie-3-muestras-parasitos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/so3/</loc>
+    <loc>https://labservicecr.com/examenes/serie-3-muestras-sangre-oculta-en-heces/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/covid/</loc>
+    <loc>https://labservicecr.com/examenes/serologia-covid/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/vacuna/</loc>
+    <loc>https://labservicecr.com/examenes/serologia-covid-post-vacuna/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/se/</loc>
+    <loc>https://labservicecr.com/examenes/serologia-leptospira-equino/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/dengue/</loc>
+    <loc>https://labservicecr.com/examenes/serologia-por-dengue/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/sexo/</loc>
+    <loc>https://labservicecr.com/examenes/sexo-fetal/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/shbg/</loc>
+    <loc>https://labservicecr.com/examenes/shbg-globulina-fijadora-de-las-hormonas-sexuales/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/314/</loc>
+    <loc>https://labservicecr.com/examenes/sodio-suero/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/sero/</loc>
+    <loc>https://labservicecr.com/examenes/serotonina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/32/</loc>
+    <loc>https://labservicecr.com/examenes/t3-libre/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/t3r/</loc>
+    <loc>https://labservicecr.com/examenes/t3-reversa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/34/</loc>
+    <loc>https://labservicecr.com/examenes/t3-total/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/31/</loc>
+    <loc>https://labservicecr.com/examenes/t4-libre/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/33/</loc>
+    <loc>https://labservicecr.com/examenes/t4-total/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/sa/</loc>
+    <loc>https://labservicecr.com/examenes/tamizaje-por-s-agalactiae/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/graham/</loc>
+    <loc>https://labservicecr.com/examenes/test-de-graham/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/711/</loc>
+    <loc>https://labservicecr.com/examenes/testosterona-libre/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/75/</loc>
+    <loc>https://labservicecr.com/examenes/tgo-ast/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/76/</loc>
+    <loc>https://labservicecr.com/examenes/tgp-alt/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/303/</loc>
+    <loc>https://labservicecr.com/examenes/tiempo-de-tromboplastina-parcial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/35/</loc>
+    <loc>https://labservicecr.com/examenes/tiroglobulina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/trans/</loc>
+    <loc>https://labservicecr.com/examenes/transferrina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/var/</loc>
+    <loc>https://labservicecr.com/examenes/varicela/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/600/</loc>
+    <loc>https://labservicecr.com/examenes/vdrl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/vita/</loc>
+    <loc>https://labservicecr.com/examenes/vitamina-a/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/d3/</loc>
+    <loc>https://labservicecr.com/examenes/vitamina-d3/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -14,9 +14,11 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+EXAMENES_JSON = ROOT / "data" / "examenes.json"
 CONTENIDO_JSON = ROOT / "data" / "examenes-contenido.json"
 SITEMAP = ROOT / "sitemap.xml"
 SITE_URL = "https://labservicecr.com"
+SLUG_MAXLEN = 60
 
 
 def normalizar(texto):
@@ -25,26 +27,41 @@ def normalizar(texto):
     return " ".join(sin_acentos.lower().split())
 
 
-def slug(codigo):
-    base = normalizar(codigo).replace(" ", "-")
+def slug(texto):
+    """Mismo criterio que build_examenes.py / build_paginas_examenes.py."""
+    texto = texto.replace("<", " menos de ").replace(">", " mas de ")
+    base = normalizar(texto).replace(" ", "-")
     base = re.sub(r"[^a-z0-9\-]", "-", base)
     base = re.sub(r"-+", "-", base).strip("-")
+    if len(base) > SLUG_MAXLEN:
+        cortado = base[:SLUG_MAXLEN]
+        if "-" in cortado:
+            cortado = cortado.rsplit("-", 1)[0]
+        base = cortado or base[:SLUG_MAXLEN]
     return base or "examen"
 
 
 def main():
     if not CONTENIDO_JSON.exists():
         sys.exit(f"No se encontró {CONTENIDO_JSON}.")
+    if not EXAMENES_JSON.exists():
+        sys.exit(f"No se encontró {EXAMENES_JSON}.")
 
     contenido = json.loads(CONTENIDO_JSON.read_text(encoding="utf-8"))
+    examenes = json.loads(EXAMENES_JSON.read_text(encoding="utf-8"))
+    examenes_por_codigo = {e["codigo"]: e for e in examenes}
     codigos = [item["codigo"] for item in contenido["examenes"]]
 
     urls = [
         (f"{SITE_URL}/", "monthly", "1.0"),
         (f"{SITE_URL}/precios/", "weekly", "0.9"),
+        (f"{SITE_URL}/examenes/", "weekly", "0.8"),
     ]
     for codigo in codigos:
-        urls.append((f"{SITE_URL}/examenes/{slug(codigo)}/", "monthly", "0.7"))
+        ex = examenes_por_codigo.get(codigo)
+        if not ex:
+            continue
+        urls.append((f"{SITE_URL}/examenes/{slug(ex['descripcion'])}/", "monthly", "0.7"))
 
     lineas = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, freq, prio in urls:
