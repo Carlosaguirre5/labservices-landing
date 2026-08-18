@@ -6,168 +6,257 @@
       "categoria": "sangre",
       "resumen": "Mide el azúcar en tu sangre en el momento del examen.",
       "descripcion": "La glucosa es el azúcar que circula en tu sangre y que tu cuerpo usa como energía. Este examen mide su concentración en un solo momento y es la base para detectar o dar seguimiento a la diabetes y la prediabetes. Se recomienda ayuno de 8 a 12 horas antes de la toma de muestra, salvo indicación contraria de tu médico.",
-      "relacionados": ["glic", "2739", "2738"]
+      "relacionados": [
+        "glic",
+        "2739",
+        "2738"
+      ]
     },
     {
       "codigo": "glic",
       "categoria": "sangre",
       "resumen": "Refleja tu nivel promedio de azúcar en los últimos 2-3 meses.",
       "descripcion": "También conocida como HbA1c, mide el porcentaje de hemoglobina que se ha unido al azúcar en tu sangre durante los últimos dos o tres meses. A diferencia de la glucosa en ayunas, no requiere ayuno y se usa principalmente para diagnosticar diabetes y monitorear qué tan controlada está en personas que ya la tienen.",
-      "relacionados": ["1160", "2739", "2738"]
+      "relacionados": [
+        "1160",
+        "2739",
+        "2738"
+      ]
     },
     {
       "codigo": "1122",
       "categoria": "sangre",
       "resumen": "Revisa tus glóbulos rojos, blancos y plaquetas en un solo examen.",
       "descripcion": "El hemograma completo analiza los tres tipos de células de tu sangre: glóbulos rojos (relacionados con la anemia), glóbulos blancos (tu sistema de defensas) y plaquetas (la coagulación). Es uno de los exámenes más solicitados porque da una radiografía general de tu estado de salud y suele ser parte de cualquier chequeo de rutina.",
-      "relacionados": ["905", "306", "1136"]
+      "relacionados": [
+        "905",
+        "306",
+        "1136"
+      ]
     },
     {
       "codigo": "TIRO",
       "categoria": "sangre",
       "resumen": "Evalúa a fondo el funcionamiento de tu tiroides.",
       "descripcion": "Incluye TSH, T4 libre y T3 libre para dar una visión completa de cómo está funcionando tu tiroides, la glándula que regula tu metabolismo, energía y peso. Se recomienda cuando hay síntomas como cansancio persistente, cambios de peso inexplicables o alteraciones en el ritmo cardíaco, o para dar seguimiento a un tratamiento tiroideo ya diagnosticado.",
-      "relacionados": ["30", "HF", "710"]
+      "relacionados": [
+        "30",
+        "HF",
+        "710"
+      ]
     },
     {
       "codigo": "30",
       "categoria": "sangre",
       "resumen": "La prueba básica para revisar tu tiroides.",
       "descripcion": "La TSH (hormona estimulante de la tiroides) es el examen de primera línea para evaluar si tu tiroides funciona de más (hipertiroidismo) o de menos (hipotiroidismo). Es rápido, no requiere preparación especial y suele ser el punto de partida antes de pedir un perfil tiroideo más completo.",
-      "relacionados": ["TIRO", "HF", "glic"]
+      "relacionados": [
+        "TIRO",
+        "HF",
+        "glic"
+      ]
     },
     {
       "codigo": "2737",
       "categoria": "sangre",
       "resumen": "Revisa cómo está trabajando tu hígado.",
       "descripcion": "Agrupa varias pruebas que en conjunto muestran si tu hígado está inflamado o funcionando de forma anormal. Se pide con frecuencia en chequeos generales, antes de iniciar ciertos medicamentos, o para dar seguimiento a personas con hígado graso, consumo de alcohol o hepatitis.",
-      "relacionados": ["2738", "2739", "306"]
+      "relacionados": [
+        "2738",
+        "2739",
+        "306"
+      ]
     },
     {
       "codigo": "2738",
       "categoria": "sangre",
       "resumen": "Evalúa cómo están trabajando tus riñones.",
       "descripcion": "Mide creatinina y nitrógeno ureico (BUN) en tu sangre, dos indicadores clave de qué tan bien están filtrando tus riñones. Es un examen habitual en chequeos preventivos, sobre todo en personas con hipertensión, diabetes o antecedentes familiares de enfermedad renal.",
-      "relacionados": ["1136", "905", "1160"]
+      "relacionados": [
+        "1136",
+        "905",
+        "1160"
+      ]
     },
     {
       "codigo": "1875",
       "categoria": "heces",
       "resumen": "Analiza tu materia fecal en busca de parásitos, sangre u otras alteraciones.",
       "descripcion": "Revisa una muestra de heces bajo el microscopio para detectar parásitos intestinales, restos de sangre, grasas o cambios en la flora digestiva. Es útil ante síntomas digestivos persistentes (dolor abdominal, diarrea, hinchazón) o simplemente como parte de un chequeo preventivo completo.",
-      "relacionados": ["1136", "1122", "405"]
+      "relacionados": [
+        "1136",
+        "1122",
+        "405"
+      ]
     },
     {
       "codigo": "1136",
       "categoria": "orina",
       "resumen": "Detecta infecciones urinarias y otras alteraciones renales.",
       "descripcion": "Analiza el aspecto, la química y el sedimento de tu orina para detectar infecciones urinarias, presencia de sangre, proteínas o cristales, entre otros hallazgos. Es uno de los exámenes más solicitados por su rapidez y porque da pistas tempranas sobre la salud de tus riñones y vías urinarias.",
-      "relacionados": ["URO", "2738", "1875"]
+      "relacionados": [
+        "URO",
+        "2738",
+        "1875"
+      ]
     },
     {
       "codigo": "601",
       "categoria": "sangre",
       "resumen": "Prueba de anticuerpos para detectar el VIH.",
       "descripcion": "Detecta anticuerpos contra el VIH en tu sangre. Es una prueba confidencial que forma parte de los chequeos de salud sexual recomendados y también se solicita antes de algunos procedimientos médicos. Tus resultados se entregan solo a vos.",
-      "relacionados": ["628", "URO", "630"]
+      "relacionados": [
+        "628",
+        "URO",
+        "630"
+      ]
     },
     {
       "codigo": "MT",
       "categoria": "sangre",
       "resumen": "Detecta mononucleosis infecciosa.",
       "descripcion": "Es una prueba rápida que detecta anticuerpos heterófilos asociados a la mononucleosis infecciosa, causada generalmente por el virus Epstein-Barr. Se recomienda ante síntomas como fatiga intensa, fiebre, dolor de garganta y ganglios inflamados que no mejoran.",
-      "relacionados": ["1122", "405", "873"]
+      "relacionados": [
+        "1122",
+        "405",
+        "873"
+      ]
     },
     {
       "codigo": "905",
       "categoria": "sangre",
       "resumen": "Mide el ácido úrico, relacionado con la gota.",
       "descripcion": "El ácido úrico es un producto de desecho que, en niveles elevados, puede acumularse en las articulaciones y causar gota, o formar cálculos renales. Este examen es habitual en chequeos preventivos y en el seguimiento de personas con antecedentes de gota o cálculos renales.",
-      "relacionados": ["2738", "1160", "306"]
+      "relacionados": [
+        "2738",
+        "1160",
+        "306"
+      ]
     },
     {
       "codigo": "psa",
       "categoria": "sangre",
       "resumen": "El examen de rutina para la salud de la próstata.",
       "descripcion": "El PSA (antígeno prostático) es la prueba de tamizaje más usada para la salud de la próstata en hombres. Se recomienda a partir de los 40-50 años como parte del chequeo preventivo anual, o antes si hay antecedentes familiares o síntomas urinarios.",
-      "relacionados": ["5", "6", "1136"]
+      "relacionados": [
+        "5",
+        "6",
+        "1136"
+      ]
     },
     {
       "codigo": "5",
       "categoria": "sangre",
       "resumen": "Complementa el PSA total para afinar el diagnóstico.",
       "descripcion": "Mide la fracción libre del antígeno prostático en tu sangre. Se usa junto con el PSA total, calculando la relación entre ambos, para ayudar a diferenciar entre un crecimiento benigno de la próstata y otras causas de un PSA elevado.",
-      "relacionados": ["psa", "6", "1136"]
+      "relacionados": [
+        "psa",
+        "6",
+        "1136"
+      ]
     },
     {
       "codigo": "6",
       "categoria": "sangre",
       "resumen": "PSA total y libre en un solo examen combinado.",
       "descripcion": "Combina la medición del PSA total y del PSA libre en una sola muestra, calculando además la relación entre ambos. Es útil cuando tu médico necesita más precisión que un PSA total solo, sin tener que pedir dos exámenes por separado.",
-      "relacionados": ["psa", "5", "1136"]
+      "relacionados": [
+        "psa",
+        "5",
+        "1136"
+      ]
     },
     {
       "codigo": "HF",
       "categoria": "sangre",
       "resumen": "Panel hormonal completo: FSH, LH, estradiol y progesterona.",
       "descripcion": "Agrupa cuatro hormonas clave (FSH, LH, estradiol y progesterona) que en conjunto ayudan a evaluar el ciclo menstrual, la fertilidad y la función ovárica. Se solicita comúnmente ante irregularidades menstruales, estudios de fertilidad o para valorar la etapa de la menopausia.",
-      "relacionados": ["703", "TIRO", "PRL"]
+      "relacionados": [
+        "703",
+        "TIRO",
+        "PRL"
+      ]
     },
     {
       "codigo": "dr6",
       "categoria": "orina",
       "resumen": "Tamizaje de sustancias de abuso en orina.",
       "descripcion": "Panel de tamizaje que detecta en una sola muestra de orina el consumo reciente de varias sustancias de abuso comunes. Se usa en contextos laborales, deportivos, legales o simplemente por tranquilidad personal o familiar.",
-      "relacionados": ["1136"]
+      "relacionados": [
+        "1136"
+      ]
     },
     {
       "codigo": "630",
       "categoria": "hisopado",
       "resumen": "Detecta el virus del papiloma humano (VPH) por biología molecular.",
       "descripcion": "Identifica material genético del virus del papiloma humano (VPH) mediante una técnica molecular de alta precisión, a partir de una muestra tomada por un profesional de la salud. Es clave en la prevención del cáncer de cuello uterino, en conjunto con el papanicolau.",
-      "relacionados": ["628", "601"]
+      "relacionados": [
+        "628",
+        "601"
+      ]
     },
     {
       "codigo": "877",
       "categoria": "sangre",
       "resumen": "Determina tu tipo de sangre y factor Rh.",
       "descripcion": "Identifica tu grupo sanguíneo (A, B, AB u O) y tu factor Rh (positivo o negativo). Es información esencial antes de una cirugía, transfusión o durante el embarazo, y muchas personas simplemente lo solicitan para tenerlo documentado.",
-      "relacionados": ["1122", "emb"]
+      "relacionados": [
+        "1122",
+        "emb"
+      ]
     },
     {
       "codigo": "Niño",
       "categoria": "otro",
       "resumen": "Chequeo preventivo pensado para la salud de los más pequeños.",
       "descripcion": "Paquete de exámenes básicos pensado para acompañar el control preventivo de niños y niñas en sus citas de valoración pediátrica. Incluye las pruebas más relevantes para monitorear su crecimiento y desarrollo; consultá con tu pediatra qué otros exámenes podrían sumarse según la edad.",
-      "relacionados": ["1122", "1136", "1875"]
+      "relacionados": [
+        "1122",
+        "1136",
+        "1875"
+      ]
     },
     {
       "codigo": "400",
       "categoria": "sangre",
       "resumen": "Marcador clave para detectar daño al músculo cardíaco.",
       "descripcion": "La troponina es una proteína que se libera a la sangre cuando hay daño al músculo cardíaco. Es uno de los exámenes que se usan en la evaluación de un posible infarto o daño cardíaco agudo, siempre en el contexto de una valoración médica junto con otros estudios.",
-      "relacionados": ["405", "873"]
+      "relacionados": [
+        "405",
+        "873"
+      ]
     },
     {
       "codigo": "quan",
       "categoria": "sangre",
       "resumen": "Detecta infección por tuberculosis mediante una prueba de sangre.",
       "descripcion": "Es una prueba de sangre que detecta si tu sistema inmune ha estado expuesto a la bacteria que causa la tuberculosis, sin necesidad de la clásica prueba cutánea (PPD). Se usa tanto para tamizaje como para el seguimiento en personas con mayor riesgo de exposición.",
-      "relacionados": ["1122", "405"]
+      "relacionados": [
+        "1122",
+        "405"
+      ]
     },
     {
       "codigo": "CEL",
       "categoria": "sangre",
       "resumen": "Panel de anticuerpos para el estudio de la enfermedad celíaca.",
       "descripcion": "Agrupa varios anticuerpos relacionados con la enfermedad celíaca (una reacción autoinmune al gluten) para dar un panorama completo en una sola muestra. Se recomienda ante síntomas digestivos persistentes, antecedentes familiares de la enfermedad, o antes de decidir eliminar el gluten de la dieta.",
-      "relacionados": ["DQ", "1875", "1122"]
+      "relacionados": [
+        "DQ",
+        "1875",
+        "1122"
+      ]
     },
     {
       "codigo": "300",
       "categoria": "sangre",
       "resumen": "Evalúa qué tan rápido coagula tu sangre.",
       "descripcion": "Mide el tiempo que tarda tu sangre en coagular a través de una de las vías de la coagulación. Se usa para monitorear a personas que toman anticoagulantes, evaluar la función hepática o como parte de una valoración prequirúrgica.",
-      "relacionados": ["2737", "1122"]
+      "relacionados": [
+        "2737",
+        "1122"
+      ]
     },
     {
       "codigo": "ALERG",
@@ -181,126 +270,2599 @@
       "categoria": "sangre",
       "resumen": "Colesterol total, bueno, malo y triglicéridos.",
       "descripcion": "Mide tu colesterol total, el colesterol HDL ('bueno'), el LDL ('malo') y los triglicéridos, dando un panorama completo de tu salud cardiovascular. Se recomienda una vez al año como parte del chequeo preventivo, sobre todo si hay antecedentes familiares de enfermedad cardíaca.",
-      "relacionados": ["306", "60", "1160"]
+      "relacionados": [
+        "306",
+        "60",
+        "1160"
+      ]
     },
     {
       "codigo": "emb",
       "categoria": "sangre",
       "resumen": "El método más confiable para confirmar un embarazo.",
       "descripcion": "Detecta la hormona hCG en tu sangre para confirmar un embarazo con mayor sensibilidad y antes que una prueba de orina casera. Se puede tomar apenas unos días después de la falta menstrual, sin necesidad de ayuno.",
-      "relacionados": ["877", "HF", "1136"]
+      "relacionados": [
+        "877",
+        "HF",
+        "1136"
+      ]
     },
     {
       "codigo": "vit d",
       "categoria": "sangre",
       "resumen": "Uno de los déficits nutricionales más comunes hoy en día.",
       "descripcion": "Mide tus niveles de vitamina D, esencial para la salud ósea, muscular e inmune. El déficit es muy común incluso en países soleados y suele pasar desapercibido, por lo que se recomienda incluirlo en chequeos preventivos generales.",
-      "relacionados": ["FOL", "b12", "306"]
+      "relacionados": [
+        "FOL",
+        "b12",
+        "306"
+      ]
     },
     {
       "codigo": "b12",
       "categoria": "sangre",
       "resumen": "Clave para tu sistema nervioso y la formación de glóbulos rojos.",
       "descripcion": "La vitamina B12 es esencial para tu sistema nervioso y la producción de glóbulos rojos. Su déficit puede causar cansancio, hormigueo o anemia, y es más frecuente en personas mayores, veganas/vegetarianas o con ciertos problemas digestivos.",
-      "relacionados": ["FOL", "1122", "vit d"]
+      "relacionados": [
+        "FOL",
+        "1122",
+        "vit d"
+      ]
     },
     {
       "codigo": "FOL",
       "categoria": "sangre",
       "resumen": "Vitamina clave antes y durante el embarazo.",
       "descripcion": "El ácido fólico (vitamina B9) es fundamental para la formación de glóbulos rojos y el desarrollo neurológico durante el embarazo. Se mide con frecuencia junto con la vitamina B12 para el estudio de anemias o como parte de la planificación de un embarazo.",
-      "relacionados": ["b12", "1122", "vit d"]
+      "relacionados": [
+        "b12",
+        "1122",
+        "vit d"
+      ]
     },
     {
       "codigo": "876",
       "categoria": "sangre",
       "resumen": "La reserva de hierro de tu cuerpo.",
       "descripcion": "La ferritina refleja cuánto hierro tenés almacenado en tu cuerpo, lo que la hace más sensible que otras pruebas para detectar una deficiencia de hierro antes de que aparezca la anemia. Se pide comúnmente junto con el hierro sérico y un hemograma.",
-      "relacionados": ["875", "1122"]
+      "relacionados": [
+        "875",
+        "1122"
+      ]
     },
     {
       "codigo": "875",
       "categoria": "sangre",
       "resumen": "Complementa el estudio del hierro en tu organismo.",
       "descripcion": "Mide el hierro circulante en tu sangre junto con la capacidad de tu cuerpo para transportarlo, ayudando a distinguir entre distintos tipos de anemia. Se interpreta habitualmente junto con la ferritina y el hemograma completo.",
-      "relacionados": ["876", "1122"]
+      "relacionados": [
+        "876",
+        "1122"
+      ]
     },
     {
       "codigo": "DQ",
       "categoria": "sangre",
       "resumen": "Estudio genético que apoya el diagnóstico de celiaquía.",
       "descripcion": "Analiza si tenés los genes HLA-DQ2 y/o DQ8, presentes en casi todas las personas con enfermedad celíaca. Un resultado negativo prácticamente descarta la enfermedad, mientras que uno positivo no la confirma por sí solo, sino que apoya el estudio junto con otros exámenes.",
-      "relacionados": ["CEL", "1875"]
+      "relacionados": [
+        "CEL",
+        "1875"
+      ]
     },
     {
       "codigo": "710",
       "categoria": "sangre",
       "resumen": "La hormona sexual masculina principal.",
       "descripcion": "Mide el nivel de testosterona en tu sangre, la principal hormona sexual masculina, relacionada con la energía, masa muscular, libido y estado de ánimo. Se solicita ante síntomas de baja testosterona o como parte de estudios hormonales más amplios.",
-      "relacionados": ["psa", "HF"]
+      "relacionados": [
+        "psa",
+        "HF"
+      ]
     },
     {
       "codigo": "703",
       "categoria": "sangre",
       "resumen": "La principal hormona sexual femenina.",
       "descripcion": "Mide el estradiol, la forma principal de estrógeno en el cuerpo, clave en el ciclo menstrual, la fertilidad y la salud ósea. Se solicita frecuentemente junto con otras hormonas para estudiar el ciclo menstrual, la fertilidad o la transición a la menopausia.",
-      "relacionados": ["HF", "PRL"]
+      "relacionados": [
+        "HF",
+        "PRL"
+      ]
     },
     {
       "codigo": "PRL",
       "categoria": "sangre",
       "resumen": "Hormona relacionada con la lactancia y el ciclo menstrual.",
       "descripcion": "La prolactina es una hormona producida por la hipófisis, relacionada con la lactancia, y cuyos niveles elevados también pueden alterar el ciclo menstrual o la fertilidad. Se solicita ante irregularidades menstruales, galactorrea (producción de leche fuera del embarazo o la lactancia) o estudios de fertilidad.",
-      "relacionados": ["HF", "703", "TIRO"]
+      "relacionados": [
+        "HF",
+        "703",
+        "TIRO"
+      ]
     },
     {
       "codigo": "306",
       "categoria": "sangre",
       "resumen": "La suma de tu colesterol bueno y malo.",
       "descripcion": "Mide la cantidad total de colesterol en tu sangre, sumando el HDL ('bueno') y el LDL ('malo'). Es un examen de rutina para valorar tu riesgo cardiovascular, generalmente interpretado en conjunto con el resto del perfil de lípidos.",
-      "relacionados": ["2739", "60"]
+      "relacionados": [
+        "2739",
+        "60"
+      ]
     },
     {
       "codigo": "60",
       "categoria": "sangre",
       "resumen": "Otro indicador clave de tu salud cardiovascular.",
       "descripcion": "Los triglicéridos son un tipo de grasa presente en tu sangre; niveles elevados se asocian a mayor riesgo cardiovascular y, en algunos casos, a hígado graso. Se mide junto con el resto del perfil de lípidos, idealmente en ayunas.",
-      "relacionados": ["2739", "306"]
+      "relacionados": [
+        "2739",
+        "306"
+      ]
     },
     {
       "codigo": "58",
       "categoria": "sangre",
       "resumen": "El indicador más usado para valorar tu función renal.",
       "descripcion": "La creatinina es un producto de desecho muscular que tus riñones filtran de manera constante; su nivel en sangre es uno de los indicadores más usados para valorar qué tan bien están funcionando. Forma parte del perfil renal y de la mayoría de los chequeos preventivos.",
-      "relacionados": ["2738", "1136"]
+      "relacionados": [
+        "2738",
+        "1136"
+      ]
     },
     {
       "codigo": "405",
       "categoria": "sangre",
       "resumen": "Marcador general de inflamación en tu cuerpo.",
       "descripcion": "La proteína C reactiva (PCR) se eleva ante procesos inflamatorios o infecciosos en tu cuerpo, aunque no indica dónde ni por qué. Se usa como apoyo para dar seguimiento a infecciones, procesos inflamatorios o algunas enfermedades crónicas.",
-      "relacionados": ["873", "1122"]
+      "relacionados": [
+        "873",
+        "1122"
+      ]
     },
     {
       "codigo": "873",
       "categoria": "sangre",
       "resumen": "Otro marcador clásico de inflamación.",
       "descripcion": "Mide qué tan rápido se asientan tus glóbulos rojos en un tubo de ensayo; una velocidad mayor a la esperada puede indicar un proceso inflamatorio o infeccioso activo. Se interpreta junto con otros marcadores como la proteína C reactiva.",
-      "relacionados": ["405", "1122"]
+      "relacionados": [
+        "405",
+        "1122"
+      ]
     },
     {
       "codigo": "URO",
       "categoria": "orina",
       "resumen": "Identifica la bacteria causante de una infección urinaria.",
       "descripcion": "Cultiva una muestra de orina para identificar si hay bacterias causando una infección urinaria y cuáles antibióticos serían efectivos contra ella. Se recomienda ante síntomas como ardor al orinar, urgencia urinaria frecuente o infecciones urinarias a repetición.",
-      "relacionados": ["1136", "2738"]
+      "relacionados": [
+        "1136",
+        "2738"
+      ]
     },
     {
       "codigo": "628",
       "categoria": "sangre",
       "resumen": "Detecta anticuerpos frente a la bacteria Chlamydia.",
       "descripcion": "Mide anticuerpos IgG contra Chlamydia trachomatis, una de las infecciones de transmisión sexual más comunes. Un resultado positivo indica exposición previa a la bacteria; para infecciones activas, tu médico podría recomendar además una prueba molecular directa.",
-      "relacionados": ["601", "630"]
+      "relacionados": [
+        "601",
+        "630"
+      ]
+    },
+    {
+      "codigo": "17-OHPR",
+      "categoria": "sangre",
+      "resumen": "Precursora hormonal en el estudio de la hiperplasia suprarrenal.",
+      "descripcion": "Precursora hormonal relevante en el estudio de la hiperplasia suprarrenal congénita, una condición genética poco frecuente, y en algunos trastornos hormonales del ciclo menstrual.",
+      "relacionados": [
+        "andros",
+        "CORT"
+      ]
+    },
+    {
+      "codigo": "608",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo IgG contra el núcleo de la hepatitis B.",
+      "descripcion": "Detecta anticuerpos IgG contra el núcleo del virus de la hepatitis B, señal de que tu cuerpo estuvo expuesto al virus en algún momento. Se interpreta junto con otros marcadores de hepatitis B para determinar si la infección está activa, resuelta o si estás inmunizado.",
+      "relacionados": [
+        "604",
+        "607"
+      ]
+    },
+    {
+      "codigo": "617",
+      "categoria": "sangre",
+      "resumen": "Detecta una infección reciente por el virus Epstein-Barr.",
+      "descripcion": "Detecta una infección reciente o activa por el virus Epstein-Barr, causante de la mononucleosis infecciosa. Se solicita junto con el IgG para saber si la infección es actual o pasada.",
+      "relacionados": [
+        "618",
+        "MT"
+      ]
+    },
+    {
+      "codigo": "610",
+      "categoria": "sangre",
+      "resumen": "Detecta una infección aguda por hepatitis A.",
+      "descripcion": "Detecta una infección aguda y reciente por el virus de la hepatitis A. Es la prueba indicada cuando hay síntomas actuales sugestivos de hepatitis A, a diferencia del IgG, que indica inmunidad o infección pasada.",
+      "relacionados": [
+        "611"
+      ]
+    },
+    {
+      "codigo": "613",
+      "categoria": "sangre",
+      "resumen": "Detecta anticuerpos frente al virus de la hepatitis C.",
+      "descripcion": "Detecta anticuerpos contra el virus de la hepatitis C, indicando si tu cuerpo estuvo expuesto al virus alguna vez. Un resultado positivo generalmente requiere una prueba molecular adicional para confirmar si la infección sigue activa.",
+      "relacionados": []
+    },
+    {
+      "codigo": "MUSC LISO LKM1",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo relacionado con hepatitis autoinmune.",
+      "descripcion": "Detecta anticuerpos relacionados con hepatitis autoinmune, una condición en la que el sistema inmune ataca al propio hígado. Se solicita como parte del estudio de enfermedad hepática de causa no clara.",
+      "relacionados": [
+        "2737"
+      ]
+    },
+    {
+      "codigo": "511",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo antifosfolípido relacionado con riesgo de trombosis.",
+      "descripcion": "Forma parte del panel de anticuerpos antifosfolípidos, relacionados con mayor riesgo de trombosis y complicaciones en el embarazo. Se solicita generalmente junto con otros anticuerpos antifosfolípidos como el anticoagulante lúpico.",
+      "relacionados": [
+        "510",
+        "lup",
+        "BETA2"
+      ]
+    },
+    {
+      "codigo": "510",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo antifosfolípido relacionado con riesgo de trombosis.",
+      "descripcion": "Forma parte del panel de anticuerpos antifosfolípidos, relacionados con mayor riesgo de trombosis y complicaciones en el embarazo. Se solicita generalmente junto con otros anticuerpos antifosfolípidos como el anticoagulante lúpico.",
+      "relacionados": [
+        "511",
+        "lup",
+        "BETA2"
+      ]
+    },
+    {
+      "codigo": "627",
+      "categoria": "sangre",
+      "resumen": "Detecta una infección reciente por Chlamydia.",
+      "descripcion": "Detecta una infección reciente o activa por Chlamydia trachomatis. Se interpreta junto con el IgG, que indica exposición pasada.",
+      "relacionados": [
+        "628"
+      ]
+    },
+    {
+      "codigo": "622",
+      "categoria": "sangre",
+      "resumen": "Indica exposición pasada al citomegalovirus.",
+      "descripcion": "Indica exposición pasada e inmunidad frente al citomegalovirus (CMV), una infección viral común que puede ser relevante durante el embarazo o en personas con el sistema inmune comprometido.",
+      "relacionados": [
+        "621"
+      ]
+    },
+    {
+      "codigo": "621",
+      "categoria": "sangre",
+      "resumen": "Detecta una infección activa o reciente por citomegalovirus.",
+      "descripcion": "Detecta una infección activa o reciente por citomegalovirus (CMV), relevante especialmente durante el embarazo. Se interpreta junto con el IgG.",
+      "relacionados": [
+        "622"
+      ]
+    },
+    {
+      "codigo": "609",
+      "categoria": "sangre",
+      "resumen": "Anticuerpos totales contra el núcleo de la hepatitis B.",
+      "descripcion": "Detecta anticuerpos totales (IgG e IgM) contra el núcleo del virus de la hepatitis B. Es útil para el tamizaje inicial de exposición al virus.",
+      "relacionados": [
+        "608",
+        "607",
+        "603"
+      ]
+    },
+    {
+      "codigo": "512",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo de alta especificidad para la enfermedad celíaca.",
+      "descripcion": "Anticuerpo de alta especificidad para la enfermedad celíaca. Se solicita junto con los anticuerpos anti-transglutaminasa como parte del estudio de esta condición.",
+      "relacionados": [
+        "513",
+        "514"
+      ]
+    },
+    {
+      "codigo": "618",
+      "categoria": "sangre",
+      "resumen": "Indica exposición pasada al virus Epstein-Barr.",
+      "descripcion": "Indica exposición pasada al virus Epstein-Barr (inmunidad). Se solicita junto con el IgM para diferenciar una infección antigua de una activa.",
+      "relacionados": [
+        "617"
+      ]
+    },
+    {
+      "codigo": "515",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo usado en el estudio de celiaquía y sensibilidad al gluten.",
+      "descripcion": "Anticuerpo utilizado en el estudio de la enfermedad celíaca y la sensibilidad al gluten, generalmente en conjunto con los anticuerpos anti-transglutaminasa.",
+      "relacionados": [
+        "513",
+        "514",
+        "CEL"
+      ]
+    },
+    {
+      "codigo": "516",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo usado en el estudio de celiaquía y sensibilidad al gluten.",
+      "descripcion": "Anticuerpo utilizado en el estudio de la enfermedad celíaca y la sensibilidad al gluten, generalmente en conjunto con los anticuerpos anti-transglutaminasa.",
+      "relacionados": [
+        "513",
+        "514",
+        "CEL"
+      ]
+    },
+    {
+      "codigo": "606",
+      "categoria": "sangre",
+      "resumen": "Marcador de actividad de la hepatitis B crónica.",
+      "descripcion": "Marcador que ayuda a evaluar la actividad y el pronóstico de una infección crónica por hepatitis B, en conjunto con el antígeno HBeAg.",
+      "relacionados": [
+        "605"
+      ]
+    },
+    {
+      "codigo": "624",
+      "categoria": "sangre",
+      "resumen": "Indica exposición al virus del herpes simple tipo 1.",
+      "descripcion": "Detecta anticuerpos IgG contra el virus del herpes simple tipo 1 (habitualmente oral), indicando exposición pasada.",
+      "relacionados": [
+        "623",
+        "626"
+      ]
+    },
+    {
+      "codigo": "623",
+      "categoria": "sangre",
+      "resumen": "Detecta infección reciente por herpes simple tipo 1.",
+      "descripcion": "Detecta anticuerpos IgM contra el virus del herpes simple tipo 1, sugiriendo infección reciente o activa.",
+      "relacionados": [
+        "624"
+      ]
+    },
+    {
+      "codigo": "626",
+      "categoria": "sangre",
+      "resumen": "Indica exposición al virus del herpes simple tipo 2.",
+      "descripcion": "Detecta anticuerpos IgG contra el virus del herpes simple tipo 2 (habitualmente genital), indicando exposición pasada.",
+      "relacionados": [
+        "625",
+        "624"
+      ]
+    },
+    {
+      "codigo": "625",
+      "categoria": "sangre",
+      "resumen": "Detecta infección reciente por herpes simple tipo 2.",
+      "descripcion": "Detecta anticuerpos IgM contra el virus del herpes simple tipo 2, sugiriendo infección reciente o activa.",
+      "relacionados": [
+        "626"
+      ]
+    },
+    {
+      "codigo": "PCC",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo de alta especificidad para artritis reumatoide.",
+      "descripcion": "Anticuerpo de alta especificidad para el diagnóstico de artritis reumatoide, generalmente solicitado junto con el factor reumático.",
+      "relacionados": [
+        "501"
+      ]
+    },
+    {
+      "codigo": "620",
+      "categoria": "sangre",
+      "resumen": "Indica inmunidad frente a la rubéola.",
+      "descripcion": "Indica inmunidad frente al virus de la rubéola, por infección pasada o vacunación. Es común solicitarlo durante el control prenatal.",
+      "relacionados": [
+        "619"
+      ]
+    },
+    {
+      "codigo": "619",
+      "categoria": "sangre",
+      "resumen": "Detecta una infección reciente por rubéola.",
+      "descripcion": "Detecta anticuerpos IgM frente al virus de la rubéola, sugiriendo una infección reciente.",
+      "relacionados": [
+        "620"
+      ]
+    },
+    {
+      "codigo": "615",
+      "categoria": "sangre",
+      "resumen": "Indica exposición pasada al toxoplasma.",
+      "descripcion": "Indica exposición pasada al parásito Toxoplasma gondii. Se solicita con frecuencia durante el control prenatal.",
+      "relacionados": [
+        "614"
+      ]
+    },
+    {
+      "codigo": "614",
+      "categoria": "sangre",
+      "resumen": "Detecta una infección reciente por toxoplasma.",
+      "descripcion": "Detecta anticuerpos IgM frente al parásito Toxoplasma gondii, sugiriendo una infección reciente, relevante especialmente durante el embarazo.",
+      "relacionados": [
+        "615"
+      ]
+    },
+    {
+      "codigo": "513",
+      "categoria": "sangre",
+      "resumen": "La prueba más usada para tamizaje de enfermedad celíaca.",
+      "descripcion": "La prueba más usada para el tamizaje de la enfermedad celíaca. Detecta anticuerpos característicos de esta condición autoinmune desencadenada por el gluten.",
+      "relacionados": [
+        "512",
+        "515",
+        "516",
+        "CEL"
+      ]
+    },
+    {
+      "codigo": "514",
+      "categoria": "sangre",
+      "resumen": "La prueba más usada para tamizaje de enfermedad celíaca.",
+      "descripcion": "La prueba más usada para el tamizaje de la enfermedad celíaca. Detecta anticuerpos característicos de esta condición autoinmune desencadenada por el gluten.",
+      "relacionados": [
+        "512",
+        "515",
+        "516",
+        "CEL"
+      ]
+    },
+    {
+      "codigo": "607",
+      "categoria": "sangre",
+      "resumen": "Indica una infección reciente por hepatitis B.",
+      "descripcion": "Indica una infección reciente por hepatitis B, a diferencia del IgG, que indica exposición pasada.",
+      "relacionados": [
+        "608",
+        "609"
+      ]
+    },
+    {
+      "codigo": "604",
+      "categoria": "sangre",
+      "resumen": "Detecta anticuerpos protectores contra la hepatitis B.",
+      "descripcion": "Detecta anticuerpos protectores contra la hepatitis B, ya sea por infección pasada resuelta o por vacunación. Un resultado positivo generalmente indica inmunidad.",
+      "relacionados": [
+        "603",
+        "609"
+      ]
+    },
+    {
+      "codigo": "503",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo específico para el lupus eritematoso sistémico.",
+      "descripcion": "Anticuerpo específico para el diagnóstico y seguimiento del lupus eritematoso sistémico, generalmente solicitado junto con los anticuerpos antinucleares (ANA).",
+      "relacionados": [
+        "502"
+      ]
+    },
+    {
+      "codigo": "505",
+      "categoria": "sangre",
+      "resumen": "Panel de anticuerpos para enfermedades autoinmunes del tejido conectivo.",
+      "descripcion": "Panel de anticuerpos que ayuda a diferenciar entre distintas enfermedades autoinmunes del tejido conectivo, generalmente solicitado junto con los anticuerpos antinucleares.",
+      "relacionados": [
+        "502"
+      ]
+    },
+    {
+      "codigo": "AU OR",
+      "categoria": "orina",
+      "resumen": "Ácido úrico eliminado en 24 horas.",
+      "descripcion": "Mide cuánto ácido úrico eliminás en 24 horas a través de la orina, útil para estudiar cálculos renales o gota junto con el ácido úrico en sangre.",
+      "relacionados": [
+        "905"
+      ]
+    },
+    {
+      "codigo": "VALP",
+      "categoria": "sangre",
+      "resumen": "Mide el medicamento ácido valproico en tu sangre.",
+      "descripcion": "Mide el nivel del medicamento ácido valproico en tu sangre, usado para el tratamiento de epilepsia y trastornos del ánimo, con el fin de ajustar la dosis y evitar toxicidad.",
+      "relacionados": []
+    },
+    {
+      "codigo": "van",
+      "categoria": "orina",
+      "resumen": "Usado en el estudio de tumores poco frecuentes de las suprarrenales.",
+      "descripcion": "Mide un producto de degradación de las catecolaminas en orina, usado en el estudio de tumores poco frecuentes de las glándulas suprarrenales (como el feocromocitoma).",
+      "relacionados": []
+    },
+    {
+      "codigo": "ACLA",
+      "categoria": "orina",
+      "resumen": "Estima con más precisión qué tan bien filtran tus riñones.",
+      "descripcion": "Estima qué tan bien están filtrando tus riñones combinando una muestra de sangre con una recolección de orina de 24 horas. Es más preciso que la creatinina sola para valorar la función renal.",
+      "relacionados": [
+        "58",
+        "2738"
+      ]
+    },
+    {
+      "codigo": "ACTH",
+      "categoria": "sangre",
+      "resumen": "Regula la producción de cortisol.",
+      "descripcion": "Mide la hormona adrenocorticotrópica, que regula la producción de cortisol en tus glándulas suprarrenales. Se usa en el estudio de trastornos de estas glándulas, junto con el cortisol.",
+      "relacionados": [
+        "CORT"
+      ]
+    },
+    {
+      "codigo": "ADULTO 2",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo completo para adultos menores de 40 años.",
+      "descripcion": "Paquete de chequeo preventivo completo pensado para adultos menores de 40 años, con las pruebas más relevantes para monitorear tu salud general.",
+      "relacionados": [
+        "ADULTO 1",
+        "BAS"
+      ]
+    },
+    {
+      "codigo": "ADULTO 3",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo para adultos mayores de 40 años.",
+      "descripcion": "Paquete de chequeo preventivo pensado para adultos mayores de 40 años, etapa en la que se recomienda ampliar la vigilancia de tu salud cardiovascular, metabólica y hormonal.",
+      "relacionados": [
+        "ADULTO 4",
+        "FEMEMINO",
+        "MASC"
+      ]
+    },
+    {
+      "codigo": "ADULTO 4",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo completo para adultos mayores de 40 años.",
+      "descripcion": "Versión ampliada del chequeo para adultos mayores de 40 años, con un panel más completo de pruebas preventivas.",
+      "relacionados": [
+        "ADULTO 3"
+      ]
+    },
+    {
+      "codigo": "ADULTO 1",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo básico para adultos menores de 40 años.",
+      "descripcion": "Paquete de chequeo preventivo básico pensado para adultos menores de 40 años.",
+      "relacionados": [
+        "ADULTO 2",
+        "BAS"
+      ]
+    },
+    {
+      "codigo": "ALD",
+      "categoria": "sangre",
+      "resumen": "Regula el sodio, el potasio y la presión arterial.",
+      "descripcion": "Mide la hormona aldosterona, que regula el sodio, el potasio y la presión arterial. Se solicita en el estudio de hipertensión de causa no clara o alteraciones del potasio.",
+      "relacionados": [
+        "314",
+        "316"
+      ]
+    },
+    {
+      "codigo": "alim",
+      "categoria": "sangre",
+      "resumen": "Panel ampliado de alergias alimentarias.",
+      "descripcion": "Panel ampliado de anticuerpos IgE frente a los alimentos más comunes causantes de alergia, en una sola muestra de sangre.",
+      "relacionados": [
+        "ALERG",
+        "CARNE"
+      ]
+    },
+    {
+      "codigo": "CARNE",
+      "categoria": "sangre",
+      "resumen": "Panel de alergia a mariscos.",
+      "descripcion": "Panel de anticuerpos IgE frente a los mariscos más comunes causantes de alergia, en una sola muestra de sangre.",
+      "relacionados": [
+        "ALERG",
+        "alim"
+      ]
+    },
+    {
+      "codigo": "AFP",
+      "categoria": "sangre",
+      "resumen": "Marcador usado en tumores hepáticos y en el tamizaje prenatal.",
+      "descripcion": "Marcador utilizado en el seguimiento de algunos tumores hepáticos y de células germinales, y también como parte del tamizaje prenatal en el embarazo.",
+      "relacionados": []
+    },
+    {
+      "codigo": "906",
+      "categoria": "sangre",
+      "resumen": "Enzima pancreática que se eleva en la pancreatitis.",
+      "descripcion": "Mide una enzima producida principalmente por el páncreas; se eleva en casos de pancreatitis u otros problemas pancreáticos.",
+      "relacionados": [
+        "Lipa"
+      ]
+    },
+    {
+      "codigo": "AMON",
+      "categoria": "sangre",
+      "resumen": "Se eleva en enfermedades hepáticas avanzadas.",
+      "descripcion": "Mide el nivel de amonio en tu sangre, útil en el estudio de enfermedades hepáticas avanzadas o algunos trastornos metabólicos.",
+      "relacionados": [
+        "2737"
+      ]
+    },
+    {
+      "codigo": "507",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo asociado a vasculitis autoinmunes.",
+      "descripcion": "Anticuerpo asociado a ciertas enfermedades autoinmunes que afectan los vasos sanguíneos (vasculitis), generalmente solicitado junto con el ANCA-C.",
+      "relacionados": [
+        "506"
+      ]
+    },
+    {
+      "codigo": "506",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo asociado a vasculitis autoinmunes.",
+      "descripcion": "Anticuerpo asociado a vasculitis autoinmunes, generalmente solicitado junto con el ANCA-P.",
+      "relacionados": [
+        "507"
+      ]
+    },
+    {
+      "codigo": "andros",
+      "categoria": "sangre",
+      "resumen": "Hormona precursora de estrógenos y testosterona.",
+      "descripcion": "Hormona precursora de estrógenos y testosterona; se solicita en el estudio de trastornos hormonales como el síndrome de ovario poliquístico o el hirsutismo.",
+      "relacionados": [
+        "710",
+        "703"
+      ]
+    },
+    {
+      "codigo": "37",
+      "categoria": "sangre",
+      "resumen": "Uno de los principales anticuerpos contra la tiroides.",
+      "descripcion": "Anticuerpo contra la tiroides, uno de los más usados para detectar tiroiditis autoinmune (como la tiroiditis de Hashimoto). Se solicita junto con las pruebas de función tiroidea.",
+      "relacionados": [
+        "30",
+        "TIRO",
+        "36"
+      ]
+    },
+    {
+      "codigo": "RO",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo asociado a lupus y síndrome de Sjögren.",
+      "descripcion": "Anticuerpo asociado a enfermedades autoinmunes como el lupus y el síndrome de Sjögren, generalmente solicitado junto con el panel de anticuerpos antinucleares.",
+      "relacionados": [
+        "502"
+      ]
+    },
+    {
+      "codigo": "36",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo contra la tiroides.",
+      "descripcion": "Anticuerpo contra la tiroides, relacionado con enfermedad tiroidea autoinmune. Se solicita junto con el anti-TPO y, en algunos casos, para el seguimiento de cáncer de tiroides ya tratado.",
+      "relacionados": [
+        "37",
+        "35",
+        "30"
+      ]
+    },
+    {
+      "codigo": "lup",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo antifosfolípido relacionado con riesgo de trombosis.",
+      "descripcion": "Forma parte del panel de anticuerpos antifosfolípidos, relacionados con mayor riesgo de trombosis y complicaciones en el embarazo. Se solicita junto con los anticuerpos anticardiolipina.",
+      "relacionados": [
+        "510",
+        "511"
+      ]
+    },
+    {
+      "codigo": "502",
+      "categoria": "sangre",
+      "resumen": "Prueba de tamizaje clave para enfermedades autoinmunes.",
+      "descripcion": "Prueba de tamizaje clave para enfermedades autoinmunes como el lupus. Un resultado positivo suele requerir estudios adicionales más específicos para precisar el diagnóstico.",
+      "relacionados": [
+        "503",
+        "505",
+        "RO"
+      ]
+    },
+    {
+      "codigo": "fta",
+      "categoria": "sangre",
+      "resumen": "Prueba confirmatoria para el diagnóstico de sífilis.",
+      "descripcion": "Prueba confirmatoria para el diagnóstico de sífilis, generalmente solicitada después de un VDRL positivo.",
+      "relacionados": [
+        "600"
+      ]
+    },
+    {
+      "codigo": "ASO",
+      "categoria": "sangre",
+      "resumen": "Se eleva tras una infección reciente por estreptococo.",
+      "descripcion": "Mide anticuerpos frente a una toxina producida por la bacteria estreptococo; se eleva tras una infección reciente por esta bacteria y se usa en el estudio de fiebre reumática y glomerulonefritis post-estreptocócica.",
+      "relacionados": []
+    },
+    {
+      "codigo": "cea",
+      "categoria": "sangre",
+      "resumen": "Marcador usado en el seguimiento del cáncer colorrectal.",
+      "descripcion": "Marcador tumoral usado principalmente en el seguimiento del cáncer colorrectal, aunque también puede elevarse en otras condiciones no cancerosas.",
+      "relacionados": [
+        "CA19-9",
+        "ca-125"
+      ]
+    },
+    {
+      "codigo": "603",
+      "categoria": "sangre",
+      "resumen": "Detecta una infección activa por hepatitis B.",
+      "descripcion": "Detecta si tenés una infección activa por el virus de la hepatitis B. Es la prueba de tamizaje más usada para esta infección.",
+      "relacionados": [
+        "604",
+        "609"
+      ]
+    },
+    {
+      "codigo": "605",
+      "categoria": "sangre",
+      "resumen": "Evalúa qué tan activa está una hepatitis B en curso.",
+      "descripcion": "Marcador que ayuda a evaluar qué tan activa e infecciosa está una hepatitis B en curso.",
+      "relacionados": [
+        "603",
+        "606"
+      ]
+    },
+    {
+      "codigo": "ANTIGENO",
+      "categoria": "hisopado",
+      "resumen": "Prueba rápida que detecta una infección activa por COVID-19.",
+      "descripcion": "Prueba rápida que detecta una infección activa por COVID-19 a partir de una muestra tomada por hisopado nasal.",
+      "relacionados": [
+        "AG",
+        "covid"
+      ]
+    },
+    {
+      "codigo": "AG",
+      "categoria": "hisopado",
+      "resumen": "Prueba de antígenos COVID-19 con certificado para viajar.",
+      "descripcion": "Misma prueba rápida de antígenos para COVID-19, con la certificación necesaria para viajar según lo requiera tu aerolínea o destino.",
+      "relacionados": [
+        "ANTIGENO",
+        "covid"
+      ]
+    },
+    {
+      "codigo": "AN",
+      "categoria": "otro",
+      "resumen": "Servicio general de análisis de laboratorio.",
+      "descripcion": "Servicio general de análisis de laboratorio. Escribinos por WhatsApp para indicarte exactamente qué incluye según lo que necesites.",
+      "relacionados": []
+    },
+    {
+      "codigo": "apo a1",
+      "categoria": "sangre",
+      "resumen": "Proteína principal del colesterol HDL.",
+      "descripcion": "Proteína principal del colesterol HDL ('bueno'); se usa como un indicador adicional de riesgo cardiovascular, junto con el perfil de lípidos.",
+      "relacionados": [
+        "2739",
+        "APOB"
+      ]
+    },
+    {
+      "codigo": "APOB",
+      "categoria": "sangre",
+      "resumen": "Proteína principal del colesterol LDL.",
+      "descripcion": "Proteína principal del colesterol LDL ('malo'); se considera un indicador de riesgo cardiovascular incluso más preciso que el LDL solo.",
+      "relacionados": [
+        "2739",
+        "apo a1"
+      ]
+    },
+    {
+      "codigo": "83",
+      "categoria": "heces",
+      "resumen": "Detecta azúcares no digeridos en las heces.",
+      "descripcion": "Detecta azúcares no digeridos en las heces, útil en el estudio de intolerancia a la lactosa u otros problemas de absorción de azúcares, principalmente en niños.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "Metil",
+      "categoria": "sangre",
+      "resumen": "Marcador temprano de deficiencia de vitamina B12.",
+      "descripcion": "Marcador más sensible que la vitamina B12 sola para detectar una deficiencia temprana de esta vitamina.",
+      "relacionados": [
+        "b12"
+      ]
+    },
+    {
+      "codigo": "Febril",
+      "categoria": "sangre",
+      "resumen": "Panel de anticuerpos frente a bacterias causantes de fiebre prolongada.",
+      "descripcion": "Panel que detecta anticuerpos frente a varias bacterias causantes de fiebres prolongadas (como Salmonella), útil en el estudio de fiebre de origen no claro.",
+      "relacionados": []
+    },
+    {
+      "codigo": "Albu",
+      "categoria": "sangre",
+      "resumen": "La principal proteína de tu sangre.",
+      "descripcion": "Mide la principal proteína de tu sangre, producida por el hígado; sus niveles reflejan tu estado nutricional y la función hepática y renal.",
+      "relacionados": [
+        "2737",
+        "2738",
+        "73"
+      ]
+    },
+    {
+      "codigo": "IgE alergeno",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo IgE frente a un alérgeno específico.",
+      "descripcion": "Mide el anticuerpo IgE frente a un alérgeno específico que quieras investigar. Se pide por cada sustancia; consultanos si querés armar un panel más amplio.",
+      "relacionados": [
+        "ALERG"
+      ]
+    },
+    {
+      "codigo": "Jo-1",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo usado en miopatías inflamatorias autoinmunes.",
+      "descripcion": "Anticuerpo específico usado en el estudio de miopatías inflamatorias autoinmunes, como la polimiositis y la dermatomiositis.",
+      "relacionados": []
+    },
+    {
+      "codigo": "Mi-2",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo asociado a la dermatomiositis.",
+      "descripcion": "Anticuerpo asociado específicamente a la dermatomiositis, una enfermedad autoinmune que afecta piel y músculos.",
+      "relacionados": [
+        "Jo-1"
+      ]
+    },
+    {
+      "codigo": "Anti Mitocondrias",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo característico de la cirrosis biliar primaria.",
+      "descripcion": "Anticuerpo característico de la cirrosis biliar primaria, una enfermedad autoinmune del hígado.",
+      "relacionados": [
+        "2737"
+      ]
+    },
+    {
+      "codigo": "Scl-70",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo asociado a la esclerodermia sistémica.",
+      "descripcion": "Anticuerpo asociado a la esclerodermia sistémica, una enfermedad autoinmune que afecta la piel y otros órganos.",
+      "relacionados": [
+        "centromero"
+      ]
+    },
+    {
+      "codigo": "Nucleo",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo de alta especificidad para el lupus.",
+      "descripcion": "Anticuerpo con alta especificidad para el lupus eritematoso sistémico, usado como apoyo diagnóstico junto con otros anticuerpos autoinmunes.",
+      "relacionados": [
+        "502",
+        "503"
+      ]
+    },
+    {
+      "codigo": "centromero",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo asociado a una variante de esclerodermia.",
+      "descripcion": "Anticuerpo asociado a una variante limitada de esclerodermia (síndrome CREST).",
+      "relacionados": [
+        "Scl-70"
+      ]
+    },
+    {
+      "codigo": "PSA ZF",
+      "categoria": "sangre",
+      "resumen": "El examen de PSA para pacientes de zona franca.",
+      "descripcion": "El mismo examen de antígeno prostático (PSA), procesado para pacientes de zona franca.",
+      "relacionados": [
+        "psa"
+      ]
+    },
+    {
+      "codigo": "B OSEO",
+      "categoria": "sangre",
+      "resumen": "Panel de marcadores del recambio óseo.",
+      "descripcion": "Panel de marcadores relacionados con la formación y el recambio óseo, útil en el estudio y seguimiento de la salud de tus huesos.",
+      "relacionados": [
+        "CTX",
+        "vit d"
+      ]
+    },
+    {
+      "codigo": "BETA2",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo antifosfolípido relacionado con riesgo de trombosis.",
+      "descripcion": "Forma parte del panel de anticuerpos antifosfolípidos, relacionados con mayor riesgo de trombosis. Se solicita junto con la anticardiolipina y el anticoagulante lúpico.",
+      "relacionados": [
+        "510",
+        "511",
+        "lup"
+      ]
+    },
+    {
+      "codigo": "74",
+      "categoria": "sangre",
+      "resumen": "Pigmento que se eleva en enfermedades hepáticas.",
+      "descripcion": "Mide la bilirrubina en tu sangre, un pigmento producido por la degradación de glóbulos rojos que tu hígado procesa. Se eleva en enfermedades hepáticas o de las vías biliares, y también causa la ictericia (piel amarilla).",
+      "relacionados": [
+        "2737"
+      ]
+    },
+    {
+      "codigo": "BNP",
+      "categoria": "sangre",
+      "resumen": "Marcador clave para evaluar insuficiencia cardíaca.",
+      "descripcion": "Marcador clave para evaluar si hay insuficiencia cardíaca o sobrecarga del corazón. Se usa tanto para el diagnóstico como para el seguimiento del tratamiento.",
+      "relacionados": [
+        "400",
+        "407"
+      ]
+    },
+    {
+      "codigo": "BAS",
+      "categoria": "otro",
+      "resumen": "Paquete básico: hemograma, lípidos, glucosa y orina.",
+      "descripcion": "Paquete de chequeo básico que incluye hemograma, perfil de lípidos, glucosa y examen general de orina, ideal como primer acercamiento a tu estado de salud.",
+      "relacionados": [
+        "1122",
+        "2739",
+        "1160",
+        "1136"
+      ]
+    },
+    {
+      "codigo": "CA15-3",
+      "categoria": "sangre",
+      "resumen": "Marcador para el seguimiento del cáncer de mama.",
+      "descripcion": "Marcador tumoral usado principalmente en el seguimiento del cáncer de mama ya diagnosticado.",
+      "relacionados": []
+    },
+    {
+      "codigo": "CA19-9",
+      "categoria": "sangre",
+      "resumen": "Marcador para el seguimiento de cáncer de páncreas y vías biliares.",
+      "descripcion": "Marcador tumoral usado principalmente en el seguimiento de cáncer de páncreas y de vías biliares.",
+      "relacionados": [
+        "cea"
+      ]
+    },
+    {
+      "codigo": "ca 72-4",
+      "categoria": "sangre",
+      "resumen": "Marcador para cánceres de colon, ovario y estómago.",
+      "descripcion": "Marcador tumoral usado en el seguimiento de cánceres de colon, ovario y estómago.",
+      "relacionados": [
+        "cea",
+        "ca-125"
+      ]
+    },
+    {
+      "codigo": "ca-125",
+      "categoria": "sangre",
+      "resumen": "Marcador para el seguimiento del cáncer de ovario.",
+      "descripcion": "Marcador tumoral usado principalmente en el seguimiento del cáncer de ovario, aunque también puede elevarse en condiciones ginecológicas no cancerosas.",
+      "relacionados": [
+        "HE4"
+      ]
+    },
+    {
+      "codigo": "62",
+      "categoria": "sangre",
+      "resumen": "Clave para tus huesos, músculos y sistema nervioso.",
+      "descripcion": "Mide el calcio en tu sangre, importante para tus huesos, músculos y sistema nervioso. Se altera en trastornos de las glándulas paratiroides, óseos o renales.",
+      "relacionados": [
+        "64",
+        "PTH"
+      ]
+    },
+    {
+      "codigo": "CAL OR",
+      "categoria": "orina",
+      "resumen": "Calcio eliminado en 24 horas.",
+      "descripcion": "Mide cuánto calcio eliminás en 24 horas, útil en el estudio de cálculos renales o trastornos del metabolismo óseo.",
+      "relacionados": [
+        "62"
+      ]
+    },
+    {
+      "codigo": "cal",
+      "categoria": "sangre",
+      "resumen": "Se usa en el seguimiento del carcinoma medular de tiroides.",
+      "descripcion": "Hormona producida por la tiroides; se usa principalmente en el estudio y seguimiento del carcinoma medular de tiroides.",
+      "relacionados": [
+        "30",
+        "TIRO"
+      ]
+    },
+    {
+      "codigo": "calculo",
+      "categoria": "otro",
+      "resumen": "Analiza la composición de un cálculo renal o biliar.",
+      "descripcion": "Estudio del material extraído de un cálculo renal o biliar, para identificar su composición y ayudar a prevenir que se repita.",
+      "relacionados": []
+    },
+    {
+      "codigo": "CALP",
+      "categoria": "heces",
+      "resumen": "Marcador de inflamación intestinal.",
+      "descripcion": "Marcador de inflamación intestinal medido en heces, útil para diferenciar entre enfermedad inflamatoria intestinal (como Crohn o colitis ulcerosa) y el síndrome de intestino irritable.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "CARBA",
+      "categoria": "sangre",
+      "resumen": "Mide el medicamento carbamazepina en tu sangre.",
+      "descripcion": "Mide el nivel del medicamento carbamazepina en tu sangre, usado en epilepsia y otros trastornos neurológicos, para ajustar la dosis y evitar toxicidad.",
+      "relacionados": []
+    },
+    {
+      "codigo": "car",
+      "categoria": "sangre",
+      "resumen": "Analiza tus cromosomas.",
+      "descripcion": "Estudio genético que analiza el número y la estructura de tus cromosomas. Se usa en el estudio de infertilidad, pérdidas gestacionales recurrentes o sospecha de alteraciones cromosómicas.",
+      "relacionados": [
+        "DQ"
+      ]
+    },
+    {
+      "codigo": "LE",
+      "categoria": "sangre",
+      "resumen": "Prueba histórica relacionada con el lupus.",
+      "descripcion": "Prueba histórica relacionada con el lupus, hoy en gran parte reemplazada por los anticuerpos antinucleares.",
+      "relacionados": [
+        "502"
+      ]
+    },
+    {
+      "codigo": "CER",
+      "categoria": "sangre",
+      "resumen": "Se usa en el estudio de la enfermedad de Wilson.",
+      "descripcion": "Proteína que transporta cobre en tu sangre; se usa en el estudio de la enfermedad de Wilson, un trastorno hereditario del metabolismo del cobre.",
+      "relacionados": [
+        "COBRE"
+      ]
+    },
+    {
+      "codigo": "POLI",
+      "categoria": "otro",
+      "resumen": "Exámenes requeridos para trámites de Fuerza Pública.",
+      "descripcion": "Paquete de exámenes de laboratorio requeridos para trámites de la Fuerza Pública. Escribinos por WhatsApp para confirmar exactamente qué incluye tu trámite.",
+      "relacionados": [
+        "policia"
+      ]
+    },
+    {
+      "codigo": "401",
+      "categoria": "sangre",
+      "resumen": "Enzima que se eleva ante daño muscular o cardíaco.",
+      "descripcion": "Enzima muscular que se eleva ante daño al músculo esquelético o cardíaco. Se usa junto con la troponina en la evaluación de un posible daño al corazón, o sola para evaluar daño muscular.",
+      "relacionados": [
+        "400",
+        "402"
+      ]
+    },
+    {
+      "codigo": "402",
+      "categoria": "sangre",
+      "resumen": "Fracción de la CK específica del corazón.",
+      "descripcion": "Fracción de la CK más específica del músculo cardíaco; se usa junto con la troponina en la evaluación de un posible infarto.",
+      "relacionados": [
+        "400",
+        "401"
+      ]
+    },
+    {
+      "codigo": "312",
+      "categoria": "sangre",
+      "resumen": "Uno de tus electrolitos principales.",
+      "descripcion": "Uno de los electrolitos principales de tu sangre, junto con el sodio y el potasio; ayuda a regular el balance de líquidos y el equilibrio ácido-base de tu cuerpo.",
+      "relacionados": [
+        "314",
+        "316"
+      ]
+    },
+    {
+      "codigo": "CLOST",
+      "categoria": "heces",
+      "resumen": "Toxina bacteriana causante de diarrea por antibióticos.",
+      "descripcion": "Detecta la toxina de la bacteria Clostridioides difficile en heces, causante de diarrea asociada al uso de antibióticos.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "COBRE",
+      "categoria": "sangre",
+      "resumen": "Se usa en el estudio de la enfermedad de Wilson.",
+      "descripcion": "Mide el cobre en tu sangre, un mineral esencial en pequeñas cantidades; se usa en el estudio de la enfermedad de Wilson y otros trastornos del metabolismo del cobre.",
+      "relacionados": [
+        "CER",
+        "Cobre Orina"
+      ]
+    },
+    {
+      "codigo": "COC CUAL",
+      "categoria": "orina",
+      "resumen": "Detección rápida de consumo reciente de cocaína.",
+      "descripcion": "Prueba rápida en orina que detecta consumo reciente de cocaína (sí/no).",
+      "relacionados": [
+        "COC CUANT",
+        "dr6"
+      ]
+    },
+    {
+      "codigo": "COC CUANT",
+      "categoria": "orina",
+      "resumen": "Mide la cantidad de cocaína en tu orina.",
+      "descripcion": "Mide la cantidad de cocaína o sus metabolitos en tu orina, con mayor precisión que la prueba cualitativa.",
+      "relacionados": [
+        "COC CUAL"
+      ]
+    },
+    {
+      "codigo": "COLICO",
+      "categoria": "heces",
+      "resumen": "Estudia posibles causas digestivas del cólico del lactante.",
+      "descripcion": "Panel de exámenes en heces orientado a estudiar posibles causas digestivas del cólico en bebés lactantes.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "319",
+      "categoria": "sangre",
+      "resumen": "Usado para monitorear exposición a pesticidas.",
+      "descripcion": "Mide la actividad de esta enzima en tus glóbulos rojos; se usa principalmente para monitorear exposición a pesticidas organofosforados.",
+      "relacionados": [
+        "318"
+      ]
+    },
+    {
+      "codigo": "318",
+      "categoria": "sangre",
+      "resumen": "Usado para monitorear exposición a pesticidas.",
+      "descripcion": "Mide la actividad de esta enzima en tu suero; se usa para monitorear exposición a pesticidas organofosforados y como parte de la valoración prequirúrgica en algunos casos.",
+      "relacionados": [
+        "319"
+      ]
+    },
+    {
+      "codigo": "508",
+      "categoria": "sangre",
+      "resumen": "Suele estar bajo en enfermedades autoinmunes activas.",
+      "descripcion": "Proteína del sistema inmune que suele estar baja en enfermedades autoinmunes activas como el lupus. Se mide junto con el complemento C4.",
+      "relacionados": [
+        "509",
+        "502"
+      ]
+    },
+    {
+      "codigo": "509",
+      "categoria": "sangre",
+      "resumen": "Se mide junto con el complemento C3.",
+      "descripcion": "Proteína del sistema inmune que se mide junto con el complemento C3 para evaluar actividad de enfermedades autoinmunes.",
+      "relacionados": [
+        "508",
+        "502"
+      ]
+    },
+    {
+      "codigo": "FEMEMINO",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo para mujeres desde los 40 años.",
+      "descripcion": "Paquete de chequeo preventivo pensado para mujeres a partir de los 40 años: incluye hemograma, perfil de lípidos, glucosa, CA-125, vitamina D, TSH y un examen general de orina de cortesía.",
+      "relacionados": [
+        "MASC",
+        "ca-125",
+        "30"
+      ]
+    },
+    {
+      "codigo": "MASC",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo para hombres desde los 40 años.",
+      "descripcion": "Paquete de chequeo preventivo pensado para hombres a partir de los 40 años: incluye hemograma, perfil de lípidos, glucosa, antígeno prostático (PSA), función renal y un examen general de orina de cortesía.",
+      "relacionados": [
+        "FEMEMINO",
+        "psa",
+        "2738"
+      ]
+    },
+    {
+      "codigo": "CD",
+      "categoria": "sangre",
+      "resumen": "Detecta ataque del sistema inmune a tus glóbulos rojos.",
+      "descripcion": "Detecta si tus glóbulos rojos están siendo atacados por tu propio sistema inmune, o en el caso de recién nacidos, por anticuerpos maternos. Se usa en el estudio de ciertos tipos de anemia.",
+      "relacionados": [
+        "CI",
+        "1122"
+      ]
+    },
+    {
+      "codigo": "CI",
+      "categoria": "sangre",
+      "resumen": "Se usa en control prenatal y antes de transfusiones.",
+      "descripcion": "Detecta anticuerpos en tu sangre contra glóbulos rojos, usado en el control prenatal (especialmente si sos Rh negativo) y antes de transfusiones.",
+      "relacionados": [
+        "CD",
+        "877"
+      ]
+    },
+    {
+      "codigo": "copro",
+      "categoria": "heces",
+      "resumen": "Identifica bacterias causantes de infección digestiva.",
+      "descripcion": "Cultiva una muestra de heces para identificar bacterias causantes de una infección digestiva y qué antibióticos serían efectivos contra ellas.",
+      "relacionados": [
+        "1875",
+        "FRO HE"
+      ]
+    },
+    {
+      "codigo": "CORT",
+      "categoria": "sangre",
+      "resumen": "La hormona del estrés.",
+      "descripcion": "Mide la hormona del estrés producida por tus glándulas suprarrenales. Se usa en el estudio de trastornos como el Cushing o la insuficiencia suprarrenal.",
+      "relacionados": [
+        "ACTH"
+      ]
+    },
+    {
+      "codigo": "CTX",
+      "categoria": "sangre",
+      "resumen": "Marcador de recambio óseo.",
+      "descripcion": "Marcador de recambio óseo que indica qué tan rápido se está degradando tu hueso; útil en el seguimiento de la osteoporosis y su tratamiento.",
+      "relacionados": [
+        "B OSEO",
+        "vit d"
+      ]
+    },
+    {
+      "codigo": "cfs",
+      "categoria": "hisopado",
+      "resumen": "Identifica bacterias en las fosas nasales.",
+      "descripcion": "Cultiva una muestra tomada de las fosas nasales para identificar bacterias, útil en infecciones respiratorias altas persistentes o para descartar portación de ciertas bacterias.",
+      "relacionados": [
+        "FF"
+      ]
+    },
+    {
+      "codigo": "CTG 75",
+      "categoria": "sangre",
+      "resumen": "La prueba estándar para diabetes gestacional.",
+      "descripcion": "Mide tu glucosa en ayunas y luego de tomar una solución con 75g de azúcar, generalmente a las 2 horas. Es la prueba estándar para diagnosticar diabetes gestacional y diabetes en general.",
+      "relacionados": [
+        "1160",
+        "glic"
+      ]
+    },
+    {
+      "codigo": "Campy",
+      "categoria": "heces",
+      "resumen": "Bacteria causante común de diarrea infecciosa.",
+      "descripcion": "Detecta la bacteria Campylobacter en una muestra de heces, una causa común de diarrea infecciosa.",
+      "relacionados": [
+        "1875",
+        "copro"
+      ]
+    },
+    {
+      "codigo": "Coag",
+      "categoria": "sangre",
+      "resumen": "Evalúa tu capacidad de coagulación de forma completa.",
+      "descripcion": "Combina el tiempo de protrombina y el tiempo de tromboplastina parcial para evaluar de forma completa tu capacidad de coagulación.",
+      "relacionados": [
+        "300",
+        "303"
+      ]
+    },
+    {
+      "codigo": "Cobre Orina",
+      "categoria": "orina",
+      "resumen": "Cobre eliminado en 24 horas.",
+      "descripcion": "Mide cuánto cobre eliminás en 24 horas, usado en el estudio de la enfermedad de Wilson.",
+      "relacionados": [
+        "COBRE",
+        "CER"
+      ]
+    },
+    {
+      "codigo": "DEPORT",
+      "categoria": "otro",
+      "resumen": "Chequeo pensado para deportistas.",
+      "descripcion": "Paquete de chequeo pensado para deportistas: incluye hemograma, perfil de lípidos, glucosa, perfil renal, electrolitos (sodio, potasio, cloruro), CPK y un examen general de orina de cortesía.",
+      "relacionados": [
+        "DEP",
+        "1122"
+      ]
+    },
+    {
+      "codigo": "COMP",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo amplio.",
+      "descripcion": "Paquete de chequeo preventivo amplio: incluye hemograma, perfil de lípidos, glucosa, perfil renal, perfil hepático, ácido úrico y exámenes generales de orina y heces de cortesía.",
+      "relacionados": [
+        "BAS",
+        "2737",
+        "2738"
+      ]
+    },
+    {
+      "codigo": "DEP",
+      "categoria": "otro",
+      "resumen": "Chequeo orientado a deportistas.",
+      "descripcion": "Paquete de chequeo orientado a deportistas, similar al Control Deportista, pensado para dar seguimiento a tu condición física y salud metabólica.",
+      "relacionados": [
+        "DEPORT"
+      ]
+    },
+    {
+      "codigo": "404",
+      "categoria": "sangre",
+      "resumen": "Se eleva ante distintos tipos de daño celular.",
+      "descripcion": "Enzima presente en muchos tejidos que se eleva ante distintos tipos de daño celular (muscular, hepático, cardíaco o de glóbulos rojos, entre otros). Se interpreta según el contexto clínico.",
+      "relacionados": []
+    },
+    {
+      "codigo": "629",
+      "categoria": "hisopado",
+      "resumen": "Detecta 9 agentes de transmisión sexual en una sola muestra.",
+      "descripcion": "Prueba molecular que detecta simultáneamente 9 agentes causantes de infecciones de transmisión sexual en una sola muestra, con alta sensibilidad y rapidez.",
+      "relacionados": [
+        "630",
+        "628",
+        "601"
+      ]
+    },
+    {
+      "codigo": "DHEAS",
+      "categoria": "sangre",
+      "resumen": "Hormona precursora de otras hormonas sexuales.",
+      "descripcion": "Hormona producida por las glándulas suprarrenales, precursora de otras hormonas sexuales. Se solicita en el estudio de hirsutismo, acné severo o trastornos hormonales.",
+      "relacionados": [
+        "andros",
+        "710"
+      ]
+    },
+    {
+      "codigo": "DIM",
+      "categoria": "sangre",
+      "resumen": "Ayuda a descartar trombosis o embolismo pulmonar.",
+      "descripcion": "Marcador usado principalmente para ayudar a descartar trombosis venosa o embolismo pulmonar cuando la sospecha clínica es baja.",
+      "relacionados": [
+        "300",
+        "Trombo"
+      ]
+    },
+    {
+      "codigo": "DHT total",
+      "categoria": "sangre",
+      "resumen": "La forma más activa de la testosterona.",
+      "descripcion": "Forma más activa de la testosterona a nivel celular; se estudia en trastornos como la caída de cabello (alopecia androgénica) o el crecimiento excesivo de vello.",
+      "relacionados": [
+        "710",
+        "DHT libre"
+      ]
+    },
+    {
+      "codigo": "DHT libre",
+      "categoria": "sangre",
+      "resumen": "Fracción libre y activa de la dihidrotestosterona.",
+      "descripcion": "Mide la fracción libre y biológicamente activa de la dihidrotestosterona.",
+      "relacionados": [
+        "DHT total",
+        "710"
+      ]
+    },
+    {
+      "codigo": "317",
+      "categoria": "sangre",
+      "resumen": "Tus tres electrolitos principales en conjunto.",
+      "descripcion": "Mide en conjunto tus tres electrolitos principales, esenciales para el balance de líquidos, la función muscular y nerviosa de tu cuerpo.",
+      "relacionados": [
+        "314",
+        "316",
+        "312"
+      ]
+    },
+    {
+      "codigo": "eos",
+      "categoria": "sangre",
+      "resumen": "Glóbulo blanco relacionado con alergias y parásitos.",
+      "descripcion": "Mide un tipo específico de glóbulo blanco relacionado con alergias y infecciones parasitarias.",
+      "relacionados": [
+        "1122"
+      ]
+    },
+    {
+      "codigo": "esper",
+      "categoria": "otro",
+      "resumen": "Analiza la calidad de una muestra de semen.",
+      "descripcion": "Analiza la cantidad, movilidad y forma de los espermatozoides en una muestra de semen. Es uno de los exámenes clave en el estudio de fertilidad masculina.",
+      "relacionados": []
+    },
+    {
+      "codigo": "ETS COMP",
+      "categoria": "otro",
+      "resumen": "Panel amplio de infecciones de transmisión sexual.",
+      "descripcion": "Panel amplio orientado a la detección de las infecciones de transmisión sexual más comunes en una sola consulta.",
+      "relacionados": [
+        "629",
+        "601",
+        "628"
+      ]
+    },
+    {
+      "codigo": "Electro",
+      "categoria": "sangre",
+      "resumen": "Separa los distintos tipos de proteínas en tu sangre.",
+      "descripcion": "Separa y cuantifica los distintos tipos de proteínas en tu sangre, útil en el estudio de enfermedades del sistema inmune, hepáticas, renales o de la médula ósea.",
+      "relacionados": [
+        "73",
+        "Albu"
+      ]
+    },
+    {
+      "codigo": "Electro hemo",
+      "categoria": "sangre",
+      "resumen": "Identifica los tipos de hemoglobina en tu sangre.",
+      "descripcion": "Identifica los distintos tipos de hemoglobina presentes en tu sangre, usado en el estudio de enfermedades hereditarias como la talasemia o la anemia de células falciformes.",
+      "relacionados": [
+        "1122"
+      ]
+    },
+    {
+      "codigo": "Trombo",
+      "categoria": "sangre",
+      "resumen": "Panel amplio de riesgo de trombosis.",
+      "descripcion": "Panel amplio que evalúa distintos factores genéticos y de coagulación relacionados con mayor riesgo de trombosis. Se recomienda ante trombosis a repetición o pérdidas gestacionales recurrentes sin causa clara.",
+      "relacionados": [
+        "DIM",
+        "300",
+        "MTHFR"
+      ]
+    },
+    {
+      "codigo": "Eta",
+      "categoria": "sangre",
+      "resumen": "Mide el alcohol en tu sangre.",
+      "descripcion": "Mide el nivel de alcohol (etanol) en tu sangre en el momento de la toma de muestra.",
+      "relacionados": []
+    },
+    {
+      "codigo": "501",
+      "categoria": "sangre",
+      "resumen": "Anticuerpo asociado a la artritis reumatoide.",
+      "descripcion": "Anticuerpo asociado a la artritis reumatoide, aunque también puede estar presente en otras condiciones. Se interpreta junto con el anti-CCP para mayor precisión diagnóstica.",
+      "relacionados": [
+        "PCC"
+      ]
+    },
+    {
+      "codigo": "304",
+      "categoria": "sangre",
+      "resumen": "Proteína clave en la coagulación.",
+      "descripcion": "Proteína clave en el proceso de coagulación; sus niveles se estudian ante alteraciones de la coagulación o sangrados de causa no clara.",
+      "relacionados": [
+        "300",
+        "Coag"
+      ]
+    },
+    {
+      "codigo": "78",
+      "categoria": "sangre",
+      "resumen": "Se eleva en enfermedades hepáticas o de vías biliares.",
+      "descripcion": "Enzima presente principalmente en hígado y hueso; se eleva en enfermedades hepáticas, de las vías biliares o en algunos trastornos óseos.",
+      "relacionados": [
+        "2737"
+      ]
+    },
+    {
+      "codigo": "64",
+      "categoria": "sangre",
+      "resumen": "Clave para tus huesos y la energía celular.",
+      "descripcion": "Mide el fósforo en tu sangre, un mineral clave para tus huesos y la producción de energía celular. Se relaciona estrechamente con el calcio y la función renal.",
+      "relacionados": [
+        "62",
+        "2738"
+      ]
+    },
+    {
+      "codigo": "FOSF OR",
+      "categoria": "orina",
+      "resumen": "Fósforo eliminado en 24 horas.",
+      "descripcion": "Mide cuánto fósforo eliminás en 24 horas, útil en el estudio de trastornos del metabolismo óseo o renal.",
+      "relacionados": [
+        "64"
+      ]
+    },
+    {
+      "codigo": "FB",
+      "categoria": "hisopado",
+      "resumen": "Identifica bacterias en una muestra.",
+      "descripcion": "Examina bajo el microscopio una muestra para identificar la presencia de bacterias.",
+      "relacionados": []
+    },
+    {
+      "codigo": "FRO HE",
+      "categoria": "heces",
+      "resumen": "Examina tus heces bajo el microscopio.",
+      "descripcion": "Examina bajo el microscopio una muestra de heces para identificar bacterias, parásitos u otras alteraciones.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "FF",
+      "categoria": "hisopado",
+      "resumen": "Identifica la bacteria causante de una faringitis.",
+      "descripcion": "Toma una muestra de tu garganta para identificar bajo el microscopio y mediante cultivo qué bacteria está causando una faringitis, y a qué antibióticos responde.",
+      "relacionados": [
+        "cfs"
+      ]
+    },
+    {
+      "codigo": "FCB",
+      "categoria": "hisopado",
+      "resumen": "Identifica bacterias mediante cultivo.",
+      "descripcion": "Identifica bajo el microscopio y mediante cultivo qué bacteria está presente en la muestra tomada, y a qué antibióticos responde.",
+      "relacionados": [
+        "FF",
+        "hongos"
+      ]
+    },
+    {
+      "codigo": "hongos",
+      "categoria": "hisopado",
+      "resumen": "Identifica hongos en piel, uñas o mucosas.",
+      "descripcion": "Identifica bajo el microscopio y mediante cultivo la presencia de hongos en la muestra tomada, útil en infecciones de piel, uñas o mucosas que no mejoran.",
+      "relacionados": [
+        "FCB"
+      ]
+    },
+    {
+      "codigo": "FU",
+      "categoria": "hisopado",
+      "resumen": "Identifica bacterias causantes de una infección uretral.",
+      "descripcion": "Identifica bacterias causantes de una infección uretral (por ejemplo, uretritis) y a qué antibióticos responden.",
+      "relacionados": [
+        "fv",
+        "629"
+      ]
+    },
+    {
+      "codigo": "fv",
+      "categoria": "hisopado",
+      "resumen": "Identifica la causa de una infección vaginal.",
+      "descripcion": "Identifica bacterias u hongos causantes de una infección vaginal y, en el caso de bacterias, a qué antibióticos responden.",
+      "relacionados": [
+        "FU",
+        "hongos"
+      ]
+    },
+    {
+      "codigo": "FSH",
+      "categoria": "sangre",
+      "resumen": "Clave en el ciclo menstrual y la fertilidad.",
+      "descripcion": "Hormona clave en el ciclo menstrual y la fertilidad, tanto en hombres como en mujeres. Se solicita en estudios de fertilidad y para valorar la etapa de la menopausia.",
+      "relacionados": [
+        "HF",
+        "LH"
+      ]
+    },
+    {
+      "codigo": "Fen",
+      "categoria": "sangre",
+      "resumen": "Mide el medicamento fenitoína en tu sangre.",
+      "descripcion": "Mide el nivel del medicamento fenitoína en tu sangre, usado en el tratamiento de la epilepsia, para ajustar la dosis y evitar toxicidad.",
+      "relacionados": [
+        "CARBA",
+        "VALP"
+      ]
+    },
+    {
+      "codigo": "Frotis general",
+      "categoria": "hisopado",
+      "resumen": "Examen microscópico general de una muestra.",
+      "descripcion": "Examen microscópico general de una muestra, según lo que tu médico necesite investigar.",
+      "relacionados": []
+    },
+    {
+      "codigo": "77",
+      "categoria": "sangre",
+      "resumen": "Enzima hepática sensible al consumo de alcohol.",
+      "descripcion": "Enzima hepática sensible al consumo de alcohol y a problemas de las vías biliares; suele solicitarse junto con el resto del perfil hepático.",
+      "relacionados": [
+        "2737"
+      ]
+    },
+    {
+      "codigo": "Tiroxina",
+      "categoria": "sangre",
+      "resumen": "Transporta las hormonas tiroideas en tu sangre.",
+      "descripcion": "Proteína que transporta las hormonas tiroideas en tu sangre; se mide en casos puntuales para interpretar correctamente resultados alterados de T3 o T4.",
+      "relacionados": [
+        "31",
+        "33"
+      ]
+    },
+    {
+      "codigo": "97",
+      "categoria": "sangre",
+      "resumen": "Primer paso del tamizaje de diabetes gestacional.",
+      "descripcion": "Primer paso del tamizaje de diabetes gestacional: mide tu glucosa una hora después de tomar una solución con 50g de azúcar.",
+      "relacionados": [
+        "CTG 75",
+        "1160"
+      ]
+    },
+    {
+      "codigo": "99",
+      "categoria": "sangre",
+      "resumen": "Prueba confirmatoria de diabetes gestacional.",
+      "descripcion": "Prueba confirmatoria de diabetes gestacional, con mediciones de glucosa tras tomar una solución con 100g de azúcar.",
+      "relacionados": [
+        "97",
+        "98"
+      ]
+    },
+    {
+      "codigo": "98",
+      "categoria": "sangre",
+      "resumen": "Parte de la curva de tolerancia a la glucosa.",
+      "descripcion": "Mide tu glucosa dos horas después de tomar una solución con 75g de azúcar, como parte de la curva de tolerancia a la glucosa.",
+      "relacionados": [
+        "CTG 75"
+      ]
+    },
+    {
+      "codigo": "96",
+      "categoria": "sangre",
+      "resumen": "Evalúa el control de la diabetes en el día a día.",
+      "descripcion": "Mide tu glucosa dos horas después de una comida normal, útil para evaluar el control de la diabetes en el día a día.",
+      "relacionados": [
+        "1160",
+        "glic"
+      ]
+    },
+    {
+      "codigo": "GRAH",
+      "categoria": "heces",
+      "resumen": "Detecta grasa no digerida en las heces.",
+      "descripcion": "Detecta grasa no digerida en una muestra de heces, útil en el estudio de problemas de absorción intestinal.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "611",
+      "categoria": "sangre",
+      "resumen": "Indica inmunidad frente a la hepatitis A.",
+      "descripcion": "Indica si tenés inmunidad (por infección pasada o vacunación) frente al virus de la hepatitis A.",
+      "relacionados": [
+        "610"
+      ]
+    },
+    {
+      "codigo": "705",
+      "categoria": "sangre",
+      "resumen": "Mide la cantidad exacta de la hormona del embarazo.",
+      "descripcion": "Mide la cantidad exacta de la hormona del embarazo (hCG) en tu sangre, útil para confirmar el embarazo y dar seguimiento a su evolución temprana.",
+      "relacionados": [
+        "emb"
+      ]
+    },
+    {
+      "codigo": "307",
+      "categoria": "sangre",
+      "resumen": "El colesterol bueno.",
+      "descripcion": "El colesterol 'bueno': ayuda a remover el exceso de colesterol de tus arterias. Niveles más altos se asocian a menor riesgo cardiovascular.",
+      "relacionados": [
+        "2739",
+        "306"
+      ]
+    },
+    {
+      "codigo": "HE4",
+      "categoria": "sangre",
+      "resumen": "Se usa junto con el CA-125 para masas ováricas.",
+      "descripcion": "Marcador tumoral usado junto con el CA-125 para el estudio de masas ováricas.",
+      "relacionados": [
+        "ca-125"
+      ]
+    },
+    {
+      "codigo": "871",
+      "categoria": "sangre",
+      "resumen": "Dos componentes clave de tu hemograma.",
+      "descripcion": "Mide dos de los componentes clave de tu hemograma: el porcentaje de glóbulos rojos (hematocrito) y la hemoglobina, principal indicador de anemia.",
+      "relacionados": [
+        "1122"
+      ]
+    },
+    {
+      "codigo": "HG",
+      "categoria": "otro",
+      "resumen": "Panel orientado a evaluar el hígado graso.",
+      "descripcion": "Panel de exámenes orientado a evaluar signos de hígado graso, una condición cada vez más común relacionada con el sobrepeso y el síndrome metabólico.",
+      "relacionados": [
+        "2737",
+        "2739"
+      ]
+    },
+    {
+      "codigo": "homo",
+      "categoria": "sangre",
+      "resumen": "Se asocia a mayor riesgo cardiovascular.",
+      "descripcion": "Aminoácido cuyo nivel elevado se asocia a mayor riesgo cardiovascular y a deficiencias de vitamina B12 o ácido fólico.",
+      "relacionados": [
+        "b12",
+        "FOL"
+      ]
+    },
+    {
+      "codigo": "mul",
+      "categoria": "sangre",
+      "resumen": "Indicador de tu reserva ovárica.",
+      "descripcion": "Indicador de tu reserva ovárica (la cantidad de óvulos disponibles). Es un examen clave en estudios de fertilidad.",
+      "relacionados": [
+        "HF",
+        "FSH"
+      ]
+    },
+    {
+      "codigo": "CREC",
+      "categoria": "sangre",
+      "resumen": "Útil en trastornos del crecimiento.",
+      "descripcion": "Mide la hormona de crecimiento en tu sangre, útil en el estudio de trastornos del crecimiento en niños o de exceso/déficit hormonal en adultos.",
+      "relacionados": [
+        "IGF-1"
+      ]
+    },
+    {
+      "codigo": "Helico IgG",
+      "categoria": "sangre",
+      "resumen": "Detecta exposición a Helicobacter pylori.",
+      "descripcion": "Detecta anticuerpos contra la bacteria Helicobacter pylori, relacionada con gastritis y úlceras. Indica exposición, no necesariamente infección activa.",
+      "relacionados": [
+        "81"
+      ]
+    },
+    {
+      "codigo": "81",
+      "categoria": "heces",
+      "resumen": "Detecta infección activa por Helicobacter pylori.",
+      "descripcion": "Detecta antígenos de la bacteria Helicobacter pylori en una muestra de heces; a diferencia del anticuerpo en sangre, indica infección activa.",
+      "relacionados": [
+        "Helico IgG"
+      ]
+    },
+    {
+      "codigo": "HemoPromo",
+      "categoria": "sangre",
+      "resumen": "El hemograma completo, a precio promocional.",
+      "descripcion": "El mismo hemograma completo (glóbulos rojos, blancos y plaquetas), a precio promocional.",
+      "relacionados": [
+        "1122"
+      ]
+    },
+    {
+      "codigo": "HAV G",
+      "categoria": "sangre",
+      "resumen": "Indica inmunidad frente a la hepatitis A.",
+      "descripcion": "Indica inmunidad frente a la hepatitis A, ya sea por infección pasada o vacunación. Es el mismo examen que el HAV IgG.",
+      "relacionados": [
+        "611",
+        "610"
+      ]
+    },
+    {
+      "codigo": "IGF-1",
+      "categoria": "sangre",
+      "resumen": "Refleja la producción de hormona de crecimiento.",
+      "descripcion": "Refleja de forma indirecta y más estable la producción de hormona de crecimiento en tu cuerpo. Se usa en el estudio de trastornos del crecimiento.",
+      "relacionados": [
+        "CREC"
+      ]
+    },
+    {
+      "codigo": "IGF-BP3",
+      "categoria": "sangre",
+      "resumen": "Se solicita junto con el IGF-1.",
+      "descripcion": "Proteína que transporta el IGF-1; se solicita junto con este para el estudio de trastornos relacionados con la hormona de crecimiento.",
+      "relacionados": [
+        "IGF-1"
+      ]
+    },
+    {
+      "codigo": "IA",
+      "categoria": "sangre",
+      "resumen": "Relación entre testosterona total y libre.",
+      "descripcion": "Calcula la relación entre la testosterona total y libre en tu sangre, útil en el estudio de exceso de andrógenos, como en el síndrome de ovario poliquístico.",
+      "relacionados": [
+        "710",
+        "andros"
+      ]
+    },
+    {
+      "codigo": "HOMA",
+      "categoria": "sangre",
+      "resumen": "Estima tu grado de resistencia a la insulina.",
+      "descripcion": "Combina la glucosa y la insulina en ayunas para estimar tu grado de resistencia a la insulina, un factor clave en el riesgo de diabetes tipo 2.",
+      "relacionados": [
+        "1160",
+        "708"
+      ]
+    },
+    {
+      "codigo": "IGA",
+      "categoria": "sangre",
+      "resumen": "El déficit primario más común del sistema inmune.",
+      "descripcion": "Anticuerpo presente principalmente en mucosas; su déficit es la inmunodeficiencia primaria más común y puede interferir con algunas pruebas de enfermedad celíaca.",
+      "relacionados": [
+        "IGG",
+        "IGM"
+      ]
+    },
+    {
+      "codigo": "IGE",
+      "categoria": "sangre",
+      "resumen": "Suele estar elevado en personas con alergias.",
+      "descripcion": "Anticuerpo relacionado con reacciones alérgicas; sus niveles totales suelen estar elevados en personas con alergias o parasitosis.",
+      "relacionados": [
+        "ALERG"
+      ]
+    },
+    {
+      "codigo": "IGG",
+      "categoria": "sangre",
+      "resumen": "El anticuerpo más abundante en tu sangre.",
+      "descripcion": "El anticuerpo más abundante en tu sangre, clave para tu memoria inmunológica frente a infecciones pasadas y vacunas.",
+      "relacionados": [
+        "IGA",
+        "IGM"
+      ]
+    },
+    {
+      "codigo": "IGM",
+      "categoria": "sangre",
+      "resumen": "El primer anticuerpo ante una infección nueva.",
+      "descripcion": "El primer anticuerpo que produce tu cuerpo frente a una infección nueva.",
+      "relacionados": [
+        "IGA",
+        "IGG"
+      ]
+    },
+    {
+      "codigo": "708",
+      "categoria": "sangre",
+      "resumen": "Útil en el estudio de resistencia a la insulina.",
+      "descripcion": "Mide la hormona insulina en tu sangre, útil en el estudio de resistencia a la insulina y trastornos metabólicos, generalmente junto con la glucosa.",
+      "relacionados": [
+        "1160",
+        "HOMA"
+      ]
+    },
+    {
+      "codigo": "709",
+      "categoria": "sangre",
+      "resumen": "Evalúa cómo responde tu cuerpo al azúcar.",
+      "descripcion": "Mide la insulina después de una carga de glucosa, útil para evaluar cómo responde tu cuerpo al azúcar.",
+      "relacionados": [
+        "708",
+        "CTG 75"
+      ]
+    },
+    {
+      "codigo": "IGE ALER",
+      "categoria": "sangre",
+      "resumen": "Anticuerpos IgE frente a un panel de alérgenos.",
+      "descripcion": "Mide anticuerpos IgE frente a un panel de alérgenos comunes.",
+      "relacionados": [
+        "ALERG",
+        "IGE"
+      ]
+    },
+    {
+      "codigo": "LH",
+      "categoria": "sangre",
+      "resumen": "Clave en el ciclo menstrual y la ovulación.",
+      "descripcion": "Hormona luteinizante, clave en el ciclo menstrual, la ovulación y la producción de testosterona. Se solicita junto con la FSH en estudios de fertilidad.",
+      "relacionados": [
+        "FSH",
+        "HF"
+      ]
+    },
+    {
+      "codigo": "li",
+      "categoria": "sangre",
+      "resumen": "Mide el medicamento litio en tu sangre.",
+      "descripcion": "Mide el nivel del medicamento litio en tu sangre, usado en el tratamiento del trastorno bipolar, para ajustar la dosis y evitar toxicidad.",
+      "relacionados": []
+    },
+    {
+      "codigo": "Lepto",
+      "categoria": "sangre",
+      "resumen": "Anticuerpos frente a la bacteria de la leptospirosis.",
+      "descripcion": "Detecta anticuerpos frente a la bacteria Leptospira, causante de la leptospirosis, una infección transmitida por contacto con agua o tierra contaminada con orina de animales.",
+      "relacionados": [
+        "SE"
+      ]
+    },
+    {
+      "codigo": "Lipa",
+      "categoria": "sangre",
+      "resumen": "Enzima pancreática más específica que la amilasa.",
+      "descripcion": "Enzima producida por el páncreas; se eleva en casos de pancreatitis, con mayor especificidad que la amilasa.",
+      "relacionados": [
+        "906"
+      ]
+    },
+    {
+      "codigo": "63",
+      "categoria": "sangre",
+      "resumen": "Clave para la función muscular, nerviosa y cardíaca.",
+      "descripcion": "Mide el magnesio en tu sangre, un mineral clave para la función muscular, nerviosa y cardíaca.",
+      "relacionados": [
+        "62",
+        "64"
+      ]
+    },
+    {
+      "codigo": "MAR CUAL",
+      "categoria": "orina",
+      "resumen": "Detección rápida de consumo reciente de marihuana.",
+      "descripcion": "Prueba rápida en orina que detecta consumo reciente de marihuana (sí/no).",
+      "relacionados": [
+        "MAR CUANT",
+        "dr6"
+      ]
+    },
+    {
+      "codigo": "MAR CUANT",
+      "categoria": "orina",
+      "resumen": "Mide la cantidad de marihuana en tu orina.",
+      "descripcion": "Mide la cantidad de metabolitos de marihuana en tu orina, con mayor precisión que la prueba cualitativa.",
+      "relacionados": [
+        "MAR CUAL"
+      ]
+    },
+    {
+      "codigo": "MICRO",
+      "categoria": "orina",
+      "resumen": "Signo temprano de daño renal.",
+      "descripcion": "Detecta cantidades muy pequeñas de proteína en tu orina, un signo temprano de daño renal, especialmente importante en personas con diabetes o hipertensión.",
+      "relacionados": [
+        "Micro/Creat",
+        "2738"
+      ]
+    },
+    {
+      "codigo": "Micro/Creat",
+      "categoria": "orina",
+      "resumen": "Cálculo más preciso del riesgo de daño renal temprano.",
+      "descripcion": "Combina la microalbuminuria con la creatinina en orina para un cálculo más preciso del riesgo de daño renal temprano.",
+      "relacionados": [
+        "MICRO"
+      ]
+    },
+    {
+      "codigo": "MTHFR",
+      "categoria": "sangre",
+      "resumen": "Variante genética del metabolismo del ácido fólico.",
+      "descripcion": "Estudio genético de una variante común relacionada con el metabolismo del ácido fólico; se asocia en algunos estudios a mayor riesgo de trombosis o complicaciones del embarazo, aunque su relevancia clínica se evalúa caso por caso con tu médico.",
+      "relacionados": [
+        "homo",
+        "Trombo"
+      ]
+    },
+    {
+      "codigo": "363",
+      "categoria": "sangre",
+      "resumen": "Indicador principal de tu función renal.",
+      "descripcion": "También conocido como BUN; junto con la creatinina, es uno de los indicadores principales de qué tan bien están funcionando tus riñones.",
+      "relacionados": [
+        "58",
+        "2738"
+      ]
+    },
+    {
+      "codigo": "407",
+      "categoria": "sangre",
+      "resumen": "Marcador para insuficiencia cardíaca.",
+      "descripcion": "Marcador para evaluar insuficiencia cardíaca o sobrecarga del corazón, alternativa al BNP con mayor estabilidad en la muestra.",
+      "relacionados": [
+        "BNP",
+        "400"
+      ]
+    },
+    {
+      "codigo": "Nico",
+      "categoria": "sangre",
+      "resumen": "Detecta consumo de nicotina.",
+      "descripcion": "Detecta consumo de nicotina (tabaco o productos relacionados) en tu sangre.",
+      "relacionados": []
+    },
+    {
+      "codigo": "SED",
+      "categoria": "orina",
+      "resumen": "Analiza el sedimento de tu orina con tinción especial.",
+      "descripcion": "Analiza con tinción especial el sedimento de tu orina, dando mayor detalle sobre células y otros hallazgos que el examen general de orina.",
+      "relacionados": [
+        "1136"
+      ]
+    },
+    {
+      "codigo": "OXALATO",
+      "categoria": "orina",
+      "resumen": "Relevante en cálculos renales recurrentes.",
+      "descripcion": "Mide cuánto oxalato eliminás en 24 horas, relevante en el estudio de cálculos renales recurrentes.",
+      "relacionados": [
+        "CAL OR"
+      ]
+    },
+    {
+      "codigo": "Omeg",
+      "categoria": "sangre",
+      "resumen": "Relacionados con la salud cardiovascular.",
+      "descripcion": "Mide tus niveles de ácidos grasos omega 3 y 6, relacionados con la salud cardiovascular e inflamatoria.",
+      "relacionados": [
+        "2739"
+      ]
+    },
+    {
+      "codigo": "PMC14",
+      "categoria": "sangre",
+      "resumen": "Panel amplio de 14 pruebas metabólicas.",
+      "descripcion": "Panel amplio de 14 pruebas metabólicas (electrolitos, función renal, función hepática y más) en una sola muestra, ideal para una visión general y detallada de tu estado metabólico.",
+      "relacionados": [
+        "2737",
+        "2738",
+        "317"
+      ]
+    },
+    {
+      "codigo": "pb",
+      "categoria": "otro",
+      "resumen": "Versión promocional del paquete básico.",
+      "descripcion": "Versión promocional del paquete básico de chequeo. Escribinos por WhatsApp para confirmar qué incluye y su vigencia.",
+      "relacionados": [
+        "BAS"
+      ]
+    },
+    {
+      "codigo": "pc",
+      "categoria": "otro",
+      "resumen": "Paquete amplio de chequeo preventivo.",
+      "descripcion": "Paquete amplio de chequeo preventivo. Escribinos por WhatsApp para conocer el detalle completo de lo que incluye.",
+      "relacionados": [
+        "COMP"
+      ]
+    },
+    {
+      "codigo": "papa",
+      "categoria": "otro",
+      "resumen": "Paquete promocional del Día del Padre.",
+      "descripcion": "Paquete promocional de temporada pensado para el Día del Padre. Escribinos por WhatsApp para confirmar si sigue disponible y qué incluye.",
+      "relacionados": [
+        "pdr"
+      ]
+    },
+    {
+      "codigo": "DIAB SEG",
+      "categoria": "otro",
+      "resumen": "Seguimiento para personas con diabetes.",
+      "descripcion": "Paquete pensado para el seguimiento de personas ya diagnosticadas con diabetes: incluye glucosa, hemoglobina glicosilada, perfil de lípidos, perfil renal y microalbuminuria.",
+      "relacionados": [
+        "1160",
+        "glic",
+        "DIAB PRE"
+      ]
+    },
+    {
+      "codigo": "policia",
+      "categoria": "otro",
+      "resumen": "Exámenes requeridos para trámites de Fuerza Pública.",
+      "descripcion": "Paquete de exámenes de laboratorio requeridos para trámites de la Fuerza Pública.",
+      "relacionados": [
+        "POLI"
+      ]
+    },
+    {
+      "codigo": "SAD",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo para adolescentes.",
+      "descripcion": "Paquete de chequeo preventivo pensado para adolescentes.",
+      "relacionados": [
+        "Niño"
+      ]
+    },
+    {
+      "codigo": "PTH",
+      "categoria": "sangre",
+      "resumen": "Regula el calcio en tu cuerpo.",
+      "descripcion": "Hormona que regula el calcio en tu cuerpo. Se estudia junto con el calcio y la vitamina D ante alteraciones óseas o de las glándulas paratiroides.",
+      "relacionados": [
+        "62",
+        "vit d"
+      ]
+    },
+    {
+      "codigo": "PCR Neisseria",
+      "categoria": "hisopado",
+      "resumen": "Detecta la bacteria causante de la gonorrea.",
+      "descripcion": "Prueba molecular de alta precisión para detectar la bacteria causante de la gonorrea.",
+      "relacionados": [
+        "PCR Trichomonas",
+        "629"
+      ]
+    },
+    {
+      "codigo": "PCR Trichomonas",
+      "categoria": "hisopado",
+      "resumen": "Detecta el parásito causante de la tricomoniasis.",
+      "descripcion": "Prueba molecular de alta precisión para detectar el parásito causante de la tricomoniasis.",
+      "relacionados": [
+        "PCR Neisseria",
+        "629"
+      ]
+    },
+    {
+      "codigo": "PEP C",
+      "categoria": "sangre",
+      "resumen": "Refleja cuánta insulina propia produce tu páncreas.",
+      "descripcion": "Refleja cuánta insulina propia produce tu páncreas; útil para diferenciar tipos de diabetes y evaluar la función de las células productoras de insulina.",
+      "relacionados": [
+        "708",
+        "1160"
+      ]
+    },
+    {
+      "codigo": "316",
+      "categoria": "sangre",
+      "resumen": "Esencial para la función muscular y cardíaca.",
+      "descripcion": "Mide el potasio en tu sangre, esencial para la función muscular y cardíaca. Sus alteraciones pueden ser relevantes y requieren atención médica.",
+      "relacionados": [
+        "314",
+        "312"
+      ]
+    },
+    {
+      "codigo": "PREGNENOLONA",
+      "categoria": "sangre",
+      "resumen": "Precursora de cortisol y hormonas sexuales.",
+      "descripcion": "Hormona precursora de otras hormonas esteroideas (como cortisol y hormonas sexuales); se estudia en trastornos hormonales complejos.",
+      "relacionados": [
+        "CORT",
+        "andros"
+      ]
+    },
+    {
+      "codigo": "PQ",
+      "categoria": "otro",
+      "resumen": "Exámenes solicitados antes de una cirugía.",
+      "descripcion": "Panel de exámenes solicitado antes de una cirugía, según lo requiera tu médico o el centro donde te vayan a operar.",
+      "relacionados": [
+        "300",
+        "1122"
+      ]
+    },
+    {
+      "codigo": "PROCALCITONINA",
+      "categoria": "sangre",
+      "resumen": "Diferencia infecciones bacterianas de otras causas.",
+      "descripcion": "Marcador que ayuda a diferenciar entre infecciones bacterianas y otras causas de inflamación, útil sobre todo en cuadros de infección severa.",
+      "relacionados": [
+        "405"
+      ]
+    },
+    {
+      "codigo": "704",
+      "categoria": "sangre",
+      "resumen": "Hormona clave en el ciclo menstrual y el embarazo.",
+      "descripcion": "Hormona clave en el ciclo menstrual y el embarazo. Se solicita en estudios de fertilidad y para confirmar la ovulación.",
+      "relacionados": [
+        "HF",
+        "703"
+      ]
+    },
+    {
+      "codigo": "jun",
+      "categoria": "otro",
+      "resumen": "Paquete promocional de temporada.",
+      "descripcion": "Paquete promocional de temporada. Escribinos por WhatsApp para confirmar si sigue disponible y qué incluye.",
+      "relacionados": []
+    },
+    {
+      "codigo": "406",
+      "categoria": "sangre",
+      "resumen": "Evalúa riesgo cardiovascular por inflamación de bajo grado.",
+      "descripcion": "Versión de mayor sensibilidad de la proteína C reactiva, usada principalmente para evaluar el riesgo cardiovascular relacionado con inflamación de bajo grado.",
+      "relacionados": [
+        "405"
+      ]
+    },
+    {
+      "codigo": "73",
+      "categoria": "sangre",
+      "resumen": "Divide tus proteínas entre albúmina y globulinas.",
+      "descripcion": "Mide el total de proteínas en tu sangre y las divide entre albúmina y globulinas, útil en el estudio de enfermedades hepáticas, renales o del sistema inmune.",
+      "relacionados": [
+        "Albu",
+        "Electro"
+      ]
+    },
+    {
+      "codigo": "PROT",
+      "categoria": "orina",
+      "resumen": "Indicador importante de daño renal.",
+      "descripcion": "Mide cuánta proteína eliminás en tu orina durante 24 horas, un indicador importante de daño renal.",
+      "relacionados": [
+        "MICRO",
+        "2738"
+      ]
+    },
+    {
+      "codigo": "PSAMov",
+      "categoria": "sangre",
+      "resumen": "El examen de PSA a precio especial.",
+      "descripcion": "El mismo examen de antígeno prostático (PSA), a precio especial durante la campaña Movember de salud masculina.",
+      "relacionados": [
+        "psa"
+      ]
+    },
+    {
+      "codigo": "Aler75",
+      "categoria": "sangre",
+      "resumen": "Panel amplio de 75 alérgenos.",
+      "descripcion": "Panel amplio que evalúa 75 alérgenos distintos en una sola muestra de sangre, ideal si querés un estudio de alergias completo en vez de probar sustancia por sustancia.",
+      "relacionados": [
+        "ALERG",
+        "alim",
+        "CARNE"
+      ]
+    },
+    {
+      "codigo": "DIAB PRE",
+      "categoria": "otro",
+      "resumen": "Detecta riesgo de diabetes antes de que aparezca.",
+      "descripcion": "Paquete pensado para detectar riesgo de diabetes antes de que aparezca: incluye hemoglobina glicosilada e índice de HOMA (glucosa + insulina).",
+      "relacionados": [
+        "DIAB SEG",
+        "glic",
+        "HOMA"
+      ]
+    },
+    {
+      "codigo": "PRP",
+      "categoria": "otro",
+      "resumen": "Plasma rico en plaquetas para distintos tratamientos.",
+      "descripcion": "Procesamiento de tu sangre para obtener plasma rico en plaquetas, usado en distintos tratamientos médicos y estéticos según indicación de tu especialista.",
+      "relacionados": []
+    },
+    {
+      "codigo": "pdr",
+      "categoria": "otro",
+      "resumen": "PSA y hemograma en un paquete promocional.",
+      "descripcion": "Paquete promocional de temporada que combina el antígeno prostático (PSA) con un hemograma completo.",
+      "relacionados": [
+        "papa",
+        "psa",
+        "1122"
+      ]
+    },
+    {
+      "codigo": "ProtC",
+      "categoria": "sangre",
+      "resumen": "Ayuda a regular la coagulación.",
+      "descripcion": "Proteína que ayuda a regular la coagulación de tu sangre; su déficit se asocia a mayor riesgo de trombosis. Forma parte del estudio de trombofilias.",
+      "relacionados": [
+        "Trombo",
+        "DIM"
+      ]
+    },
+    {
+      "codigo": "872",
+      "categoria": "sangre",
+      "resumen": "Evalúa la respuesta de tu médula ósea ante una anemia.",
+      "descripcion": "Mide los glóbulos rojos jóvenes en tu sangre, útil para evaluar si tu médula ósea está respondiendo adecuadamente ante una anemia.",
+      "relacionados": [
+        "1122"
+      ]
+    },
+    {
+      "codigo": "85",
+      "categoria": "heces",
+      "resumen": "Causas comunes de diarrea aguda en niños.",
+      "descripcion": "Detecta estos dos virus, causas comunes de diarrea aguda especialmente en niños pequeños.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "soh",
+      "categoria": "heces",
+      "resumen": "Tamizaje de cáncer colorrectal.",
+      "descripcion": "Detecta pequeñas cantidades de sangre en las heces que no son visibles a simple vista, útil en el estudio de sangrados digestivos y como tamizaje de cáncer colorrectal.",
+      "relacionados": [
+        "1875",
+        "SO3"
+      ]
+    },
+    {
+      "codigo": "EG 3",
+      "categoria": "heces",
+      "resumen": "Tres muestras para mayor probabilidad de detectar parásitos.",
+      "descripcion": "Analiza tres muestras de heces tomadas en días distintos, lo que aumenta la probabilidad de detectar parásitos intestinales frente a una sola muestra.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "SO3",
+      "categoria": "heces",
+      "resumen": "Sangre oculta en tres muestras de heces.",
+      "descripcion": "Analiza sangre oculta en tres muestras de heces tomadas en días distintos, con mayor sensibilidad que una sola muestra.",
+      "relacionados": [
+        "soh"
+      ]
+    },
+    {
+      "codigo": "covid",
+      "categoria": "sangre",
+      "resumen": "Detecta anticuerpos contra el COVID-19.",
+      "descripcion": "Detecta anticuerpos contra el COVID-19 en tu sangre, indicando exposición pasada o respuesta a la vacuna, a diferencia de la prueba de antígenos que detecta infección activa.",
+      "relacionados": [
+        "ANTIGENO",
+        "VACUNA"
+      ]
+    },
+    {
+      "codigo": "VACUNA",
+      "categoria": "sangre",
+      "resumen": "Mide tus anticuerpos después de vacunarte.",
+      "descripcion": "Mide tus anticuerpos contra el COVID-19 después de haberte vacunado.",
+      "relacionados": [
+        "covid"
+      ]
+    },
+    {
+      "codigo": "SE",
+      "categoria": "sangre",
+      "resumen": "Anticuerpos frente a la bacteria Leptospira.",
+      "descripcion": "Detecta anticuerpos frente a la bacteria Leptospira mediante una técnica específica.",
+      "relacionados": [
+        "Lepto"
+      ]
+    },
+    {
+      "codigo": "dengue",
+      "categoria": "sangre",
+      "resumen": "Confirma una infección reciente o pasada por dengue.",
+      "descripcion": "Detecta anticuerpos frente al virus del dengue, útil para confirmar una infección reciente o pasada.",
+      "relacionados": []
+    },
+    {
+      "codigo": "sexo",
+      "categoria": "sangre",
+      "resumen": "Determina el sexo del bebé desde una muestra de sangre.",
+      "descripcion": "Determina el sexo del bebé a partir de una muestra de sangre materna, analizando ADN fetal libre en circulación desde etapas tempranas del embarazo.",
+      "relacionados": [
+        "emb"
+      ]
+    },
+    {
+      "codigo": "SHBG",
+      "categoria": "sangre",
+      "resumen": "Afecta cuánta hormona sexual está disponible libremente.",
+      "descripcion": "Proteína que transporta las hormonas sexuales en tu sangre; su nivel afecta cuánta testosterona o estrógeno está disponible de forma libre y activa.",
+      "relacionados": [
+        "710",
+        "703"
+      ]
+    },
+    {
+      "codigo": "314",
+      "categoria": "sangre",
+      "resumen": "Clave para el balance de líquidos de tu cuerpo.",
+      "descripcion": "Mide el sodio en tu sangre, clave para el balance de líquidos de tu cuerpo. Sus alteraciones pueden ser relevantes y requieren atención médica.",
+      "relacionados": [
+        "316",
+        "312"
+      ]
+    },
+    {
+      "codigo": "Sero",
+      "categoria": "sangre",
+      "resumen": "Neurotransmisor relacionado con el estado de ánimo.",
+      "descripcion": "Neurotransmisor relacionado con el estado de ánimo; en el laboratorio también se mide para el estudio de ciertos tumores neuroendocrinos poco frecuentes.",
+      "relacionados": []
+    },
+    {
+      "codigo": "32",
+      "categoria": "sangre",
+      "resumen": "Forma activa de la hormona T3.",
+      "descripcion": "Forma activa y no unida a proteínas de la hormona T3; se solicita junto con el resto del perfil tiroideo para evaluar la función de tu tiroides.",
+      "relacionados": [
+        "TIRO",
+        "30",
+        "31"
+      ]
+    },
+    {
+      "codigo": "t3r",
+      "categoria": "sangre",
+      "resumen": "Forma inactiva de la T3.",
+      "descripcion": "Forma inactiva de la T3; se estudia en casos puntuales donde los resultados de T3 y T4 no explican completamente el cuadro clínico.",
+      "relacionados": [
+        "34",
+        "32"
+      ]
+    },
+    {
+      "codigo": "34",
+      "categoria": "sangre",
+      "resumen": "Mide el total de hormona T3 en tu sangre.",
+      "descripcion": "Mide el total de hormona T3 en tu sangre, unida y no unida a proteínas, como parte del estudio de tu función tiroidea.",
+      "relacionados": [
+        "32",
+        "TIRO"
+      ]
+    },
+    {
+      "codigo": "31",
+      "categoria": "sangre",
+      "resumen": "De las pruebas más usadas para tu función tiroidea.",
+      "descripcion": "Forma activa y no unida a proteínas de la hormona T4; junto con la TSH, es de las pruebas más usadas para evaluar tu función tiroidea.",
+      "relacionados": [
+        "30",
+        "TIRO",
+        "33"
+      ]
+    },
+    {
+      "codigo": "33",
+      "categoria": "sangre",
+      "resumen": "Mide el total de hormona T4 en tu sangre.",
+      "descripcion": "Mide el total de hormona T4 en tu sangre, unida y no unida a proteínas.",
+      "relacionados": [
+        "31",
+        "30"
+      ]
+    },
+    {
+      "codigo": "SA",
+      "categoria": "hisopado",
+      "resumen": "Tamizaje recomendado en el tercer trimestre del embarazo.",
+      "descripcion": "Detecta la bacteria Streptococcus agalactiae (estreptococo del grupo B), parte del tamizaje recomendado en el embarazo hacia el final del tercer trimestre.",
+      "relacionados": [
+        "fv"
+      ]
+    },
+    {
+      "codigo": "GRAHAM",
+      "categoria": "otro",
+      "resumen": "Detecta oxiuros, un parásito común en niños.",
+      "descripcion": "Detecta huevos de oxiuros (un parásito intestinal común en niños) mediante una cinta adhesiva aplicada en la zona perianal, generalmente al despertar.",
+      "relacionados": [
+        "1875"
+      ]
+    },
+    {
+      "codigo": "711",
+      "categoria": "sangre",
+      "resumen": "Fracción libre y activa de la testosterona.",
+      "descripcion": "Mide la fracción de testosterona que circula libre y activa en tu sangre, complementaria a la testosterona total.",
+      "relacionados": [
+        "710",
+        "SHBG"
+      ]
+    },
+    {
+      "codigo": "75",
+      "categoria": "sangre",
+      "resumen": "Evalúa si tu hígado está inflamado.",
+      "descripcion": "Enzima hepática; junto con la TGP, es una de las pruebas más usadas para evaluar si tu hígado está inflamado.",
+      "relacionados": [
+        "76",
+        "2737"
+      ]
+    },
+    {
+      "codigo": "76",
+      "categoria": "sangre",
+      "resumen": "La enzima hepática más específica.",
+      "descripcion": "Enzima más específica del hígado que la TGO; su elevación sugiere inflamación o daño hepático.",
+      "relacionados": [
+        "75",
+        "2737"
+      ]
+    },
+    {
+      "codigo": "303",
+      "categoria": "sangre",
+      "resumen": "Evalúa otra vía de la coagulación.",
+      "descripcion": "Evalúa otra de las vías de la coagulación de tu sangre, complementaria al tiempo de protrombina.",
+      "relacionados": [
+        "300",
+        "Coag"
+      ]
+    },
+    {
+      "codigo": "35",
+      "categoria": "sangre",
+      "resumen": "Se usa en el seguimiento del cáncer de tiroides.",
+      "descripcion": "Proteína producida por la tiroides, usada principalmente en el seguimiento de personas tratadas por cáncer de tiroides.",
+      "relacionados": [
+        "36",
+        "TIRO"
+      ]
+    },
+    {
+      "codigo": "TRANS",
+      "categoria": "sangre",
+      "resumen": "Transporta el hierro en tu sangre.",
+      "descripcion": "Proteína que transporta el hierro en tu sangre; se interpreta junto con el hierro sérico y la ferritina en el estudio de anemia.",
+      "relacionados": [
+        "875",
+        "876"
+      ]
+    },
+    {
+      "codigo": "var",
+      "categoria": "sangre",
+      "resumen": "Indica inmunidad frente a la varicela.",
+      "descripcion": "Detecta anticuerpos frente al virus de la varicela, indicando si tenés inmunidad por infección pasada o vacunación.",
+      "relacionados": []
+    },
+    {
+      "codigo": "600",
+      "categoria": "sangre",
+      "resumen": "Prueba de tamizaje para sífilis.",
+      "descripcion": "Prueba de tamizaje para sífilis. Un resultado positivo generalmente se confirma con una prueba más específica como el FTA.",
+      "relacionados": [
+        "fta"
+      ]
+    },
+    {
+      "codigo": "VitA",
+      "categoria": "sangre",
+      "resumen": "Importante para la visión, la piel y el sistema inmune.",
+      "descripcion": "Mide tus niveles de vitamina A, importante para la visión, la piel y el sistema inmune.",
+      "relacionados": [
+        "vit d"
+      ]
+    },
+    {
+      "codigo": "D3",
+      "categoria": "sangre",
+      "resumen": "La forma más común medida de vitamina D.",
+      "descripcion": "Mide específicamente la forma D3 de la vitamina D, la más común medida en el estudio de tus niveles de esta vitamina.",
+      "relacionados": [
+        "vit d"
+      ]
     }
   ]
 }
