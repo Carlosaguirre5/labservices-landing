@@ -334,11 +334,24 @@
       });
   });
 
+  // Si llegás desde la página de un examen (ej. /precios/?examen=vit%20d), lo
+  // agrega automáticamente y te lleva directo a "Tu lista".
+  function agregarDesdeQueryParam() {
+    var codigo = new URLSearchParams(window.location.search).get("examen");
+    if (!codigo) return;
+    var existe = state.examenes.some(function (ex) { return ex.codigo === codigo; });
+    if (!existe) return;
+    toggleExamen(codigo);
+    var panelLista = document.querySelector(".cotizador-panel--lista");
+    if (panelLista) panelLista.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   fetch(DATA_URL)
     .then(function (res) { return res.json(); })
     .then(function (data) {
       state.examenes = data;
       render();
+      agregarDesdeQueryParam();
     })
     .catch(function () {
       var error = document.createElement("li");

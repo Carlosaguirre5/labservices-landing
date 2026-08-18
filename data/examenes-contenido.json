@@ -1,0 +1,306 @@
+{
+  "_comentario": "Contenido editorial para las páginas individuales de /examenes/. Solo los códigos listados aquí generan página propia (piloto de los exámenes más buscados). categoria controla el ícono: sangre | orina | heces | hisopado | otro. relacionados son códigos de otros exámenes de este mismo archivo.",
+  "examenes": [
+    {
+      "codigo": "1160",
+      "categoria": "sangre",
+      "resumen": "Mide el azúcar en tu sangre en el momento del examen.",
+      "descripcion": "La glucosa es el azúcar que circula en tu sangre y que tu cuerpo usa como energía. Este examen mide su concentración en un solo momento y es la base para detectar o dar seguimiento a la diabetes y la prediabetes. Se recomienda ayuno de 8 a 12 horas antes de la toma de muestra, salvo indicación contraria de tu médico.",
+      "relacionados": ["glic", "2739", "2738"]
+    },
+    {
+      "codigo": "glic",
+      "categoria": "sangre",
+      "resumen": "Refleja tu nivel promedio de azúcar en los últimos 2-3 meses.",
+      "descripcion": "También conocida como HbA1c, mide el porcentaje de hemoglobina que se ha unido al azúcar en tu sangre durante los últimos dos o tres meses. A diferencia de la glucosa en ayunas, no requiere ayuno y se usa principalmente para diagnosticar diabetes y monitorear qué tan controlada está en personas que ya la tienen.",
+      "relacionados": ["1160", "2739", "2738"]
+    },
+    {
+      "codigo": "1122",
+      "categoria": "sangre",
+      "resumen": "Revisa tus glóbulos rojos, blancos y plaquetas en un solo examen.",
+      "descripcion": "El hemograma completo analiza los tres tipos de células de tu sangre: glóbulos rojos (relacionados con la anemia), glóbulos blancos (tu sistema de defensas) y plaquetas (la coagulación). Es uno de los exámenes más solicitados porque da una radiografía general de tu estado de salud y suele ser parte de cualquier chequeo de rutina.",
+      "relacionados": ["905", "306", "1136"]
+    },
+    {
+      "codigo": "TIRO",
+      "categoria": "sangre",
+      "resumen": "Evalúa a fondo el funcionamiento de tu tiroides.",
+      "descripcion": "Incluye TSH, T4 libre y T3 libre para dar una visión completa de cómo está funcionando tu tiroides, la glándula que regula tu metabolismo, energía y peso. Se recomienda cuando hay síntomas como cansancio persistente, cambios de peso inexplicables o alteraciones en el ritmo cardíaco, o para dar seguimiento a un tratamiento tiroideo ya diagnosticado.",
+      "relacionados": ["30", "HF", "710"]
+    },
+    {
+      "codigo": "30",
+      "categoria": "sangre",
+      "resumen": "La prueba básica para revisar tu tiroides.",
+      "descripcion": "La TSH (hormona estimulante de la tiroides) es el examen de primera línea para evaluar si tu tiroides funciona de más (hipertiroidismo) o de menos (hipotiroidismo). Es rápido, no requiere preparación especial y suele ser el punto de partida antes de pedir un perfil tiroideo más completo.",
+      "relacionados": ["TIRO", "HF", "glic"]
+    },
+    {
+      "codigo": "2737",
+      "categoria": "sangre",
+      "resumen": "Revisa cómo está trabajando tu hígado.",
+      "descripcion": "Agrupa varias pruebas que en conjunto muestran si tu hígado está inflamado o funcionando de forma anormal. Se pide con frecuencia en chequeos generales, antes de iniciar ciertos medicamentos, o para dar seguimiento a personas con hígado graso, consumo de alcohol o hepatitis.",
+      "relacionados": ["2738", "2739", "306"]
+    },
+    {
+      "codigo": "2738",
+      "categoria": "sangre",
+      "resumen": "Evalúa cómo están trabajando tus riñones.",
+      "descripcion": "Mide creatinina y nitrógeno ureico (BUN) en tu sangre, dos indicadores clave de qué tan bien están filtrando tus riñones. Es un examen habitual en chequeos preventivos, sobre todo en personas con hipertensión, diabetes o antecedentes familiares de enfermedad renal.",
+      "relacionados": ["1136", "905", "1160"]
+    },
+    {
+      "codigo": "1875",
+      "categoria": "heces",
+      "resumen": "Analiza tu materia fecal en busca de parásitos, sangre u otras alteraciones.",
+      "descripcion": "Revisa una muestra de heces bajo el microscopio para detectar parásitos intestinales, restos de sangre, grasas o cambios en la flora digestiva. Es útil ante síntomas digestivos persistentes (dolor abdominal, diarrea, hinchazón) o simplemente como parte de un chequeo preventivo completo.",
+      "relacionados": ["1136", "1122", "405"]
+    },
+    {
+      "codigo": "1136",
+      "categoria": "orina",
+      "resumen": "Detecta infecciones urinarias y otras alteraciones renales.",
+      "descripcion": "Analiza el aspecto, la química y el sedimento de tu orina para detectar infecciones urinarias, presencia de sangre, proteínas o cristales, entre otros hallazgos. Es uno de los exámenes más solicitados por su rapidez y porque da pistas tempranas sobre la salud de tus riñones y vías urinarias.",
+      "relacionados": ["URO", "2738", "1875"]
+    },
+    {
+      "codigo": "601",
+      "categoria": "sangre",
+      "resumen": "Prueba de anticuerpos para detectar el VIH.",
+      "descripcion": "Detecta anticuerpos contra el VIH en tu sangre. Es una prueba confidencial que forma parte de los chequeos de salud sexual recomendados y también se solicita antes de algunos procedimientos médicos. Tus resultados se entregan solo a vos.",
+      "relacionados": ["628", "URO", "630"]
+    },
+    {
+      "codigo": "MT",
+      "categoria": "sangre",
+      "resumen": "Detecta mononucleosis infecciosa.",
+      "descripcion": "Es una prueba rápida que detecta anticuerpos heterófilos asociados a la mononucleosis infecciosa, causada generalmente por el virus Epstein-Barr. Se recomienda ante síntomas como fatiga intensa, fiebre, dolor de garganta y ganglios inflamados que no mejoran.",
+      "relacionados": ["1122", "405", "873"]
+    },
+    {
+      "codigo": "905",
+      "categoria": "sangre",
+      "resumen": "Mide el ácido úrico, relacionado con la gota.",
+      "descripcion": "El ácido úrico es un producto de desecho que, en niveles elevados, puede acumularse en las articulaciones y causar gota, o formar cálculos renales. Este examen es habitual en chequeos preventivos y en el seguimiento de personas con antecedentes de gota o cálculos renales.",
+      "relacionados": ["2738", "1160", "306"]
+    },
+    {
+      "codigo": "psa",
+      "categoria": "sangre",
+      "resumen": "El examen de rutina para la salud de la próstata.",
+      "descripcion": "El PSA (antígeno prostático) es la prueba de tamizaje más usada para la salud de la próstata en hombres. Se recomienda a partir de los 40-50 años como parte del chequeo preventivo anual, o antes si hay antecedentes familiares o síntomas urinarios.",
+      "relacionados": ["5", "6", "1136"]
+    },
+    {
+      "codigo": "5",
+      "categoria": "sangre",
+      "resumen": "Complementa el PSA total para afinar el diagnóstico.",
+      "descripcion": "Mide la fracción libre del antígeno prostático en tu sangre. Se usa junto con el PSA total, calculando la relación entre ambos, para ayudar a diferenciar entre un crecimiento benigno de la próstata y otras causas de un PSA elevado.",
+      "relacionados": ["psa", "6", "1136"]
+    },
+    {
+      "codigo": "6",
+      "categoria": "sangre",
+      "resumen": "PSA total y libre en un solo examen combinado.",
+      "descripcion": "Combina la medición del PSA total y del PSA libre en una sola muestra, calculando además la relación entre ambos. Es útil cuando tu médico necesita más precisión que un PSA total solo, sin tener que pedir dos exámenes por separado.",
+      "relacionados": ["psa", "5", "1136"]
+    },
+    {
+      "codigo": "HF",
+      "categoria": "sangre",
+      "resumen": "Panel hormonal completo: FSH, LH, estradiol y progesterona.",
+      "descripcion": "Agrupa cuatro hormonas clave (FSH, LH, estradiol y progesterona) que en conjunto ayudan a evaluar el ciclo menstrual, la fertilidad y la función ovárica. Se solicita comúnmente ante irregularidades menstruales, estudios de fertilidad o para valorar la etapa de la menopausia.",
+      "relacionados": ["703", "TIRO", "PRL"]
+    },
+    {
+      "codigo": "dr6",
+      "categoria": "orina",
+      "resumen": "Tamizaje de sustancias de abuso en orina.",
+      "descripcion": "Panel de tamizaje que detecta en una sola muestra de orina el consumo reciente de varias sustancias de abuso comunes. Se usa en contextos laborales, deportivos, legales o simplemente por tranquilidad personal o familiar.",
+      "relacionados": ["1136"]
+    },
+    {
+      "codigo": "630",
+      "categoria": "hisopado",
+      "resumen": "Detecta el virus del papiloma humano (VPH) por biología molecular.",
+      "descripcion": "Identifica material genético del virus del papiloma humano (VPH) mediante una técnica molecular de alta precisión, a partir de una muestra tomada por un profesional de la salud. Es clave en la prevención del cáncer de cuello uterino, en conjunto con el papanicolau.",
+      "relacionados": ["628", "601"]
+    },
+    {
+      "codigo": "877",
+      "categoria": "sangre",
+      "resumen": "Determina tu tipo de sangre y factor Rh.",
+      "descripcion": "Identifica tu grupo sanguíneo (A, B, AB u O) y tu factor Rh (positivo o negativo). Es información esencial antes de una cirugía, transfusión o durante el embarazo, y muchas personas simplemente lo solicitan para tenerlo documentado.",
+      "relacionados": ["1122", "emb"]
+    },
+    {
+      "codigo": "Niño",
+      "categoria": "otro",
+      "resumen": "Chequeo preventivo pensado para la salud de los más pequeños.",
+      "descripcion": "Paquete de exámenes básicos pensado para acompañar el control preventivo de niños y niñas en sus citas de valoración pediátrica. Incluye las pruebas más relevantes para monitorear su crecimiento y desarrollo; consultá con tu pediatra qué otros exámenes podrían sumarse según la edad.",
+      "relacionados": ["1122", "1136", "1875"]
+    },
+    {
+      "codigo": "400",
+      "categoria": "sangre",
+      "resumen": "Marcador clave para detectar daño al músculo cardíaco.",
+      "descripcion": "La troponina es una proteína que se libera a la sangre cuando hay daño al músculo cardíaco. Es uno de los exámenes que se usan en la evaluación de un posible infarto o daño cardíaco agudo, siempre en el contexto de una valoración médica junto con otros estudios.",
+      "relacionados": ["405", "873"]
+    },
+    {
+      "codigo": "quan",
+      "categoria": "sangre",
+      "resumen": "Detecta infección por tuberculosis mediante una prueba de sangre.",
+      "descripcion": "Es una prueba de sangre que detecta si tu sistema inmune ha estado expuesto a la bacteria que causa la tuberculosis, sin necesidad de la clásica prueba cutánea (PPD). Se usa tanto para tamizaje como para el seguimiento en personas con mayor riesgo de exposición.",
+      "relacionados": ["1122", "405"]
+    },
+    {
+      "codigo": "CEL",
+      "categoria": "sangre",
+      "resumen": "Panel de anticuerpos para el estudio de la enfermedad celíaca.",
+      "descripcion": "Agrupa varios anticuerpos relacionados con la enfermedad celíaca (una reacción autoinmune al gluten) para dar un panorama completo en una sola muestra. Se recomienda ante síntomas digestivos persistentes, antecedentes familiares de la enfermedad, o antes de decidir eliminar el gluten de la dieta.",
+      "relacionados": ["DQ", "1875", "1122"]
+    },
+    {
+      "codigo": "300",
+      "categoria": "sangre",
+      "resumen": "Evalúa qué tan rápido coagula tu sangre.",
+      "descripcion": "Mide el tiempo que tarda tu sangre en coagular a través de una de las vías de la coagulación. Se usa para monitorear a personas que toman anticoagulantes, evaluar la función hepática o como parte de una valoración prequirúrgica.",
+      "relacionados": ["2737", "1122"]
+    },
+    {
+      "codigo": "ALERG",
+      "categoria": "sangre",
+      "resumen": "Prueba de sangre para identificar una alergia específica.",
+      "descripcion": "Mide en tu sangre el nivel de anticuerpos IgE frente a un alérgeno específico que quieras investigar (por ejemplo, un alimento, polen o ácaro en particular). Se pide por cada sustancia que quieras evaluar; escribinos por WhatsApp si querés armar un panel más amplio.",
+      "relacionados": []
+    },
+    {
+      "codigo": "2739",
+      "categoria": "sangre",
+      "resumen": "Colesterol total, bueno, malo y triglicéridos.",
+      "descripcion": "Mide tu colesterol total, el colesterol HDL ('bueno'), el LDL ('malo') y los triglicéridos, dando un panorama completo de tu salud cardiovascular. Se recomienda una vez al año como parte del chequeo preventivo, sobre todo si hay antecedentes familiares de enfermedad cardíaca.",
+      "relacionados": ["306", "60", "1160"]
+    },
+    {
+      "codigo": "emb",
+      "categoria": "sangre",
+      "resumen": "El método más confiable para confirmar un embarazo.",
+      "descripcion": "Detecta la hormona hCG en tu sangre para confirmar un embarazo con mayor sensibilidad y antes que una prueba de orina casera. Se puede tomar apenas unos días después de la falta menstrual, sin necesidad de ayuno.",
+      "relacionados": ["877", "HF", "1136"]
+    },
+    {
+      "codigo": "vit d",
+      "categoria": "sangre",
+      "resumen": "Uno de los déficits nutricionales más comunes hoy en día.",
+      "descripcion": "Mide tus niveles de vitamina D, esencial para la salud ósea, muscular e inmune. El déficit es muy común incluso en países soleados y suele pasar desapercibido, por lo que se recomienda incluirlo en chequeos preventivos generales.",
+      "relacionados": ["FOL", "b12", "306"]
+    },
+    {
+      "codigo": "b12",
+      "categoria": "sangre",
+      "resumen": "Clave para tu sistema nervioso y la formación de glóbulos rojos.",
+      "descripcion": "La vitamina B12 es esencial para tu sistema nervioso y la producción de glóbulos rojos. Su déficit puede causar cansancio, hormigueo o anemia, y es más frecuente en personas mayores, veganas/vegetarianas o con ciertos problemas digestivos.",
+      "relacionados": ["FOL", "1122", "vit d"]
+    },
+    {
+      "codigo": "FOL",
+      "categoria": "sangre",
+      "resumen": "Vitamina clave antes y durante el embarazo.",
+      "descripcion": "El ácido fólico (vitamina B9) es fundamental para la formación de glóbulos rojos y el desarrollo neurológico durante el embarazo. Se mide con frecuencia junto con la vitamina B12 para el estudio de anemias o como parte de la planificación de un embarazo.",
+      "relacionados": ["b12", "1122", "vit d"]
+    },
+    {
+      "codigo": "876",
+      "categoria": "sangre",
+      "resumen": "La reserva de hierro de tu cuerpo.",
+      "descripcion": "La ferritina refleja cuánto hierro tenés almacenado en tu cuerpo, lo que la hace más sensible que otras pruebas para detectar una deficiencia de hierro antes de que aparezca la anemia. Se pide comúnmente junto con el hierro sérico y un hemograma.",
+      "relacionados": ["875", "1122"]
+    },
+    {
+      "codigo": "875",
+      "categoria": "sangre",
+      "resumen": "Complementa el estudio del hierro en tu organismo.",
+      "descripcion": "Mide el hierro circulante en tu sangre junto con la capacidad de tu cuerpo para transportarlo, ayudando a distinguir entre distintos tipos de anemia. Se interpreta habitualmente junto con la ferritina y el hemograma completo.",
+      "relacionados": ["876", "1122"]
+    },
+    {
+      "codigo": "DQ",
+      "categoria": "sangre",
+      "resumen": "Estudio genético que apoya el diagnóstico de celiaquía.",
+      "descripcion": "Analiza si tenés los genes HLA-DQ2 y/o DQ8, presentes en casi todas las personas con enfermedad celíaca. Un resultado negativo prácticamente descarta la enfermedad, mientras que uno positivo no la confirma por sí solo, sino que apoya el estudio junto con otros exámenes.",
+      "relacionados": ["CEL", "1875"]
+    },
+    {
+      "codigo": "710",
+      "categoria": "sangre",
+      "resumen": "La hormona sexual masculina principal.",
+      "descripcion": "Mide el nivel de testosterona en tu sangre, la principal hormona sexual masculina, relacionada con la energía, masa muscular, libido y estado de ánimo. Se solicita ante síntomas de baja testosterona o como parte de estudios hormonales más amplios.",
+      "relacionados": ["psa", "HF"]
+    },
+    {
+      "codigo": "703",
+      "categoria": "sangre",
+      "resumen": "La principal hormona sexual femenina.",
+      "descripcion": "Mide el estradiol, la forma principal de estrógeno en el cuerpo, clave en el ciclo menstrual, la fertilidad y la salud ósea. Se solicita frecuentemente junto con otras hormonas para estudiar el ciclo menstrual, la fertilidad o la transición a la menopausia.",
+      "relacionados": ["HF", "PRL"]
+    },
+    {
+      "codigo": "PRL",
+      "categoria": "sangre",
+      "resumen": "Hormona relacionada con la lactancia y el ciclo menstrual.",
+      "descripcion": "La prolactina es una hormona producida por la hipófisis, relacionada con la lactancia, y cuyos niveles elevados también pueden alterar el ciclo menstrual o la fertilidad. Se solicita ante irregularidades menstruales, galactorrea (producción de leche fuera del embarazo o la lactancia) o estudios de fertilidad.",
+      "relacionados": ["HF", "703", "TIRO"]
+    },
+    {
+      "codigo": "306",
+      "categoria": "sangre",
+      "resumen": "La suma de tu colesterol bueno y malo.",
+      "descripcion": "Mide la cantidad total de colesterol en tu sangre, sumando el HDL ('bueno') y el LDL ('malo'). Es un examen de rutina para valorar tu riesgo cardiovascular, generalmente interpretado en conjunto con el resto del perfil de lípidos.",
+      "relacionados": ["2739", "60"]
+    },
+    {
+      "codigo": "60",
+      "categoria": "sangre",
+      "resumen": "Otro indicador clave de tu salud cardiovascular.",
+      "descripcion": "Los triglicéridos son un tipo de grasa presente en tu sangre; niveles elevados se asocian a mayor riesgo cardiovascular y, en algunos casos, a hígado graso. Se mide junto con el resto del perfil de lípidos, idealmente en ayunas.",
+      "relacionados": ["2739", "306"]
+    },
+    {
+      "codigo": "58",
+      "categoria": "sangre",
+      "resumen": "El indicador más usado para valorar tu función renal.",
+      "descripcion": "La creatinina es un producto de desecho muscular que tus riñones filtran de manera constante; su nivel en sangre es uno de los indicadores más usados para valorar qué tan bien están funcionando. Forma parte del perfil renal y de la mayoría de los chequeos preventivos.",
+      "relacionados": ["2738", "1136"]
+    },
+    {
+      "codigo": "405",
+      "categoria": "sangre",
+      "resumen": "Marcador general de inflamación en tu cuerpo.",
+      "descripcion": "La proteína C reactiva (PCR) se eleva ante procesos inflamatorios o infecciosos en tu cuerpo, aunque no indica dónde ni por qué. Se usa como apoyo para dar seguimiento a infecciones, procesos inflamatorios o algunas enfermedades crónicas.",
+      "relacionados": ["873", "1122"]
+    },
+    {
+      "codigo": "873",
+      "categoria": "sangre",
+      "resumen": "Otro marcador clásico de inflamación.",
+      "descripcion": "Mide qué tan rápido se asientan tus glóbulos rojos en un tubo de ensayo; una velocidad mayor a la esperada puede indicar un proceso inflamatorio o infeccioso activo. Se interpreta junto con otros marcadores como la proteína C reactiva.",
+      "relacionados": ["405", "1122"]
+    },
+    {
+      "codigo": "URO",
+      "categoria": "orina",
+      "resumen": "Identifica la bacteria causante de una infección urinaria.",
+      "descripcion": "Cultiva una muestra de orina para identificar si hay bacterias causando una infección urinaria y cuáles antibióticos serían efectivos contra ella. Se recomienda ante síntomas como ardor al orinar, urgencia urinaria frecuente o infecciones urinarias a repetición.",
+      "relacionados": ["1136", "2738"]
+    },
+    {
+      "codigo": "628",
+      "categoria": "sangre",
+      "resumen": "Detecta anticuerpos frente a la bacteria Chlamydia.",
+      "descripcion": "Mide anticuerpos IgG contra Chlamydia trachomatis, una de las infecciones de transmisión sexual más comunes. Un resultado positivo indica exposición previa a la bacteria; para infecciones activas, tu médico podría recomendar además una prueba molecular directa.",
+      "relacionados": ["601", "630"]
+    }
+  ]
+}

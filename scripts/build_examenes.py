@@ -66,12 +66,24 @@ def formatear_colones(n):
     return "₡" + con_puntos
 
 
+def codigos_con_pagina_propia():
+    """Códigos con ficha en /examenes/ (data/examenes-contenido.json), si existe."""
+    ruta = ROOT / "data" / "examenes-contenido.json"
+    if not ruta.exists():
+        return set()
+    contenido = json.loads(ruta.read_text(encoding="utf-8"))
+    return {item["codigo"] for item in contenido.get("examenes", [])}
+
+
 def construir_filas_html(examenes):
+    con_pagina = codigos_con_pagina_propia()
     filas = []
     for ex in examenes:
         fila_id = "examen-" + slug(ex["codigo"])
         nombre = html.escape(ex["descripcion"])
         precio = formatear_colones(ex["precio"])
+        if ex["codigo"] in con_pagina:
+            nombre += f' <a href="/examenes/{slug(ex["codigo"])}/" class="lista-completa-ficha">Ver ficha →</a>'
         filas.append(f'            <tr id="{fila_id}"><td>{nombre}</td><td>{precio}</td></tr>')
     return "\n".join(filas)
 

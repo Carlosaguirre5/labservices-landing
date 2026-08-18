@@ -1,0 +1,173 @@
+/* ==========================================================================
+   /examenes/<slug>/ — Página individual por examen
+   Usa las variables y componentes de /style.css. Este archivo solo agrega
+   lo específico de estas páginas.
+   ========================================================================== */
+
+.examen-breadcrumb {
+  padding: 14px 0;
+  font-size: 0.82rem;
+  color: var(--c-gray);
+  border-bottom: 1px solid var(--c-gray-light);
+}
+
+.examen-breadcrumb a {
+  color: var(--c-gray);
+}
+
+.examen-breadcrumb a:hover {
+  color: var(--c-green-dark);
+}
+
+.examen-breadcrumb span[aria-current] {
+  color: var(--c-ink);
+  font-weight: 600;
+}
+
+.examen-hero {
+  padding: 40px 0;
+  background:
+    radial-gradient(circle at 90% 0%, var(--c-green-light) 0%, transparent 45%),
+    var(--c-white);
+}
+
+.examen-hero-layout {
+  display: grid;
+  gap: 28px;
+  align-items: start;
+}
+
+.examen-icono {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--radius-lg);
+  background: var(--c-green-light);
+  color: var(--c-green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.examen-icono svg {
+  width: 44px;
+  height: 44px;
+}
+
+.examen-info h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.35em;
+}
+
+.examen-resumen {
+  color: var(--c-gray);
+  font-size: 1.02rem;
+  margin-bottom: 18px;
+}
+
+.examen-precio-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.examen-precio {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 2.1rem;
+  color: var(--c-black);
+}
+
+.examen-precio-nota {
+  font-size: 0.82rem;
+  color: var(--c-gray);
+}
+
+.examen-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 360px;
+}
+
+.examen-detalle {
+  padding: 8px 0 56px;
+}
+
+.examen-detalle-layout {
+  display: grid;
+  gap: 28px;
+}
+
+.examen-descripcion h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.examen-descripcion p {
+  color: var(--c-ink);
+  line-height: 1.65;
+}
+
+.examen-legal {
+  font-size: 0.8rem;
+  color: var(--c-gray);
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--c-gray-light);
+}
+
+.examen-relacionados h2 {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+}
+
+.examen-relacionados-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.examen-relacionado-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--c-gray-soft);
+  border: 1px solid var(--c-gray-light);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.examen-relacionado-card:hover {
+  background: var(--c-green-light);
+  border-color: var(--c-green);
+}
+
+.examen-relacionado-nombre {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--c-ink);
+}
+
+.examen-relacionado-precio {
+  font-size: 0.82rem;
+  color: var(--c-gray);
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .examen-hero-layout {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .examen-detalle-layout {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+  }
+}

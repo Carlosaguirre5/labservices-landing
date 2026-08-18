@@ -372,3 +372,16 @@
   color: var(--c-black);
   padding-left: 12px;
 }
+
+.lista-completa-ficha {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--c-green-dark);
+  white-space: nowrap;
+}
+
+.lista-completa-ficha:hover {
+  text-decoration: underline;
+}

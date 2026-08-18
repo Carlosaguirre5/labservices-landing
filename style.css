@@ -759,6 +759,10 @@ button {
   margin-bottom: 6px;
 }
 
+.exam-card h3 a:hover {
+  text-decoration: underline;
+}
+
 .exam-card p {
   font-size: 0.9rem;
   color: #63645f;
