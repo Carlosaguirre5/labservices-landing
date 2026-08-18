@@ -8,7 +8,8 @@ piloto de exámenes más buscados, a partir de:
 
 Uso:
   python3 scripts/build_examenes.py          # primero, regenera data/examenes.json
-  python3 scripts/build_paginas_examenes.py  # luego, genera las páginas
+  python3 scripts/build_og_images.py         # luego, genera assets/og/examenes/<slug>.png
+  python3 scripts/build_paginas_examenes.py  # luego, genera las páginas (usa esas imágenes en og:image)
 
 Para agregar un examen nuevo al piloto: sumá una entrada en
 data/examenes-contenido.json con su código (debe existir en
@@ -217,6 +218,7 @@ def main():
             html.escape(f"{nombre}: {precio_fmt}. {contenido['resumen']} Laboratorio clínico en Naranjo, Alajuela. Cotizá por WhatsApp.")
         )
         pagina = pagina.replace("{{CANONICAL_URL}}", url)
+        pagina = pagina.replace("{{OG_IMAGE}}", f"{SITE_URL}/assets/og/examenes/{s}.png")
         pagina = pagina.replace("{{NOMBRE}}", html.escape(nombre))
         pagina = pagina.replace("{{RESUMEN}}", html.escape(contenido["resumen"]))
         pagina = pagina.replace("{{PRECIO}}", precio_fmt)
