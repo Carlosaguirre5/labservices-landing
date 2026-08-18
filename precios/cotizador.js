@@ -259,14 +259,14 @@
 
   function construirTexto() {
     var lineas = state.seleccionados.map(function (ex) {
-      return "• " + ex.descripcion + " — " + formatColones(ex.precio);
+      return "✅ " + ex.descripcion + " — " + formatColones(ex.precio);
     });
     var subtotal = state.seleccionados.reduce(function (suma, ex) { return suma + ex.precio; }, 0);
     var cantidad = state.seleccionados.length;
-    return "Hola, quiero cotizar estos exámenes:\n\n" +
+    return "🧪 Hola, quiero cotizar estos exámenes:\n\n" +
       lineas.join("\n") +
-      "\n\nTotal: " + formatColones(subtotal) + " (" + cantidad + (cantidad === 1 ? " examen" : " exámenes") + ")\n\n" +
-      "¿Me ayudan a coordinar la toma de muestra?";
+      "\n\n💰 Total: " + formatColones(subtotal) + " (" + cantidad + (cantidad === 1 ? " examen" : " exámenes") + ")\n\n" +
+      "🙌 ¿Me ayudan a coordinar la toma de muestra?";
   }
 
   function copiarConExecCommand(texto) {

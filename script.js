@@ -5,7 +5,7 @@
 
   // Build wa.me links for every WhatsApp CTA using its data-wa-msg text.
   document.querySelectorAll(".js-wa").forEach(function (el) {
-    var msg = el.getAttribute("data-wa-msg") || "Hola, quisiera más información sobre un examen de laboratorio";
+    var msg = el.getAttribute("data-wa-msg") || "👋 Hola, quisiera más información sobre un examen de laboratorio";
     el.setAttribute("href", "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg));
     el.setAttribute("target", "_blank");
     el.setAttribute("rel", "noopener");
