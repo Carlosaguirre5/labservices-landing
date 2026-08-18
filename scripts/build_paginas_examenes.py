@@ -74,12 +74,20 @@ def formatear_colones(n):
     return "₡" + con_puntos
 
 
+def construir_descripcion_html(texto):
+    """Cada '\n\n' en el campo 'descripcion' de examenes-contenido.json se
+    renderiza como un <p> aparte (para exámenes con varios párrafos, ej.
+    efectividad / preparación / tiempo de entrega)."""
+    parrafos = [p.strip() for p in texto.split("\n\n") if p.strip()]
+    return "\n".join(f"        <p>{html.escape(p)}</p>" for p in parrafos)
+
+
 def construir_json_ld(ex, contenido, url):
     data = {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": ex["descripcion"],
-        "description": contenido["descripcion"],
+        "description": contenido["descripcion"].replace("\n\n", " "),
         "url": url,
         "offers": {
             "@type": "Offer",
@@ -222,7 +230,7 @@ def main():
         pagina = pagina.replace("{{NOMBRE}}", html.escape(nombre))
         pagina = pagina.replace("{{RESUMEN}}", html.escape(contenido["resumen"]))
         pagina = pagina.replace("{{PRECIO}}", precio_fmt)
-        pagina = pagina.replace("{{DESCRIPCION_LARGA}}", html.escape(contenido["descripcion"]))
+        pagina = pagina.replace("{{DESCRIPCION_LARGA}}", construir_descripcion_html(contenido["descripcion"]))
         pagina = pagina.replace("{{ICONO_SVG}}", icono)
         pagina = pagina.replace(
             "{{WA_MSG}}",

@@ -2668,7 +2668,7 @@
       "codigo": "sexo",
       "categoria": "sangre",
       "resumen": "Determina el sexo del bebé desde una muestra de sangre.",
-      "descripcion": "Determina el sexo del bebé a partir de una muestra de sangre materna, analizando ADN fetal libre en circulación desde etapas tempranas del embarazo.",
+      "descripcion": "La prueba de sexo fetal puede realizarse a partir de la semana 10 de embarazo.\n\nLa prueba tiene una efectividad de aproximadamente 99% para determinar el sexo fetal, es decir, si es niño o niña, siempre que se realice a partir de las 10 semanas de gestación.\n\nPara este examen no se requiere ayuno.\n\nEl resultado tarda aproximadamente entre 4 y 5 días y puede enviarse de forma digital por correo electrónico y WhatsApp.",
       "relacionados": [
         "emb"
       ]
