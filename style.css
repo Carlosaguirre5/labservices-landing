@@ -219,6 +219,42 @@ button {
   flex-shrink: 0;
 }
 
+.header-precios {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 42px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  background: var(--c-gray-soft);
+  border: 1px solid var(--c-gray-light);
+  color: var(--c-black);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.header-precios:hover {
+  background: var(--c-green-light);
+  border-color: var(--c-green);
+  color: var(--c-green-dark);
+}
+
+@media (max-width: 480px) {
+  .header-precios span {
+    display: none;
+  }
+
+  .header-precios {
+    width: 42px;
+    padding: 0;
+  }
+}
+
 /* ==========================================================================
    Hero
    ========================================================================== */
