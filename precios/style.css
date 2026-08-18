@@ -287,3 +287,88 @@
     top: 84px;
   }
 }
+
+/* Utilidad para texto que solo debe leer un lector de pantalla (ej. <caption>) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Lista completa de exámenes — HTML estático (no depende de JS) para que
+   los buscadores puedan indexar cada examen y su precio individualmente. */
+
+.lista-completa {
+  padding: 0 0 56px;
+}
+
+.lista-completa-details {
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-light);
+  border-radius: var(--radius-lg);
+  padding: 4px 18px;
+  box-shadow: var(--shadow-sm);
+}
+
+.lista-completa-details summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 4px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--c-black);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lista-completa-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.lista-completa-details summary::before {
+  content: "▸";
+  color: var(--c-green-dark);
+  transition: transform 0.15s ease;
+}
+
+.lista-completa-details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.lista-completa-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.lista-completa-tabla th {
+  text-align: left;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--c-gray);
+  padding: 8px 4px;
+  border-bottom: 1.5px solid var(--c-gray-light);
+}
+
+.lista-completa-tabla td {
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--c-gray-light);
+  font-size: 0.92rem;
+}
+
+.lista-completa-tabla td:last-child {
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--c-black);
+  padding-left: 12px;
+}
