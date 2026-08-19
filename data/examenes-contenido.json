@@ -180,8 +180,8 @@
     {
       "codigo": "dr6",
       "categoria": "orina",
-      "resumen": "Tamizaje de sustancias de abuso en orina.",
-      "descripcion": "Panel de tamizaje que detecta en una sola muestra de orina el consumo reciente de varias sustancias de abuso comunes. Se usa en contextos laborales, deportivos, legales o simplemente por tranquilidad personal o familiar.",
+      "resumen": "Detecta el consumo reciente de varias sustancias en una muestra de orina.",
+      "descripcion": "Panel que detecta en una sola muestra de orina el uso reciente de varias sustancias comunes (marihuana, cocaína, entre otras). Se usa en contextos laborales, deportivos, legales o simplemente por tranquilidad personal o familiar.",
       "relacionados": [
         "1136"
       ]
@@ -773,8 +773,8 @@
     {
       "codigo": "VALP",
       "categoria": "sangre",
-      "resumen": "Mide el medicamento ácido valproico en tu sangre.",
-      "descripcion": "Mide el nivel del medicamento ácido valproico en tu sangre, usado para el tratamiento de epilepsia y trastornos del ánimo, con el fin de ajustar la dosis y evitar toxicidad.",
+      "resumen": "Mide el nivel de ácido valproico en tu sangre.",
+      "descripcion": "Mide el nivel de ácido valproico en tu sangre para dar seguimiento a un tratamiento ya indicado por tu médico, ayudando a mantenerlo dentro del rango terapéutico y evitar niveles tóxicos.",
       "relacionados": []
     },
     {
@@ -1313,8 +1313,8 @@
     {
       "codigo": "CARBA",
       "categoria": "sangre",
-      "resumen": "Mide el medicamento carbamazepina en tu sangre.",
-      "descripcion": "Mide el nivel del medicamento carbamazepina en tu sangre, usado en epilepsia y otros trastornos neurológicos, para ajustar la dosis y evitar toxicidad.",
+      "resumen": "Mide el nivel de carbamazepina en tu sangre.",
+      "descripcion": "Mide el nivel de carbamazepina en tu sangre para dar seguimiento a un tratamiento ya indicado por tu médico, ayudando a mantenerlo dentro del rango terapéutico y evitar niveles tóxicos.",
       "relacionados": []
     },
     {
@@ -1875,8 +1875,8 @@
     {
       "codigo": "Fen",
       "categoria": "sangre",
-      "resumen": "Mide el medicamento fenitoína en tu sangre.",
-      "descripcion": "Mide el nivel del medicamento fenitoína en tu sangre, usado en el tratamiento de la epilepsia, para ajustar la dosis y evitar toxicidad.",
+      "resumen": "Mide el nivel de fenitoína en tu sangre.",
+      "descripcion": "Mide el nivel de fenitoína en tu sangre para dar seguimiento a un tratamiento ya indicado por tu médico, ayudando a mantenerlo dentro del rango terapéutico y evitar niveles tóxicos.",
       "relacionados": [
         "CARBA",
         "VALP"
@@ -2198,8 +2198,8 @@
     {
       "codigo": "li",
       "categoria": "sangre",
-      "resumen": "Mide el medicamento litio en tu sangre.",
-      "descripcion": "Mide el nivel del medicamento litio en tu sangre, usado en el tratamiento del trastorno bipolar, para ajustar la dosis y evitar toxicidad.",
+      "resumen": "Mide el nivel de litio en tu sangre.",
+      "descripcion": "Mide el nivel de litio en tu sangre para dar seguimiento a un tratamiento ya indicado por tu médico, ayudando a mantenerlo dentro del rango terapéutico y evitar niveles tóxicos.",
       "relacionados": []
     },
     {
