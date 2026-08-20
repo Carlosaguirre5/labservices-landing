@@ -126,7 +126,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://labservicecr.com/examenes/celiaco/</loc>
+    <loc>https://labservicecr.com/examenes/control-celiaco-basico-trasglutaminasa-iga-anti-gliadina/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://labservicecr.com/examenes/control-celiaco-completo-trasglutaminasa-iga-anti-gliadina/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -172,11 +177,6 @@
   </url>
   <url>
     <loc>https://labservicecr.com/examenes/hierro-serico-y-capacidad-de-fijacion/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://labservicecr.com/examenes/prueba-genetica-enfermedad-celiaca-dq2-dq8/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

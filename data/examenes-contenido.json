@@ -238,14 +238,23 @@
       ]
     },
     {
-      "codigo": "CEL",
+      "codigo": "CELBAS",
       "categoria": "sangre",
-      "resumen": "Panel de anticuerpos para el estudio de la enfermedad celíaca.",
-      "descripcion": "Agrupa varios anticuerpos relacionados con la enfermedad celíaca (una reacción autoinmune al gluten) para dar un panorama completo en una sola muestra. Se recomienda ante síntomas digestivos persistentes, antecedentes familiares de la enfermedad, o antes de decidir eliminar el gluten de la dieta.",
+      "resumen": "Panel básico de anticuerpos para el estudio de la enfermedad celíaca.",
+      "descripcion": "Se recomienda este grupo de pruebas para personas con familiares diagnosticados con enfermedad celíaca o para pacientes con signos y síntomas de enfermedad celíaca como diarrea crónica, dolor abdominal, hinchazón, anemia y pérdida de peso. Incluye Trasglutaminasa IgA, Anti-gliadina IgA y Anti-endomisio IgA.",
       "relacionados": [
-        "DQ",
-        "1875",
-        "1122"
+        "CELCOM",
+        "1875"
+      ]
+    },
+    {
+      "codigo": "CELCOM",
+      "categoria": "sangre",
+      "resumen": "El paquete más completo de pruebas en sangre para el estudio de la enfermedad celíaca.",
+      "descripcion": "Se recomienda para personas con familiares diagnosticados con enfermedad celíaca o para pacientes con signos y síntomas de enfermedad celíaca como diarrea crónica, dolor abdominal, hinchazón, anemia y pérdida de peso. Incluye Trasglutaminasa IgA, Anti-gliadina IgA, Anti-endomisio IgA y un marcador genético (HLA DQ2-DQ8) fuertemente asociado a la enfermedad celíaca.",
+      "relacionados": [
+        "CELBAS",
+        "1875"
       ]
     },
     {
@@ -338,16 +347,6 @@
       "relacionados": [
         "876",
         "1122"
-      ]
-    },
-    {
-      "codigo": "DQ",
-      "categoria": "sangre",
-      "resumen": "Estudio genético que apoya el diagnóstico de celiaquía.",
-      "descripcion": "Analiza si tenés los genes HLA-DQ2 y/o DQ8, presentes en casi todas las personas con enfermedad celíaca. Un resultado negativo prácticamente descarta la enfermedad, mientras que uno positivo no la confirma por sí solo, sino que apoya el estudio junto con otros exámenes.",
-      "relacionados": [
-        "CEL",
-        "1875"
       ]
     },
     {
@@ -593,7 +592,7 @@
       "relacionados": [
         "513",
         "514",
-        "CEL"
+        "CELCOM"
       ]
     },
     {
@@ -604,7 +603,7 @@
       "relacionados": [
         "513",
         "514",
-        "CEL"
+        "CELCOM"
       ]
     },
     {
@@ -708,7 +707,7 @@
         "512",
         "515",
         "516",
-        "CEL"
+        "CELCOM"
       ]
     },
     {
@@ -720,7 +719,7 @@
         "512",
         "515",
         "516",
-        "CEL"
+        "CELCOM"
       ]
     },
     {
@@ -1323,7 +1322,7 @@
       "resumen": "Analiza tus cromosomas.",
       "descripcion": "Estudio genético que analiza el número y la estructura de tus cromosomas. Se usa en el estudio de infertilidad, pérdidas gestacionales recurrentes o sospecha de alteraciones cromosómicas.",
       "relacionados": [
-        "DQ"
+        "CELCOM"
       ]
     },
     {

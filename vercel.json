@@ -9,6 +9,26 @@
       "source": "/examenes/sexo-fetal/",
       "destination": "/examenes/baby-check-sexo-fetal/",
       "permanent": true
+    },
+    {
+      "source": "/examenes/celiaco",
+      "destination": "/examenes/control-celiaco-completo-trasglutaminasa-iga-anti-gliadina",
+      "permanent": true
+    },
+    {
+      "source": "/examenes/celiaco/",
+      "destination": "/examenes/control-celiaco-completo-trasglutaminasa-iga-anti-gliadina/",
+      "permanent": true
+    },
+    {
+      "source": "/examenes/prueba-genetica-enfermedad-celiaca-dq2-dq8",
+      "destination": "/examenes/control-celiaco-completo-trasglutaminasa-iga-anti-gliadina",
+      "permanent": true
+    },
+    {
+      "source": "/examenes/prueba-genetica-enfermedad-celiaca-dq2-dq8/",
+      "destination": "/examenes/control-celiaco-completo-trasglutaminasa-iga-anti-gliadina/",
+      "permanent": true
     }
   ]
 }

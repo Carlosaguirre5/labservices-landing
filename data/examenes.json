@@ -612,12 +612,6 @@
     "precio": 130000
   },
   {
-    "codigo": "CEL",
-    "descripcion": "CELIACO",
-    "descripcionNormalizada": "celiaco",
-    "precio": 218400
-  },
-  {
     "codigo": "LE",
     "descripcion": "CELULAS LE",
     "descripcionNormalizada": "celulas le",
@@ -712,6 +706,18 @@
     "descripcion": "COMPLEMENTO C4",
     "descripcionNormalizada": "complemento c4",
     "precio": 16500
+  },
+  {
+    "codigo": "CELBAS",
+    "descripcion": "CONTROL CELIACO BASICO (Trasglutaminasa IgA, Anti-gliadina IgA, Anti-endomisio IgA)",
+    "descripcionNormalizada": "control celiaco basico (trasglutaminasa iga, anti-gliadina iga, anti-endomisio iga)",
+    "precio": 78000
+  },
+  {
+    "codigo": "CELCOM",
+    "descripcion": "CONTROL CELIACO COMPLETO (Trasglutaminasa IgA, Anti-gliadina IgA, Anti-endomisio IgA, HLA DQ2/DQ8)",
+    "descripcionNormalizada": "control celiaco completo (trasglutaminasa iga, anti-gliadina iga, anti-endomisio iga, hla dq2/dq8)",
+    "precio": 158000
   },
   {
     "codigo": "FEMEMINO",
@@ -1504,12 +1510,6 @@
     "descripcion": "PROTEINURIA 24H",
     "descripcionNormalizada": "proteinuria 24h",
     "precio": 11000
-  },
-  {
-    "codigo": "DQ",
-    "descripcion": "PRUEBA GENETICA ENFERMEDAD CELIACA DQ2 / DQ8",
-    "descripcionNormalizada": "prueba genetica enfermedad celiaca dq2 / dq8",
-    "precio": 80000
   },
   {
     "codigo": "PSAMov",
