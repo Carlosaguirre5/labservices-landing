@@ -3,1788 +3,2086 @@
     "codigo": "17-OHPR",
     "descripcion": "17-OH ALFA PROGESTERONA",
     "descripcionNormalizada": "17-oh alfa progesterona",
-    "precio": 23000
+    "precio": 23000,
+    "slug": "17-oh-alfa-progesterona"
   },
   {
     "codigo": "608",
     "descripcion": "AC ANTI CORE IgG",
     "descripcionNormalizada": "ac anti core igg",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "ac-anti-core-igg"
   },
   {
     "codigo": "617",
     "descripcion": "AC ANTI EPSTEIN BARR IgM",
     "descripcionNormalizada": "ac anti epstein barr igm",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "ac-anti-epstein-barr-igm"
   },
   {
     "codigo": "610",
     "descripcion": "AC ANTI HEPATITIS A IgM",
     "descripcionNormalizada": "ac anti hepatitis a igm",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-hepatitis-a-igm"
   },
   {
     "codigo": "613",
     "descripcion": "AC ANTI HEPATITIS C",
     "descripcionNormalizada": "ac anti hepatitis c",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-hepatitis-c"
   },
   {
     "codigo": "MUSC LISO LKM1",
     "descripcion": "AC ANTI MUSCULO LISO - LKM1",
     "descripcionNormalizada": "ac anti musculo liso - lkm1",
-    "precio": 19000
+    "precio": 19000,
+    "slug": "ac-anti-musculo-liso-lkm1"
   },
   {
     "codigo": "511",
     "descripcion": "AC ANTI-CARDIOLIPINA IgG",
     "descripcionNormalizada": "ac anti-cardiolipina igg",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "ac-anti-cardiolipina-igg"
   },
   {
     "codigo": "510",
     "descripcion": "AC ANTI-CARDIOLIPINA IgM",
     "descripcionNormalizada": "ac anti-cardiolipina igm",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "ac-anti-cardiolipina-igm"
   },
   {
     "codigo": "628",
     "descripcion": "AC ANTI-CHLAMYDIA IgG",
     "descripcionNormalizada": "ac anti-chlamydia igg",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-chlamydia-igg"
   },
   {
     "codigo": "627",
     "descripcion": "AC ANTI-CHLAMYDIA IgM",
     "descripcionNormalizada": "ac anti-chlamydia igm",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-chlamydia-igm"
   },
   {
     "codigo": "622",
     "descripcion": "AC ANTI-CITOMEGALOVIRUS IgG",
     "descripcionNormalizada": "ac anti-citomegalovirus igg",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "ac-anti-citomegalovirus-igg"
   },
   {
     "codigo": "621",
     "descripcion": "AC ANTI-CITOMEGALOVIRUS IgM",
     "descripcionNormalizada": "ac anti-citomegalovirus igm",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "ac-anti-citomegalovirus-igm"
   },
   {
     "codigo": "609",
     "descripcion": "AC ANTI-CORE TOTAL",
     "descripcionNormalizada": "ac anti-core total",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "ac-anti-core-total"
   },
   {
     "codigo": "512",
     "descripcion": "AC ANTI-ENDOMISIALES",
     "descripcionNormalizada": "ac anti-endomisiales",
-    "precio": 52000
+    "precio": 52000,
+    "slug": "ac-anti-endomisiales"
   },
   {
     "codigo": "618",
     "descripcion": "AC ANTI-EPSTEIN BARR IgG",
     "descripcionNormalizada": "ac anti-epstein barr igg",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "ac-anti-epstein-barr-igg"
   },
   {
     "codigo": "515",
     "descripcion": "AC ANTI-GLIADINA IgA",
     "descripcionNormalizada": "ac anti-gliadina iga",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "ac-anti-gliadina-iga"
   },
   {
     "codigo": "516",
     "descripcion": "AC ANTI-GLIADINA IgG",
     "descripcionNormalizada": "ac anti-gliadina igg",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "ac-anti-gliadina-igg"
   },
   {
     "codigo": "606",
     "descripcion": "AC ANTI-HBE",
     "descripcionNormalizada": "ac anti-hbe",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "ac-anti-hbe"
   },
   {
     "codigo": "624",
     "descripcion": "AC ANTI-HERPES SIMPLE I IgG",
     "descripcionNormalizada": "ac anti-herpes simple i igg",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-herpes-simple-i-igg"
   },
   {
     "codigo": "623",
     "descripcion": "AC ANTI-HERPES SIMPLE I IgM",
     "descripcionNormalizada": "ac anti-herpes simple i igm",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-herpes-simple-i-igm"
   },
   {
     "codigo": "626",
     "descripcion": "AC ANTI-HERPES SIMPLE II IgG",
     "descripcionNormalizada": "ac anti-herpes simple ii igg",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-herpes-simple-ii-igg"
   },
   {
     "codigo": "625",
     "descripcion": "AC ANTI-HERPES SIMPLE II IgM",
     "descripcionNormalizada": "ac anti-herpes simple ii igm",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-herpes-simple-ii-igm"
   },
   {
     "codigo": "PCC",
     "descripcion": "AC ANTI-PEPTIDO CICLICO CITRULINADO",
     "descripcionNormalizada": "ac anti-peptido ciclico citrulinado",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "ac-anti-peptido-ciclico-citrulinado"
   },
   {
     "codigo": "620",
     "descripcion": "AC ANTI-RUBEOLA IgG",
     "descripcionNormalizada": "ac anti-rubeola igg",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-rubeola-igg"
   },
   {
     "codigo": "619",
     "descripcion": "AC ANTI-RUBEOLA IgM",
     "descripcionNormalizada": "ac anti-rubeola igm",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-rubeola-igm"
   },
   {
     "codigo": "615",
     "descripcion": "AC ANTI-TOXOPLASMA IgG",
     "descripcionNormalizada": "ac anti-toxoplasma igg",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "ac-anti-toxoplasma-igg"
   },
   {
     "codigo": "614",
     "descripcion": "AC ANTI-TOXOPLASMA IgM",
     "descripcionNormalizada": "ac anti-toxoplasma igm",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "ac-anti-toxoplasma-igm"
   },
   {
     "codigo": "513",
     "descripcion": "AC ANTI-TRASGLUTAMINASA IgA",
     "descripcionNormalizada": "ac anti-trasglutaminasa iga",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "ac-anti-trasglutaminasa-iga"
   },
   {
     "codigo": "514",
     "descripcion": "AC ANTI-TRASGLUTAMINASA IgG",
     "descripcionNormalizada": "ac anti-trasglutaminasa igg",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "ac-anti-trasglutaminasa-igg"
   },
   {
     "codigo": "607",
     "descripcion": "AC. ANTI CORE IgM",
     "descripcionNormalizada": "ac. anti core igm",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "ac-anti-core-igm"
   },
   {
     "codigo": "604",
     "descripcion": "AC. ANTI HBSAG",
     "descripcionNormalizada": "ac. anti hbsag",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ac-anti-hbsag"
   },
   {
     "codigo": "503",
     "descripcion": "AC. ANTI-DNA DS",
     "descripcionNormalizada": "ac. anti-dna ds",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "ac-anti-dna-ds"
   },
   {
     "codigo": "505",
     "descripcion": "AC. ANTI-ENAS",
     "descripcionNormalizada": "ac. anti-enas",
-    "precio": 50000
+    "precio": 50000,
+    "slug": "ac-anti-enas"
   },
   {
     "codigo": "601",
     "descripcion": "AC. ANTI-HIV",
     "descripcionNormalizada": "ac. anti-hiv",
-    "precio": 17000
+    "precio": 17000,
+    "slug": "ac-anti-hiv"
   },
   {
     "codigo": "FOL",
     "descripcion": "ACIDO FOLICO",
     "descripcionNormalizada": "acido folico",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "acido-folico"
   },
   {
     "codigo": "905",
     "descripcion": "ACIDO URICO",
     "descripcionNormalizada": "acido urico",
-    "precio": 7000
+    "precio": 7000,
+    "slug": "acido-urico"
   },
   {
     "codigo": "AU OR",
     "descripcion": "ACIDO URICO ORINA 24H",
     "descripcionNormalizada": "acido urico orina 24h",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "acido-urico-orina-24h"
   },
   {
     "codigo": "VALP",
     "descripcion": "ACIDO VALPROICO",
     "descripcionNormalizada": "acido valproico",
-    "precio": 16000
+    "precio": 16000,
+    "slug": "acido-valproico"
   },
   {
     "codigo": "van",
     "descripcion": "ACIDO VANDIL MANDELICO",
     "descripcionNormalizada": "acido vandil mandelico",
-    "precio": 60000
+    "precio": 60000,
+    "slug": "acido-vandil-mandelico"
   },
   {
     "codigo": "ACLA",
     "descripcion": "ACLARAMIENTO ENDOGENO DE CREATININA",
     "descripcionNormalizada": "aclaramiento endogeno de creatinina",
-    "precio": 16000
+    "precio": 16000,
+    "slug": "aclaramiento-endogeno-de-creatinina"
   },
   {
     "codigo": "ACTH",
     "descripcion": "ACTH",
     "descripcionNormalizada": "acth",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "acth"
   },
   {
     "codigo": "ADULTO 2",
     "descripcion": "ADULTO <40 AÑOS COMPLETO",
     "descripcionNormalizada": "adulto <40 anos completo",
-    "precio": 77000
+    "precio": 77000,
+    "slug": "adulto-menos-de-40-anos-completo"
   },
   {
     "codigo": "ADULTO 3",
     "descripcion": "ADULTO > 40 AÑOS",
     "descripcionNormalizada": "adulto > 40 anos",
-    "precio": 62000
+    "precio": 62000,
+    "slug": "adulto-mas-de-40-anos"
   },
   {
     "codigo": "ADULTO 4",
     "descripcion": "ADULTO >40 AÑOS COMPLETO",
     "descripcionNormalizada": "adulto >40 anos completo",
-    "precio": 122000
+    "precio": 122000,
+    "slug": "adulto-mas-de-40-anos-completo"
   },
   {
     "codigo": "ADULTO 1",
     "descripcion": "ADULTOS <40 AÑOS",
     "descripcionNormalizada": "adultos <40 anos",
-    "precio": 48000
+    "precio": 48000,
+    "slug": "adultos-menos-de-40-anos"
   },
   {
     "codigo": "ALD",
     "descripcion": "ALDOSTERONA",
     "descripcionNormalizada": "aldosterona",
-    "precio": 29000
+    "precio": 29000,
+    "slug": "aldosterona"
   },
   {
     "codigo": "ALERG",
     "descripcion": "ALERGENOS INDIVIDUALES",
     "descripcionNormalizada": "alergenos individuales",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "alergenos-individuales"
   },
   {
     "codigo": "alim",
     "descripcion": "ALERGOCHECK ALIMENTOS",
     "descripcionNormalizada": "alergocheck alimentos",
-    "precio": 98800
+    "precio": 98800,
+    "slug": "alergocheck-alimentos"
   },
   {
     "codigo": "CARNE",
     "descripcion": "ALERGOCHECK MARISCOS",
     "descripcionNormalizada": "alergocheck mariscos",
-    "precio": 45000
+    "precio": 45000,
+    "slug": "alergocheck-mariscos"
   },
   {
     "codigo": "AFP",
     "descripcion": "ALFA FETO PROTEINA",
     "descripcionNormalizada": "alfa feto proteina",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "alfa-feto-proteina"
   },
   {
     "codigo": "906",
     "descripcion": "AMILASA SERICA",
     "descripcionNormalizada": "amilasa serica",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "amilasa-serica"
   },
   {
     "codigo": "AMON",
     "descripcion": "AMONIO",
     "descripcionNormalizada": "amonio",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "amonio"
   },
   {
     "codigo": "507",
     "descripcion": "ANCA P",
     "descripcionNormalizada": "anca p",
-    "precio": 19000
+    "precio": 19000,
+    "slug": "anca-p"
   },
   {
     "codigo": "506",
     "descripcion": "ANCA-C",
     "descripcionNormalizada": "anca-c",
-    "precio": 19000
+    "precio": 19000,
+    "slug": "anca-c"
   },
   {
     "codigo": "andros",
     "descripcion": "ANDROSTENEDIONA",
     "descripcionNormalizada": "androstenediona",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "androstenediona"
   },
   {
     "codigo": "37",
     "descripcion": "ANTI-MICROSOMAS (ANTI-TPO)",
     "descripcionNormalizada": "anti-microsomas (anti-tpo)",
-    "precio": 18000
+    "precio": 18000,
+    "slug": "anti-microsomas-anti-tpo"
   },
   {
     "codigo": "RO",
     "descripcion": "ANTI-RO",
     "descripcionNormalizada": "anti-ro",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "anti-ro"
   },
   {
     "codigo": "36",
     "descripcion": "ANTI-TIROGLOBULINA",
     "descripcionNormalizada": "anti-tiroglobulina",
-    "precio": 18500
+    "precio": 18500,
+    "slug": "anti-tiroglobulina"
   },
   {
     "codigo": "lup",
     "descripcion": "ANTICOAGULANTE LUPICO",
     "descripcionNormalizada": "anticoagulante lupico",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "anticoagulante-lupico"
   },
   {
     "codigo": "502",
     "descripcion": "ANTICUERPOS ANTINUCLEARES",
     "descripcionNormalizada": "anticuerpos antinucleares",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "anticuerpos-antinucleares"
   },
   {
     "codigo": "fta",
     "descripcion": "ANTICUERPOS ANTITREPONEMICOS (FTA)",
     "descripcionNormalizada": "anticuerpos antitreponemicos (fta)",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "anticuerpos-antitreponemicos-fta"
   },
   {
     "codigo": "ASO",
     "descripcion": "ANTIESTREPTOLISINA",
     "descripcionNormalizada": "antiestreptolisina",
-    "precio": 10500
+    "precio": 10500,
+    "slug": "antiestreptolisina"
   },
   {
     "codigo": "cea",
     "descripcion": "ANTIGENO CARCINOEMBRIONICO (CEA)",
     "descripcionNormalizada": "antigeno carcinoembrionico (cea)",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "antigeno-carcinoembrionico-cea"
   },
   {
     "codigo": "603",
     "descripcion": "ANTIGENO HEPATITIS B (HbSAg)",
     "descripcionNormalizada": "antigeno hepatitis b (hbsag)",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "antigeno-hepatitis-b-hbsag"
   },
   {
     "codigo": "605",
     "descripcion": "ANTIGENO HbEAg",
     "descripcionNormalizada": "antigeno hbeag",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "antigeno-hbeag"
   },
   {
     "codigo": "psa",
     "descripcion": "ANTIGENO PROSTATICO",
     "descripcionNormalizada": "antigeno prostatico",
-    "precio": 17000
+    "precio": 17000,
+    "slug": "antigeno-prostatico"
   },
   {
     "codigo": "5",
     "descripcion": "ANTIGENO PROSTATICO LIBRE",
     "descripcionNormalizada": "antigeno prostatico libre",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "antigeno-prostatico-libre"
   },
   {
     "codigo": "6",
     "descripcion": "ANTIGENO PROSTÁTICO TOTAL + LIBRE",
     "descripcionNormalizada": "antigeno prostatico total + libre",
-    "precio": 36000
+    "precio": 36000,
+    "slug": "antigeno-prostatico-total-libre"
   },
   {
     "codigo": "ANTIGENO",
     "descripcion": "ANTIGENOS COVID",
     "descripcionNormalizada": "antigenos covid",
-    "precio": 28000
+    "precio": 28000,
+    "slug": "antigenos-covid"
   },
   {
     "codigo": "AG",
     "descripcion": "ANTIGENOS COVID PARA VIAJAR",
     "descripcionNormalizada": "antigenos covid para viajar",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "antigenos-covid-para-viajar"
   },
   {
     "codigo": "AN",
     "descripcion": "ANÁLISIS DE LABORATORIO",
     "descripcionNormalizada": "analisis de laboratorio",
-    "precio": 10400
+    "precio": 10400,
+    "slug": "analisis-de-laboratorio"
   },
   {
     "codigo": "apo a1",
     "descripcion": "APOLIPOPROTEÍNA A1",
     "descripcionNormalizada": "apolipoproteina a1",
-    "precio": 30000
+    "precio": 30000,
+    "slug": "apolipoproteina-a1"
   },
   {
     "codigo": "APOB",
     "descripcion": "APOLIPOPROTEÍNA B",
     "descripcionNormalizada": "apolipoproteina b",
-    "precio": 30000
+    "precio": 30000,
+    "slug": "apolipoproteina-b"
   },
   {
     "codigo": "83",
     "descripcion": "AZUCARES REDUCTORES Y NO REDUCTORES",
     "descripcionNormalizada": "azucares reductores y no reductores",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "azucares-reductores-y-no-reductores"
   },
   {
     "codigo": "Metil",
     "descripcion": "Acido Metilmalónico",
     "descripcionNormalizada": "acido metilmalonico",
-    "precio": 150000
+    "precio": 150000,
+    "slug": "acido-metilmalonico"
   },
   {
     "codigo": "Febril",
     "descripcion": "Aglutinaciones febriles",
     "descripcionNormalizada": "aglutinaciones febriles",
-    "precio": 12000
+    "precio": 12000,
+    "slug": "aglutinaciones-febriles"
   },
   {
     "codigo": "Albu",
     "descripcion": "Albumina Serica",
     "descripcionNormalizada": "albumina serica",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "albumina-serica"
   },
   {
     "codigo": "IgE alergeno",
     "descripcion": "Alergeno (IgE)",
     "descripcionNormalizada": "alergeno (ige)",
-    "precio": 5000
+    "precio": 5000,
+    "slug": "alergeno-ige"
   },
   {
     "codigo": "Jo-1",
     "descripcion": "Anti Jo-1",
     "descripcionNormalizada": "anti jo-1",
-    "precio": 23500
+    "precio": 23500,
+    "slug": "anti-jo-1"
   },
   {
     "codigo": "Mi-2",
     "descripcion": "Anti Mi-2",
     "descripcionNormalizada": "anti mi-2",
-    "precio": 93600
+    "precio": 93600,
+    "slug": "anti-mi-2"
   },
   {
     "codigo": "Anti Mitocondrias",
     "descripcion": "Anti Mitocondrias",
     "descripcionNormalizada": "anti mitocondrias",
-    "precio": 23000
+    "precio": 23000,
+    "slug": "anti-mitocondrias"
   },
   {
     "codigo": "Scl-70",
     "descripcion": "Anti Scl-70",
     "descripcionNormalizada": "anti scl-70",
-    "precio": 24500
+    "precio": 24500,
+    "slug": "anti-scl-70"
   },
   {
     "codigo": "Nucleo",
     "descripcion": "Anti-Nucleosomas",
     "descripcionNormalizada": "anti-nucleosomas",
-    "precio": 106400
+    "precio": 106400,
+    "slug": "anti-nucleosomas"
   },
   {
     "codigo": "centromero",
     "descripcion": "Anticuerpos Anti-Centromero",
     "descripcionNormalizada": "anticuerpos anti-centromero",
-    "precio": 21650
+    "precio": 21650,
+    "slug": "anticuerpos-anti-centromero"
   },
   {
     "codigo": "PSA ZF",
     "descripcion": "Antígeno Prostático (Zona Franca)",
     "descripcionNormalizada": "antigeno prostatico (zona franca)",
-    "precio": 11900
+    "precio": 11900,
+    "slug": "antigeno-prostatico-zona-franca"
   },
   {
     "codigo": "sexo",
     "descripcion": "BABY CHECK (SEXO FETAL)",
     "descripcionNormalizada": "baby check (sexo fetal)",
-    "precio": 55000
+    "precio": 55000,
+    "slug": "baby-check-sexo-fetal"
   },
   {
     "codigo": "B OSEO",
     "descripcion": "BALANCE OSEO",
     "descripcionNormalizada": "balance oseo",
-    "precio": 65000
+    "precio": 65000,
+    "slug": "balance-oseo"
   },
   {
     "codigo": "BETA2",
     "descripcion": "BETA 2 GLICOPROTEINA",
     "descripcionNormalizada": "beta 2 glicoproteina",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "beta-2-glicoproteina"
   },
   {
     "codigo": "74",
     "descripcion": "BILIRRUBINA TOTALES Y FRACCIONADAS",
     "descripcionNormalizada": "bilirrubina totales y fraccionadas",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "bilirrubina-totales-y-fraccionadas"
   },
   {
     "codigo": "BNP",
     "descripcion": "BNP/PEPTIDO NATRIURETICO B",
     "descripcionNormalizada": "bnp/peptido natriuretico b",
-    "precio": 30000
+    "precio": 30000,
+    "slug": "bnp-peptido-natriuretico-b"
   },
   {
     "codigo": "BAS",
     "descripcion": "BÁSICO (hemograma, perfil de lípidos, glucosa, ego)",
     "descripcionNormalizada": "basico (hemograma, perfil de lipidos, glucosa, ego)",
-    "precio": 40000
+    "precio": 40000,
+    "slug": "basico-hemograma-perfil-de-lipidos-glucosa-ego"
   },
   {
     "codigo": "CA15-3",
     "descripcion": "CA 15-3",
     "descripcionNormalizada": "ca 15-3",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ca-15-3"
   },
   {
     "codigo": "CA19-9",
     "descripcion": "CA 19- 9",
     "descripcionNormalizada": "ca 19- 9",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ca-19-9"
   },
   {
     "codigo": "ca 72-4",
     "descripcion": "CA 72-4 (COLONRECTAL, OVARIO, ESTOMAGO)",
     "descripcionNormalizada": "ca 72-4 (colonrectal, ovario, estomago)",
-    "precio": 36000
+    "precio": 36000,
+    "slug": "ca-72-4-colonrectal-ovario-estomago"
   },
   {
     "codigo": "ca-125",
     "descripcion": "CA-125",
     "descripcionNormalizada": "ca-125",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ca-125"
   },
   {
     "codigo": "62",
     "descripcion": "CALCIO (SUERO)",
     "descripcionNormalizada": "calcio (suero)",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "calcio-suero"
   },
   {
     "codigo": "CAL OR",
     "descripcion": "CALCIO ORINA 24H",
     "descripcionNormalizada": "calcio orina 24h",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "calcio-orina-24h"
   },
   {
     "codigo": "cal",
     "descripcion": "CALCITONINA",
     "descripcionNormalizada": "calcitonina",
-    "precio": 60000
+    "precio": 60000,
+    "slug": "calcitonina"
   },
   {
     "codigo": "calculo",
     "descripcion": "CALCULOS RENALES O BILIARES",
     "descripcionNormalizada": "calculos renales o biliares",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "calculos-renales-o-biliares"
   },
   {
     "codigo": "CALP",
     "descripcion": "CALPROTECTINA",
     "descripcionNormalizada": "calprotectina",
-    "precio": 35000
+    "precio": 35000,
+    "slug": "calprotectina"
   },
   {
     "codigo": "CARBA",
     "descripcion": "CARBAMAZEPINA (TEGRETOL)",
     "descripcionNormalizada": "carbamazepina (tegretol)",
-    "precio": 15500
+    "precio": 15500,
+    "slug": "carbamazepina-tegretol"
   },
   {
     "codigo": "car",
     "descripcion": "CARIOTIPO",
     "descripcionNormalizada": "cariotipo",
-    "precio": 130000
+    "precio": 130000,
+    "slug": "cariotipo"
   },
   {
     "codigo": "LE",
     "descripcion": "CELULAS LE",
     "descripcionNormalizada": "celulas le",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "celulas-le"
   },
   {
     "codigo": "CER",
     "descripcion": "CERULOPLASMINA",
     "descripcionNormalizada": "ceruloplasmina",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "ceruloplasmina"
   },
   {
     "codigo": "POLI",
     "descripcion": "CHEQUEO FUERZA PUBLICA",
     "descripcionNormalizada": "chequeo fuerza publica",
-    "precio": 43680
+    "precio": 43680,
+    "slug": "chequeo-fuerza-publica"
   },
   {
     "codigo": "401",
     "descripcion": "CK TOTAL",
     "descripcionNormalizada": "ck total",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "ck-total"
   },
   {
     "codigo": "402",
     "descripcion": "CK-MB",
     "descripcionNormalizada": "ck-mb",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "ck-mb"
   },
   {
     "codigo": "312",
     "descripcion": "CLORUROS (SUERO)",
     "descripcionNormalizada": "cloruros (suero)",
-    "precio": 9500
+    "precio": 9500,
+    "slug": "cloruros-suero"
   },
   {
     "codigo": "CLOST",
     "descripcion": "CLOSTRIDUIM TOXINA",
     "descripcionNormalizada": "clostriduim toxina",
-    "precio": 35000
+    "precio": 35000,
+    "slug": "clostriduim-toxina"
   },
   {
     "codigo": "COBRE",
     "descripcion": "COBRE",
     "descripcionNormalizada": "cobre",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "cobre"
   },
   {
     "codigo": "COC CUAL",
     "descripcion": "COCAINA CUALITATIVA",
     "descripcionNormalizada": "cocaina cualitativa",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "cocaina-cualitativa"
   },
   {
     "codigo": "COC CUANT",
     "descripcion": "COCAINA CUANTITATIVA",
     "descripcionNormalizada": "cocaina cuantitativa",
-    "precio": 18000
+    "precio": 18000,
+    "slug": "cocaina-cuantitativa"
   },
   {
     "codigo": "306",
     "descripcion": "COLESTEROL TOTAL",
     "descripcionNormalizada": "colesterol total",
-    "precio": 7000
+    "precio": 7000,
+    "slug": "colesterol-total"
   },
   {
     "codigo": "COLICO",
     "descripcion": "COLICO LACTANTE",
     "descripcionNormalizada": "colico lactante",
-    "precio": 63960
+    "precio": 63960,
+    "slug": "colico-lactante"
   },
   {
     "codigo": "319",
     "descripcion": "COLINESTERASA ERITROCITICA",
     "descripcionNormalizada": "colinesterasa eritrocitica",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "colinesterasa-eritrocitica"
   },
   {
     "codigo": "318",
     "descripcion": "COLINESTERASA SERICA",
     "descripcionNormalizada": "colinesterasa serica",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "colinesterasa-serica"
   },
   {
     "codigo": "508",
     "descripcion": "COMPLEMENTO C3",
     "descripcionNormalizada": "complemento c3",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "complemento-c3"
   },
   {
     "codigo": "509",
     "descripcion": "COMPLEMENTO C4",
     "descripcionNormalizada": "complemento c4",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "complemento-c4"
   },
   {
     "codigo": "CELBAS",
     "descripcion": "CONTROL CELIACO BASICO (Trasglutaminasa IgA, Anti-gliadina IgA, Anti-endomisio IgA)",
     "descripcionNormalizada": "control celiaco basico (trasglutaminasa iga, anti-gliadina iga, anti-endomisio iga)",
-    "precio": 78000
+    "precio": 78000,
+    "slug": "control-celiaco-basico-trasglutaminasa-iga-anti-gliadina"
   },
   {
     "codigo": "CELCOM",
     "descripcion": "CONTROL CELIACO COMPLETO (Trasglutaminasa IgA, Anti-gliadina IgA, Anti-endomisio IgA, HLA DQ2/DQ8)",
     "descripcionNormalizada": "control celiaco completo (trasglutaminasa iga, anti-gliadina iga, anti-endomisio iga, hla dq2/dq8)",
-    "precio": 158000
+    "precio": 158000,
+    "slug": "control-celiaco-completo-trasglutaminasa-iga-anti-gliadina"
   },
   {
     "codigo": "FEMEMINO",
     "descripcion": "CONTROL FEMENINO 40+ (Hemograma, Perfil de lipidos, Glucosa, CA-125, Vitamina D, TSH, Examen general de orina de cortesía)",
     "descripcionNormalizada": "control femenino 40+ (hemograma, perfil de lipidos, glucosa, ca-125, vitamina d, tsh, examen general de orina de cortesia)",
-    "precio": 109000
+    "precio": 109000,
+    "slug": "control-femenino-40-hemograma-perfil-de-lipidos-glucosa-ca"
   },
   {
     "codigo": "MASC",
     "descripcion": "CONTROL MASCULINO 40+ (Hemograma, Perfil de lípidos, Glucosa, Antígeno prostático (PSA), Función renal, Examen general de orina de cortesía).",
     "descripcionNormalizada": "control masculino 40+ (hemograma, perfil de lipidos, glucosa, antigeno prostatico (psa), funcion renal, examen general de orina de cortesia).",
-    "precio": 71000
+    "precio": 71000,
+    "slug": "control-masculino-40-hemograma-perfil-de-lipidos-glucosa"
   },
   {
     "codigo": "CD",
     "descripcion": "COOMBS DIRECTO",
     "descripcionNormalizada": "coombs directo",
-    "precio": 12000
+    "precio": 12000,
+    "slug": "coombs-directo"
   },
   {
     "codigo": "CI",
     "descripcion": "COOMBS INDIRECTO",
     "descripcionNormalizada": "coombs indirecto",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "coombs-indirecto"
   },
   {
     "codigo": "copro",
     "descripcion": "COPROCULTIVO",
     "descripcionNormalizada": "coprocultivo",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "coprocultivo"
   },
   {
     "codigo": "CORT",
     "descripcion": "CORTISOL",
     "descripcionNormalizada": "cortisol",
-    "precio": 18000
+    "precio": 18000,
+    "slug": "cortisol"
   },
   {
     "codigo": "58",
     "descripcion": "CREATININA",
     "descripcionNormalizada": "creatinina",
-    "precio": 7000
+    "precio": 7000,
+    "slug": "creatinina"
   },
   {
     "codigo": "CTX",
     "descripcion": "CTX telopéptidos",
     "descripcionNormalizada": "ctx telopeptidos",
-    "precio": 35000
+    "precio": 35000,
+    "slug": "ctx-telopeptidos"
   },
   {
     "codigo": "cfs",
     "descripcion": "CULTIVO FOSAS NASALES",
     "descripcionNormalizada": "cultivo fosas nasales",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "cultivo-fosas-nasales"
   },
   {
     "codigo": "CTG 75",
     "descripcion": "CURVA TOLERANCIA GLUCOSA 75G",
     "descripcionNormalizada": "curva tolerancia glucosa 75g",
-    "precio": 25001
+    "precio": 25001,
+    "slug": "curva-tolerancia-glucosa-75g"
   },
   {
     "codigo": "Campy",
     "descripcion": "Campylobacter en heces",
     "descripcionNormalizada": "campylobacter en heces",
-    "precio": 18200
+    "precio": 18200,
+    "slug": "campylobacter-en-heces"
   },
   {
     "codigo": "Coag",
     "descripcion": "Coagulación (TP, TTP)",
     "descripcionNormalizada": "coagulacion (tp, ttp)",
-    "precio": 23000
+    "precio": 23000,
+    "slug": "coagulacion-tp-ttp"
   },
   {
     "codigo": "Cobre Orina",
     "descripcion": "Cobre en orina",
     "descripcionNormalizada": "cobre en orina",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "cobre-en-orina"
   },
   {
     "codigo": "DEPORT",
     "descripcion": "Control Deportista (Hemograma, Perfil de lípidos, Glucosa, Perfil renal, Electrolitos (Na, K, Cl), CPK, Examen general de orina de cortesía)",
     "descripcionNormalizada": "control deportista (hemograma, perfil de lipidos, glucosa, perfil renal, electrolitos (na, k, cl), cpk, examen general de orina de cortesia)",
-    "precio": 92000
+    "precio": 92000,
+    "slug": "control-deportista-hemograma-perfil-de-lipidos-glucosa"
   },
   {
     "codigo": "COMP",
     "descripcion": "Control Salud Completo( Hemograma, Perfil de lipidos, Glucosa, Perfil renal, Perfil hepatico, Acido urico, Examen de general orina y heces de cortesía)",
     "descripcionNormalizada": "control salud completo( hemograma, perfil de lipidos, glucosa, perfil renal, perfil hepatico, acido urico, examen de general orina y heces de cortesia)",
-    "precio": 109000
+    "precio": 109000,
+    "slug": "control-salud-completo-hemograma-perfil-de-lipidos-glucosa"
   },
   {
     "codigo": "DEP",
     "descripcion": "DEPORTISTA",
     "descripcionNormalizada": "deportista",
-    "precio": 77500
+    "precio": 77500,
+    "slug": "deportista"
   },
   {
     "codigo": "404",
     "descripcion": "DESHIDROGENASA LACTICA (SUERO)",
     "descripcionNormalizada": "deshidrogenasa lactica (suero)",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "deshidrogenasa-lactica-suero"
   },
   {
     "codigo": "629",
     "descripcion": "DETECCION MOLECULAR DE ETS (9 AGENTES)",
     "descripcionNormalizada": "deteccion molecular de ets (9 agentes)",
-    "precio": 75500
+    "precio": 75500,
+    "slug": "deteccion-molecular-de-ets-9-agentes"
   },
   {
     "codigo": "630",
     "descripcion": "DETECCION MOLECULAR DE PAPILOMA HUMANO",
     "descripcionNormalizada": "deteccion molecular de papiloma humano",
-    "precio": 62500
+    "precio": 62500,
+    "slug": "deteccion-molecular-de-papiloma-humano"
   },
   {
     "codigo": "DHEAS",
     "descripcion": "DHEAS-SO4",
     "descripcionNormalizada": "dheas-so4",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "dheas-so4"
   },
   {
     "codigo": "DIM",
     "descripcion": "DIMERO D",
     "descripcionNormalizada": "dimero d",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "dimero-d"
   },
   {
     "codigo": "DHT total",
     "descripcion": "Dihidrotestosterona",
     "descripcionNormalizada": "dihidrotestosterona",
-    "precio": 143000
+    "precio": 143000,
+    "slug": "dihidrotestosterona"
   },
   {
     "codigo": "DHT libre",
     "descripcion": "Dihidrotestosterona libre",
     "descripcionNormalizada": "dihidrotestosterona libre",
-    "precio": 200100
+    "precio": 200100,
+    "slug": "dihidrotestosterona-libre"
   },
   {
     "codigo": "317",
     "descripcion": "ELECTROLITOS (SODIO, POTASIO, CLORUROS) SUERO",
     "descripcionNormalizada": "electrolitos (sodio, potasio, cloruros) suero",
-    "precio": 27000
+    "precio": 27000,
+    "slug": "electrolitos-sodio-potasio-cloruros-suero"
   },
   {
     "codigo": "eos",
     "descripcion": "EOSINOFILOS",
     "descripcionNormalizada": "eosinofilos",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "eosinofilos"
   },
   {
     "codigo": "esper",
     "descripcion": "ESPERMOGRAMA",
     "descripcionNormalizada": "espermograma",
-    "precio": 19000
+    "precio": 19000,
+    "slug": "espermograma"
   },
   {
     "codigo": "703",
     "descripcion": "ESTRADIOL",
     "descripcionNormalizada": "estradiol",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "estradiol"
   },
   {
     "codigo": "ETS COMP",
     "descripcion": "ETS COMPLETO",
     "descripcionNormalizada": "ets completo",
-    "precio": 89500
+    "precio": 89500,
+    "slug": "ets-completo"
   },
   {
     "codigo": "1136",
     "descripcion": "EXAMEN DE ORINA GENERAL",
     "descripcionNormalizada": "examen de orina general",
-    "precio": 8000
+    "precio": 8000,
+    "slug": "examen-de-orina-general"
   },
   {
     "codigo": "1875",
     "descripcion": "EXAMEN GENERAL DE HECES",
     "descripcionNormalizada": "examen general de heces",
-    "precio": 8000
+    "precio": 8000,
+    "slug": "examen-general-de-heces"
   },
   {
     "codigo": "Electro",
     "descripcion": "Electroforesis de Proteínas",
     "descripcionNormalizada": "electroforesis de proteinas",
-    "precio": 30000
+    "precio": 30000,
+    "slug": "electroforesis-de-proteinas"
   },
   {
     "codigo": "Electro hemo",
     "descripcion": "Electroforesis de hemoglobina",
     "descripcionNormalizada": "electroforesis de hemoglobina",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "electroforesis-de-hemoglobina"
   },
   {
     "codigo": "Trombo",
     "descripcion": "Estudio trombofilias",
     "descripcionNormalizada": "estudio trombofilias",
-    "precio": 282000
+    "precio": 282000,
+    "slug": "estudio-trombofilias"
   },
   {
     "codigo": "Eta",
     "descripcion": "Etanol",
     "descripcionNormalizada": "etanol",
-    "precio": 17000
+    "precio": 17000,
+    "slug": "etanol"
   },
   {
     "codigo": "501",
     "descripcion": "FACTOR REUMATICO",
     "descripcionNormalizada": "factor reumatico",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "factor-reumatico"
   },
   {
     "codigo": "876",
     "descripcion": "FERRITINA (SUERO)",
     "descripcionNormalizada": "ferritina (suero)",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "ferritina-suero"
   },
   {
     "codigo": "304",
     "descripcion": "FIBRINOGENO",
     "descripcionNormalizada": "fibrinogeno",
-    "precio": 14500
+    "precio": 14500,
+    "slug": "fibrinogeno"
   },
   {
     "codigo": "78",
     "descripcion": "FOSFATASA ALCALINA",
     "descripcionNormalizada": "fosfatasa alcalina",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "fosfatasa-alcalina"
   },
   {
     "codigo": "64",
     "descripcion": "FOSFORO (SUERO)",
     "descripcionNormalizada": "fosforo (suero)",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "fosforo-suero"
   },
   {
     "codigo": "FOSF OR",
     "descripcion": "FOSFORO ORINA 24H",
     "descripcionNormalizada": "fosforo orina 24h",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "fosforo-orina-24h"
   },
   {
     "codigo": "FB",
     "descripcion": "FROTIS BACTERIOLOGICO",
     "descripcionNormalizada": "frotis bacteriologico",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "frotis-bacteriologico"
   },
   {
     "codigo": "FRO HE",
     "descripcion": "FROTIS DE HECES",
     "descripcionNormalizada": "frotis de heces",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "frotis-de-heces"
   },
   {
     "codigo": "FF",
     "descripcion": "FROTIS Y CULTIVO FARINGEO",
     "descripcionNormalizada": "frotis y cultivo faringeo",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "frotis-y-cultivo-faringeo"
   },
   {
     "codigo": "FCB",
     "descripcion": "FROTIS Y CULTIVO POR BACTERIAS",
     "descripcionNormalizada": "frotis y cultivo por bacterias",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "frotis-y-cultivo-por-bacterias"
   },
   {
     "codigo": "hongos",
     "descripcion": "FROTIS Y CULTIVO POR HONGOS",
     "descripcionNormalizada": "frotis y cultivo por hongos",
-    "precio": 35000
+    "precio": 35000,
+    "slug": "frotis-y-cultivo-por-hongos"
   },
   {
     "codigo": "FU",
     "descripcion": "FROTIS Y CULTIVO URETRAL",
     "descripcionNormalizada": "frotis y cultivo uretral",
-    "precio": 28000
+    "precio": 28000,
+    "slug": "frotis-y-cultivo-uretral"
   },
   {
     "codigo": "fv",
     "descripcion": "FROTIS Y CULTIVO VAGINAL",
     "descripcionNormalizada": "frotis y cultivo vaginal",
-    "precio": 28000
+    "precio": 28000,
+    "slug": "frotis-y-cultivo-vaginal"
   },
   {
     "codigo": "FSH",
     "descripcion": "FSH (HORMONA FOLICULO ESTIMULANTE)",
     "descripcionNormalizada": "fsh (hormona foliculo estimulante)",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "fsh-hormona-foliculo-estimulante"
   },
   {
     "codigo": "Fen",
     "descripcion": "Fenitoina",
     "descripcionNormalizada": "fenitoina",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "fenitoina"
   },
   {
     "codigo": "Frotis general",
     "descripcion": "Frotis general",
     "descripcionNormalizada": "frotis general",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "frotis-general"
   },
   {
     "codigo": "77",
     "descripcion": "GGTP",
     "descripcionNormalizada": "ggtp",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "ggtp"
   },
   {
     "codigo": "Tiroxina",
     "descripcion": "GLOBULINA FIJADORA DE TIROXINA",
     "descripcionNormalizada": "globulina fijadora de tiroxina",
-    "precio": 91000
+    "precio": 91000,
+    "slug": "globulina-fijadora-de-tiroxina"
   },
   {
     "codigo": "1160",
     "descripcion": "GLUCOSA",
     "descripcionNormalizada": "glucosa",
-    "precio": 7000
+    "precio": 7000,
+    "slug": "glucosa"
   },
   {
     "codigo": "97",
     "descripcion": "GLUCOSA 1H POST CARGA 50G",
     "descripcionNormalizada": "glucosa 1h post carga 50g",
-    "precio": 8500
+    "precio": 8500,
+    "slug": "glucosa-1h-post-carga-50g"
   },
   {
     "codigo": "99",
     "descripcion": "GLUCOSA 2H POST CARGA 100G",
     "descripcionNormalizada": "glucosa 2h post carga 100g",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "glucosa-2h-post-carga-100g"
   },
   {
     "codigo": "98",
     "descripcion": "GLUCOSA 2H POST CARGA 75G",
     "descripcionNormalizada": "glucosa 2h post carga 75g",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "glucosa-2h-post-carga-75g"
   },
   {
     "codigo": "96",
     "descripcion": "GLUCOSA 2H POST PRANDIAL",
     "descripcionNormalizada": "glucosa 2h post prandial",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "glucosa-2h-post-prandial"
   },
   {
     "codigo": "GRAH",
     "descripcion": "GRASAS EN HECES",
     "descripcionNormalizada": "grasas en heces",
-    "precio": 6500
+    "precio": 6500,
+    "slug": "grasas-en-heces"
   },
   {
     "codigo": "877",
     "descripcion": "GRUPO SANGUINEO Y RH",
     "descripcionNormalizada": "grupo sanguineo y rh",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "grupo-sanguineo-y-rh"
   },
   {
     "codigo": "611",
     "descripcion": "HAV IgG",
     "descripcionNormalizada": "hav igg",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "hav-igg"
   },
   {
     "codigo": "emb",
     "descripcion": "HCG SUB UNIDAD BETA CUALITATIVA (PRUEBA EMBARAZO)",
     "descripcionNormalizada": "hcg sub unidad beta cualitativa (prueba embarazo)",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "hcg-sub-unidad-beta-cualitativa-prueba-embarazo"
   },
   {
     "codigo": "705",
     "descripcion": "HCG SUB UNIDAD BETA CUANTIFICADA",
     "descripcionNormalizada": "hcg sub unidad beta cuantificada",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "hcg-sub-unidad-beta-cuantificada"
   },
   {
     "codigo": "307",
     "descripcion": "HDL COLESTEROL",
     "descripcionNormalizada": "hdl colesterol",
-    "precio": 7000
+    "precio": 7000,
+    "slug": "hdl-colesterol"
   },
   {
     "codigo": "HE4",
     "descripcion": "HE4",
     "descripcionNormalizada": "he4",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "he4"
   },
   {
     "codigo": "871",
     "descripcion": "HEMATOCRITO HEMOGLOBINA",
     "descripcionNormalizada": "hematocrito hemoglobina",
-    "precio": 10400
+    "precio": 10400,
+    "slug": "hematocrito-hemoglobina"
   },
   {
     "codigo": "glic",
     "descripcion": "HEMOGLOBINA GLICOSILADA",
     "descripcionNormalizada": "hemoglobina glicosilada",
-    "precio": 17000
+    "precio": 17000,
+    "slug": "hemoglobina-glicosilada"
   },
   {
     "codigo": "1122",
     "descripcion": "HEMOGRAMA COMPLETO",
     "descripcionNormalizada": "hemograma completo",
-    "precio": 12000
+    "precio": 12000,
+    "slug": "hemograma-completo"
   },
   {
     "codigo": "875",
     "descripcion": "HIERRO SERICO Y CAPACIDAD DE FIJACIÓN",
     "descripcionNormalizada": "hierro serico y capacidad de fijacion",
-    "precio": 17500
+    "precio": 17500,
+    "slug": "hierro-serico-y-capacidad-de-fijacion"
   },
   {
     "codigo": "HG",
     "descripcion": "HIGADO GRASO",
     "descripcionNormalizada": "higado graso",
-    "precio": 46800
+    "precio": 46800,
+    "slug": "higado-graso"
   },
   {
     "codigo": "homo",
     "descripcion": "HOMOCISTEINA",
     "descripcionNormalizada": "homocisteina",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "homocisteina"
   },
   {
     "codigo": "mul",
     "descripcion": "HORMONA ANTIMULLERIANA",
     "descripcionNormalizada": "hormona antimulleriana",
-    "precio": 45000
+    "precio": 45000,
+    "slug": "hormona-antimulleriana"
   },
   {
     "codigo": "CREC",
     "descripcion": "HORMONA DE CRECIMIENTO",
     "descripcionNormalizada": "hormona de crecimiento",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "hormona-de-crecimiento"
   },
   {
     "codigo": "HF",
     "descripcion": "HORMONAL FEMENINO (FSH, LH, Estradiol, Progesterona)",
     "descripcionNormalizada": "hormonal femenino (fsh, lh, estradiol, progesterona)",
-    "precio": 70000
+    "precio": 70000,
+    "slug": "hormonal-femenino-fsh-lh-estradiol-progesterona"
   },
   {
     "codigo": "Helico IgG",
     "descripcion": "Helicobacter IgG",
     "descripcionNormalizada": "helicobacter igg",
-    "precio": 17000
+    "precio": 17000,
+    "slug": "helicobacter-igg"
   },
   {
     "codigo": "81",
     "descripcion": "Helicobacter pylori EN HECES",
     "descripcionNormalizada": "helicobacter pylori en heces",
-    "precio": 21500
+    "precio": 21500,
+    "slug": "helicobacter-pylori-en-heces"
   },
   {
     "codigo": "HemoPromo",
     "descripcion": "Hemograma Promoción",
     "descripcionNormalizada": "hemograma promocion",
-    "precio": 9900
+    "precio": 9900,
+    "slug": "hemograma-promocion"
   },
   {
     "codigo": "HAV G",
     "descripcion": "Hepatitis A IgG",
     "descripcionNormalizada": "hepatitis a igg",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "hepatitis-a-igg"
   },
   {
     "codigo": "IGF-1",
     "descripcion": "IGF-1 (SOMATOMEDINA)",
     "descripcionNormalizada": "igf-1 (somatomedina)",
-    "precio": 26000
+    "precio": 26000,
+    "slug": "igf-1-somatomedina"
   },
   {
     "codigo": "IGF-BP3",
     "descripcion": "IGF-BP3 (Proteína 3 de unión al factor de crecimiento parecido a la insulina)",
     "descripcionNormalizada": "igf-bp3 (proteina 3 de union al factor de crecimiento parecido a la insulina)",
-    "precio": 34000
+    "precio": 34000,
+    "slug": "igf-bp3-proteina-3-de-union-al-factor-de-crecimiento"
   },
   {
     "codigo": "IA",
     "descripcion": "INDICE ANDROGENICO",
     "descripcionNormalizada": "indice androgenico",
-    "precio": 22500
+    "precio": 22500,
+    "slug": "indice-androgenico"
   },
   {
     "codigo": "HOMA",
     "descripcion": "INDICE DE HOMA",
     "descripcionNormalizada": "indice de homa",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "indice-de-homa"
   },
   {
     "codigo": "IGA",
     "descripcion": "INMUNOGLOBINA A",
     "descripcionNormalizada": "inmunoglobina a",
-    "precio": 16000
+    "precio": 16000,
+    "slug": "inmunoglobina-a"
   },
   {
     "codigo": "IGE",
     "descripcion": "INMUNOGLOBULINA E",
     "descripcionNormalizada": "inmunoglobulina e",
-    "precio": 16000
+    "precio": 16000,
+    "slug": "inmunoglobulina-e"
   },
   {
     "codigo": "IGG",
     "descripcion": "INMUNOGLOBULINA G",
     "descripcionNormalizada": "inmunoglobulina g",
-    "precio": 16000
+    "precio": 16000,
+    "slug": "inmunoglobulina-g"
   },
   {
     "codigo": "IGM",
     "descripcion": "INMUNOGLOBULINA M",
     "descripcionNormalizada": "inmunoglobulina m",
-    "precio": 16000
+    "precio": 16000,
+    "slug": "inmunoglobulina-m"
   },
   {
     "codigo": "708",
     "descripcion": "INSULINA",
     "descripcionNormalizada": "insulina",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "insulina"
   },
   {
     "codigo": "709",
     "descripcion": "INSULINA POST CARGA",
     "descripcionNormalizada": "insulina post carga",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "insulina-post-carga"
   },
   {
     "codigo": "IGE ALER",
     "descripcion": "IgE ALERGENOS",
     "descripcionNormalizada": "ige alergenos",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "ige-alergenos"
   },
   {
     "codigo": "LH",
     "descripcion": "LH",
     "descripcionNormalizada": "lh",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "lh"
   },
   {
     "codigo": "li",
     "descripcion": "LITIO",
     "descripcionNormalizada": "litio",
-    "precio": 16000
+    "precio": 16000,
+    "slug": "litio"
   },
   {
     "codigo": "Lepto",
     "descripcion": "Leptospirosis IgG/IgM",
     "descripcionNormalizada": "leptospirosis igg/igm",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "leptospirosis-igg-igm"
   },
   {
     "codigo": "Lipa",
     "descripcion": "Lipasa",
     "descripcionNormalizada": "lipasa",
-    "precio": 11500
+    "precio": 11500,
+    "slug": "lipasa"
   },
   {
     "codigo": "63",
     "descripcion": "MAGNESIO (SUERO)",
     "descripcionNormalizada": "magnesio (suero)",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "magnesio-suero"
   },
   {
     "codigo": "MAR CUAL",
     "descripcion": "MARIHUANA CUALITATIVA",
     "descripcionNormalizada": "marihuana cualitativa",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "marihuana-cualitativa"
   },
   {
     "codigo": "MAR CUANT",
     "descripcion": "MARIHUANA CUANTITATIVA",
     "descripcionNormalizada": "marihuana cuantitativa",
-    "precio": 18000
+    "precio": 18000,
+    "slug": "marihuana-cuantitativa"
   },
   {
     "codigo": "MICRO",
     "descripcion": "MICROALBUMINURIA",
     "descripcionNormalizada": "microalbuminuria",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "microalbuminuria"
   },
   {
     "codigo": "MT",
     "descripcion": "MONOTEST",
     "descripcionNormalizada": "monotest",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "monotest"
   },
   {
     "codigo": "Micro/Creat",
     "descripcion": "Microalbuminuria/creatinuria",
     "descripcionNormalizada": "microalbuminuria/creatinuria",
-    "precio": 19240
+    "precio": 19240,
+    "slug": "microalbuminuria-creatinuria"
   },
   {
     "codigo": "MTHFR",
     "descripcion": "Mutación MTHFR",
     "descripcionNormalizada": "mutacion mthfr",
-    "precio": 105300
+    "precio": 105300,
+    "slug": "mutacion-mthfr"
   },
   {
     "codigo": "363",
     "descripcion": "NITROGENO UREICO",
     "descripcionNormalizada": "nitrogeno ureico",
-    "precio": 7000
+    "precio": 7000,
+    "slug": "nitrogeno-ureico"
   },
   {
     "codigo": "407",
     "descripcion": "NT-PROBNP",
     "descripcionNormalizada": "nt-probnp",
-    "precio": 35000
+    "precio": 35000,
+    "slug": "nt-probnp"
   },
   {
     "codigo": "Nico",
     "descripcion": "Nicotina",
     "descripcionNormalizada": "nicotina",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "nicotina"
   },
   {
     "codigo": "Niño",
     "descripcion": "Niño sano",
     "descripcionNormalizada": "nino sano",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "nino-sano"
   },
   {
     "codigo": "SED",
     "descripcion": "ORINA Y SEDIMENTO TEÑIDO",
     "descripcionNormalizada": "orina y sedimento tenido",
-    "precio": 13000
+    "precio": 13000,
+    "slug": "orina-y-sedimento-tenido"
   },
   {
     "codigo": "OXALATO",
     "descripcion": "OXALATO EN ORINA DE 24H",
     "descripcionNormalizada": "oxalato en orina de 24h",
-    "precio": 75000
+    "precio": 75000,
+    "slug": "oxalato-en-orina-de-24h"
   },
   {
     "codigo": "Omeg",
     "descripcion": "Omega 3 y 6",
     "descripcionNormalizada": "omega 3 y 6",
-    "precio": 115000
+    "precio": 115000,
+    "slug": "omega-3-y-6"
   },
   {
     "codigo": "PMC14",
     "descripcion": "PANEL METABOLICO COMPLETO (14)",
     "descripcionNormalizada": "panel metabolico completo (14)",
-    "precio": 120000
+    "precio": 120000,
+    "slug": "panel-metabolico-completo-14"
   },
   {
     "codigo": "pb",
     "descripcion": "PAQUETE BASICO PROMOCION",
     "descripcionNormalizada": "paquete basico promocion",
-    "precio": 34320
+    "precio": 34320,
+    "slug": "paquete-basico-promocion"
   },
   {
     "codigo": "pc",
     "descripcion": "PAQUETE COMPLETO",
     "descripcionNormalizada": "paquete completo",
-    "precio": 37450
+    "precio": 37450,
+    "slug": "paquete-completo"
   },
   {
     "codigo": "papa",
     "descripcion": "PAQUETE DIA DEL PADRE",
     "descripcionNormalizada": "paquete dia del padre",
-    "precio": 41600
+    "precio": 41600,
+    "slug": "paquete-dia-del-padre"
   },
   {
     "codigo": "DIAB SEG",
     "descripcion": "PAQUETE DIABETES SEGUIMIENTO (Glucosa, Hemoglobina glicosilada, Perfil de lipidos, Perfil renal, Microalbuminuria)",
     "descripcionNormalizada": "paquete diabetes seguimiento (glucosa, hemoglobina glicosilada, perfil de lipidos, perfil renal, microalbuminuria)",
-    "precio": 70000
+    "precio": 70000,
+    "slug": "paquete-diabetes-seguimiento-glucosa-hemoglobina"
   },
   {
     "codigo": "dr6",
     "descripcion": "PAQUETE DROGAS",
     "descripcionNormalizada": "paquete drogas",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "paquete-drogas"
   },
   {
     "codigo": "policia",
     "descripcion": "PAQUETE FUERZA PUBLICA",
     "descripcionNormalizada": "paquete fuerza publica",
-    "precio": 86000
+    "precio": 86000,
+    "slug": "paquete-fuerza-publica"
   },
   {
     "codigo": "SAD",
     "descripcion": "PAQUETE SALUD ADOLESCENTE",
     "descripcionNormalizada": "paquete salud adolescente",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "paquete-salud-adolescente"
   },
   {
     "codigo": "PTH",
     "descripcion": "PARATOHORMONA (PTH)",
     "descripcionNormalizada": "paratohormona (pth)",
-    "precio": 30000
+    "precio": 30000,
+    "slug": "paratohormona-pth"
   },
   {
     "codigo": "PCR Neisseria",
     "descripcion": "PCR por Neisseria gonorrhoeae",
     "descripcionNormalizada": "pcr por neisseria gonorrhoeae",
-    "precio": 90000
+    "precio": 90000,
+    "slug": "pcr-por-neisseria-gonorrhoeae"
   },
   {
     "codigo": "PCR Trichomonas",
     "descripcion": "PCR por Trichomonas Vaginalis",
     "descripcionNormalizada": "pcr por trichomonas vaginalis",
-    "precio": 84500
+    "precio": 84500,
+    "slug": "pcr-por-trichomonas-vaginalis"
   },
   {
     "codigo": "PEP C",
     "descripcion": "PEPTIDO C",
     "descripcionNormalizada": "peptido c",
-    "precio": 18000
+    "precio": 18000,
+    "slug": "peptido-c"
   },
   {
     "codigo": "2739",
     "descripcion": "PERFIL DE LIPIDOS",
     "descripcionNormalizada": "perfil de lipidos",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "perfil-de-lipidos"
   },
   {
     "codigo": "2737",
     "descripcion": "PERFIL HEPATICO",
     "descripcionNormalizada": "perfil hepatico",
-    "precio": 52000
+    "precio": 52000,
+    "slug": "perfil-hepatico"
   },
   {
     "codigo": "TIRO",
     "descripcion": "PERFIL TIROIDEO COMPLETO",
     "descripcionNormalizada": "perfil tiroideo completo",
-    "precio": 49000
+    "precio": 49000,
+    "slug": "perfil-tiroideo-completo"
   },
   {
     "codigo": "316",
     "descripcion": "POTASIO (SUERO)",
     "descripcionNormalizada": "potasio (suero)",
-    "precio": 9500
+    "precio": 9500,
+    "slug": "potasio-suero"
   },
   {
     "codigo": "PREGNENOLONA",
     "descripcion": "PREGNENOLONA",
     "descripcionNormalizada": "pregnenolona",
-    "precio": 67000
+    "precio": 67000,
+    "slug": "pregnenolona"
   },
   {
     "codigo": "PQ",
     "descripcion": "PREQUIRURGICO",
     "descripcionNormalizada": "prequirurgico",
-    "precio": 52000
+    "precio": 52000,
+    "slug": "prequirurgico"
   },
   {
     "codigo": "PROCALCITONINA",
     "descripcion": "PROCALCITONINA",
     "descripcionNormalizada": "procalcitonina",
-    "precio": 42200
+    "precio": 42200,
+    "slug": "procalcitonina"
   },
   {
     "codigo": "704",
     "descripcion": "PROGESTERONA",
     "descripcionNormalizada": "progesterona",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "progesterona"
   },
   {
     "codigo": "PRL",
     "descripcion": "PROLACTINA",
     "descripcionNormalizada": "prolactina",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "prolactina"
   },
   {
     "codigo": "jun",
     "descripcion": "PROMOCION JUNIO",
     "descripcionNormalizada": "promocion junio",
-    "precio": 31200
+    "precio": 31200,
+    "slug": "promocion-junio"
   },
   {
     "codigo": "405",
     "descripcion": "PROTEINA C REACTIVA",
     "descripcionNormalizada": "proteina c reactiva",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "proteina-c-reactiva"
   },
   {
     "codigo": "406",
     "descripcion": "PROTEINA C REACTIVA ULTRASENSIBLE",
     "descripcionNormalizada": "proteina c reactiva ultrasensible",
-    "precio": 17000
+    "precio": 17000,
+    "slug": "proteina-c-reactiva-ultrasensible"
   },
   {
     "codigo": "73",
     "descripcion": "PROTEINAS TOTALES Y FRACCIONADAS (SUERO)",
     "descripcionNormalizada": "proteinas totales y fraccionadas (suero)",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "proteinas-totales-y-fraccionadas-suero"
   },
   {
     "codigo": "PROT",
     "descripcion": "PROTEINURIA 24H",
     "descripcionNormalizada": "proteinuria 24h",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "proteinuria-24h"
   },
   {
     "codigo": "PSAMov",
     "descripcion": "PSA Movember",
     "descripcionNormalizada": "psa movember",
-    "precio": 14900
+    "precio": 14900,
+    "slug": "psa-movember"
   },
   {
     "codigo": "Aler75",
     "descripcion": "Panel completo 75 alergenos",
     "descripcionNormalizada": "panel completo 75 alergenos",
-    "precio": 416000
+    "precio": 416000,
+    "slug": "panel-completo-75-alergenos"
   },
   {
     "codigo": "DIAB PRE",
     "descripcion": "Paquete Diabetes Preventivo (Hemoglobina glicosilada, Indica HOMA (glucosa + insulina)",
     "descripcionNormalizada": "paquete diabetes preventivo (hemoglobina glicosilada, indica homa (glucosa + insulina)",
-    "precio": 40000
+    "precio": 40000,
+    "slug": "paquete-diabetes-preventivo-hemoglobina-glicosilada-indica"
   },
   {
     "codigo": "2738",
     "descripcion": "Perfil Renal (BUN/Crea)",
     "descripcionNormalizada": "perfil renal (bun/crea)",
-    "precio": 14000
+    "precio": 14000,
+    "slug": "perfil-renal-bun-crea"
   },
   {
     "codigo": "PRP",
     "descripcion": "Plasma Rico en Plaquetas",
     "descripcionNormalizada": "plasma rico en plaquetas",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "plasma-rico-en-plaquetas"
   },
   {
     "codigo": "pdr",
     "descripcion": "Promo Dia Padre (psa+hemograma)",
     "descripcionNormalizada": "promo dia padre (psa+hemograma)",
-    "precio": 24900
+    "precio": 24900,
+    "slug": "promo-dia-padre-psa-hemograma"
   },
   {
     "codigo": "ProtC",
     "descripcion": "Proteína C",
     "descripcionNormalizada": "proteina c",
-    "precio": 115000
+    "precio": 115000,
+    "slug": "proteina-c"
   },
   {
     "codigo": "quan",
     "descripcion": "QUANTIFERON",
     "descripcionNormalizada": "quantiferon",
-    "precio": 67600
+    "precio": 67600,
+    "slug": "quantiferon"
   },
   {
     "codigo": "872",
     "descripcion": "RETICULOCITOS",
     "descripcionNormalizada": "reticulocitos",
-    "precio": 8000
+    "precio": 8000,
+    "slug": "reticulocitos"
   },
   {
     "codigo": "85",
     "descripcion": "ROTAVIRUS/ADENOVIRUS EN HECES",
     "descripcionNormalizada": "rotavirus/adenovirus en heces",
-    "precio": 31500
+    "precio": 31500,
+    "slug": "rotavirus-adenovirus-en-heces"
   },
   {
     "codigo": "soh",
     "descripcion": "SANGRE OCULTA HECES",
     "descripcionNormalizada": "sangre oculta heces",
-    "precio": 8000
+    "precio": 8000,
+    "slug": "sangre-oculta-heces"
   },
   {
     "codigo": "EG 3",
     "descripcion": "SERIE 3 MUESTRAS PARASITOS",
     "descripcionNormalizada": "serie 3 muestras parasitos",
-    "precio": 15000
+    "precio": 15000,
+    "slug": "serie-3-muestras-parasitos"
   },
   {
     "codigo": "SO3",
     "descripcion": "SERIE 3 MUESTRAS SANGRE OCULTA EN HECES",
     "descripcionNormalizada": "serie 3 muestras sangre oculta en heces",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "serie-3-muestras-sangre-oculta-en-heces"
   },
   {
     "codigo": "covid",
     "descripcion": "SEROLOGIA COVID",
     "descripcionNormalizada": "serologia covid",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "serologia-covid"
   },
   {
     "codigo": "VACUNA",
     "descripcion": "SEROLOGIA COVID POST VACUNA",
     "descripcionNormalizada": "serologia covid post vacuna",
-    "precio": 28000
+    "precio": 28000,
+    "slug": "serologia-covid-post-vacuna"
   },
   {
     "codigo": "SE",
     "descripcion": "SEROLOGIA LEPTOSPIRA EQUINO",
     "descripcionNormalizada": "serologia leptospira equino",
-    "precio": 15600
+    "precio": 15600,
+    "slug": "serologia-leptospira-equino"
   },
   {
     "codigo": "dengue",
     "descripcion": "SEROLOGIA POR DENGUE",
     "descripcionNormalizada": "serologia por dengue",
-    "precio": 29500
+    "precio": 29500,
+    "slug": "serologia-por-dengue"
   },
   {
     "codigo": "SHBG",
     "descripcion": "SHBG (globulina fijadora de las hormonas sexuales)",
     "descripcionNormalizada": "shbg (globulina fijadora de las hormonas sexuales)",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "shbg-globulina-fijadora-de-las-hormonas-sexuales"
   },
   {
     "codigo": "314",
     "descripcion": "SODIO (SUERO)",
     "descripcionNormalizada": "sodio (suero)",
-    "precio": 9500
+    "precio": 9500,
+    "slug": "sodio-suero"
   },
   {
     "codigo": "Sero",
     "descripcion": "Serotonina",
     "descripcionNormalizada": "serotonina",
-    "precio": 146000
+    "precio": 146000,
+    "slug": "serotonina"
   },
   {
     "codigo": "32",
     "descripcion": "T3 LIBRE",
     "descripcionNormalizada": "t3 libre",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "t3-libre"
   },
   {
     "codigo": "t3r",
     "descripcion": "T3 REVERSA",
     "descripcionNormalizada": "t3 reversa",
-    "precio": 55000
+    "precio": 55000,
+    "slug": "t3-reversa"
   },
   {
     "codigo": "34",
     "descripcion": "T3 TOTAL",
     "descripcionNormalizada": "t3 total",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "t3-total"
   },
   {
     "codigo": "31",
     "descripcion": "T4 LIBRE",
     "descripcionNormalizada": "t4 libre",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "t4-libre"
   },
   {
     "codigo": "33",
     "descripcion": "T4 TOTAL",
     "descripcionNormalizada": "t4 total",
-    "precio": 16500
+    "precio": 16500,
+    "slug": "t4-total"
   },
   {
     "codigo": "SA",
     "descripcion": "TAMIZAJE POR S. agalactiae",
     "descripcionNormalizada": "tamizaje por s. agalactiae",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "tamizaje-por-s-agalactiae"
   },
   {
     "codigo": "GRAHAM",
     "descripcion": "TEST DE GRAHAM",
     "descripcionNormalizada": "test de graham",
-    "precio": 10000
+    "precio": 10000,
+    "slug": "test-de-graham"
   },
   {
     "codigo": "711",
     "descripcion": "TESTOSTERONA LIBRE",
     "descripcionNormalizada": "testosterona libre",
-    "precio": 22000
+    "precio": 22000,
+    "slug": "testosterona-libre"
   },
   {
     "codigo": "710",
     "descripcion": "TESTOSTERONA TOTAL",
     "descripcionNormalizada": "testosterona total",
-    "precio": 20000
+    "precio": 20000,
+    "slug": "testosterona-total"
   },
   {
     "codigo": "75",
     "descripcion": "TGO/AST",
     "descripcionNormalizada": "tgo/ast",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "tgo-ast"
   },
   {
     "codigo": "76",
     "descripcion": "TGP/ALT",
     "descripcionNormalizada": "tgp/alt",
-    "precio": 11000
+    "precio": 11000,
+    "slug": "tgp-alt"
   },
   {
     "codigo": "300",
     "descripcion": "TIEMPO DE PROTROMBINA",
     "descripcionNormalizada": "tiempo de protrombina",
-    "precio": 11500
+    "precio": 11500,
+    "slug": "tiempo-de-protrombina"
   },
   {
     "codigo": "303",
     "descripcion": "TIEMPO DE TROMBOPLASTINA PARCIAL",
     "descripcionNormalizada": "tiempo de tromboplastina parcial",
-    "precio": 11500
+    "precio": 11500,
+    "slug": "tiempo-de-tromboplastina-parcial"
   },
   {
     "codigo": "35",
     "descripcion": "TIROGLOBULINA",
     "descripcionNormalizada": "tiroglobulina",
-    "precio": 24000
+    "precio": 24000,
+    "slug": "tiroglobulina"
   },
   {
     "codigo": "TRANS",
     "descripcion": "TRANSFERRINA",
     "descripcionNormalizada": "transferrina",
-    "precio": 12500
+    "precio": 12500,
+    "slug": "transferrina"
   },
   {
     "codigo": "60",
     "descripcion": "TRIGLICERIDOS",
     "descripcionNormalizada": "trigliceridos",
-    "precio": 6731
+    "precio": 6731,
+    "slug": "trigliceridos"
   },
   {
     "codigo": "400",
     "descripcion": "TROPONINA CUANTIFICADA",
     "descripcionNormalizada": "troponina cuantificada",
-    "precio": 29000
+    "precio": 29000,
+    "slug": "troponina-cuantificada"
   },
   {
     "codigo": "30",
     "descripcion": "TSH (HORMONA ESTIMULANTE TIROIDES)",
     "descripcionNormalizada": "tsh (hormona estimulante tiroides)",
-    "precio": 17000
+    "precio": 17000,
+    "slug": "tsh-hormona-estimulante-tiroides"
   },
   {
     "codigo": "URO",
     "descripcion": "UROCULTIVO",
     "descripcionNormalizada": "urocultivo",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "urocultivo"
   },
   {
     "codigo": "var",
     "descripcion": "VARICELA",
     "descripcionNormalizada": "varicela",
-    "precio": 25000
+    "precio": 25000,
+    "slug": "varicela"
   },
   {
     "codigo": "600",
     "descripcion": "VDRL",
     "descripcionNormalizada": "vdrl",
-    "precio": 8500
+    "precio": 8500,
+    "slug": "vdrl"
   },
   {
     "codigo": "873",
     "descripcion": "VELOCIDAD DE ERITROSEDIMENTACION",
     "descripcionNormalizada": "velocidad de eritrosedimentacion",
-    "precio": 8000
+    "precio": 8000,
+    "slug": "velocidad-de-eritrosedimentacion"
   },
   {
     "codigo": "b12",
     "descripcion": "VITAMINA B12",
     "descripcionNormalizada": "vitamina b12",
-    "precio": 21000
+    "precio": 21000,
+    "slug": "vitamina-b12"
   },
   {
     "codigo": "vit d",
     "descripcion": "VITAMINA D",
     "descripcionNormalizada": "vitamina d",
-    "precio": 35000
+    "precio": 35000,
+    "slug": "vitamina-d"
   },
   {
     "codigo": "VitA",
     "descripcion": "Vitamina A",
     "descripcionNormalizada": "vitamina a",
-    "precio": 80000
+    "precio": 80000,
+    "slug": "vitamina-a"
   },
   {
     "codigo": "D3",
     "descripcion": "Vitamina D3",
     "descripcionNormalizada": "vitamina d3",
-    "precio": 134000
+    "precio": 134000,
+    "slug": "vitamina-d3"
   }
 ]

@@ -134,6 +134,17 @@
   overflow-wrap: break-word;
 }
 
+a.resultado-nombre,
+a.seleccion-nombre {
+  text-decoration: none;
+}
+
+a.resultado-nombre:hover,
+a.seleccion-nombre:hover {
+  color: var(--c-green-dark);
+  text-decoration: underline;
+}
+
 .resultado-precio {
   font-size: 0.86rem;
   color: var(--c-gray);

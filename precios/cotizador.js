@@ -140,9 +140,12 @@
 
     var info = document.createElement("div");
     info.className = "resultado-info";
-    var nombre = document.createElement("span");
+    var nombre = document.createElement(ex.slug ? "a" : "span");
     nombre.className = "resultado-nombre";
     nombre.textContent = ex.descripcion;
+    if (ex.slug) {
+      nombre.href = "/examenes/" + ex.slug + "/";
+    }
     var precio = document.createElement("span");
     precio.className = "resultado-precio";
     precio.textContent = formatColones(ex.precio);
@@ -211,9 +214,12 @@
 
     var info = document.createElement("div");
     info.className = "seleccion-info";
-    var nombre = document.createElement("span");
+    var nombre = document.createElement(ex.slug ? "a" : "span");
     nombre.className = "seleccion-nombre";
     nombre.textContent = ex.descripcion;
+    if (ex.slug) {
+      nombre.href = "/examenes/" + ex.slug + "/";
+    }
     var precio = document.createElement("span");
     precio.className = "seleccion-precio";
     precio.textContent = formatColones(ex.precio);

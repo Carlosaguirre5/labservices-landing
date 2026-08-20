@@ -206,6 +206,7 @@ def main():
 
     examenes.sort(key=lambda e: e["descripcion"])
 
+    con_pagina = codigos_con_pagina_propia()
     slugs_vistos = {}
     for ex in examenes:
         s = slug(ex["descripcion"])
@@ -215,6 +216,8 @@ def main():
                 "— la tabla estática tendrá dos <tr id> iguales, revisar los nombres"
             )
         slugs_vistos[s] = ex["codigo"]
+        if ex["codigo"] in con_pagina:
+            ex["slug"] = s
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_JSON.open("w", encoding="utf-8") as f:
