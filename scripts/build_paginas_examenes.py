@@ -85,16 +85,14 @@ def construir_descripcion_html(texto):
 def construir_json_ld(ex, contenido, url):
     data = {
         "@context": "https://schema.org",
-        "@type": "Product",
+        "@type": "MedicalTest",
         "name": ex["descripcion"],
         "description": contenido["descripcion"].replace("\n\n", " "),
         "url": url,
-        "offers": {
-            "@type": "Offer",
-            "price": ex["precio"],
-            "priceCurrency": "CRC",
-            "availability": "https://schema.org/InStock",
-            "url": url
+        "provider": {
+            "@type": "MedicalClinic",
+            "name": "LabServices — División Clínica",
+            "url": "https://labservicecr.com/"
         }
     }
     texto = json.dumps(data, ensure_ascii=False, indent=2)

@@ -107,16 +107,10 @@ def construir_json_ld(examenes):
         "name": "Lista de precios de exámenes de laboratorio — LabServices Naranjo",
         "itemListElement": [
             {
-                "@type": "Product",
+                "@type": "MedicalTest",
                 "position": i + 1,
                 "name": ex["descripcion"],
-                "url": SITE_URL + "#examen-" + slug(ex["descripcion"]),
-                "offers": {
-                    "@type": "Offer",
-                    "price": ex["precio"],
-                    "priceCurrency": "CRC",
-                    "availability": "https://schema.org/InStock"
-                }
+                "url": SITE_URL + "#examen-" + slug(ex["descripcion"])
             }
             for i, ex in enumerate(examenes)
         ]
