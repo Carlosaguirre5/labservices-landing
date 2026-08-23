@@ -1,0 +1,303 @@
+/* ==========================================================================
+   /citas — Agendar cita con disponibilidad en tiempo real
+   Usa las variables y componentes de /style.css (colores, botones,
+   .container, .section-eyebrow, .form-row, .form-field). Este archivo
+   solo agrega lo específico de esta página.
+   ========================================================================== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.citas-hero {
+  padding: 40px 0 8px;
+  text-align: center;
+}
+
+.citas-hero .container {
+  max-width: 640px;
+}
+
+.citas-hero h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4em;
+}
+
+.citas-hero p {
+  color: var(--c-gray);
+}
+
+.citas-form-section {
+  padding: 28px 0 64px;
+}
+
+.citas-form-section .container {
+  max-width: 640px;
+}
+
+.citas-form {
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-light);
+  border-radius: var(--radius-lg);
+  padding: 28px 22px;
+  box-shadow: var(--shadow-md);
+}
+
+.citas-block {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--c-gray-light);
+}
+
+.citas-block:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.citas-block-title {
+  font-size: 1.05rem;
+  color: var(--c-navy, var(--c-black));
+  margin-bottom: 16px;
+}
+
+/* Select (el resto de inputs ya vienen estilados por .form-field en /style.css) */
+
+.form-field select {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  color: var(--c-ink);
+  background: var(--c-white);
+  border: 1.5px solid var(--c-gray-light);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color 0.15s ease;
+}
+
+.form-field select:focus {
+  outline: none;
+  border-color: var(--c-green);
+}
+
+.form-field select:disabled {
+  color: var(--c-gray);
+  background: var(--c-gray-soft);
+  cursor: not-allowed;
+}
+
+.field-error {
+  font-size: 0.82rem;
+  color: #b3261e;
+  margin: 2px 0 0;
+  display: none;
+}
+
+.field-error.is-visible {
+  display: block;
+}
+
+.form-field input[aria-invalid="true"],
+.form-field select[aria-invalid="true"],
+.form-field textarea[aria-invalid="true"] {
+  border-color: #b3261e;
+}
+
+.field-hint {
+  font-size: 0.8rem;
+  color: var(--c-gray);
+  margin: 2px 0 0;
+  min-height: 1.1em;
+}
+
+/* Sucursal */
+
+.sucursal-opciones {
+  display: grid;
+  gap: 10px;
+}
+
+.sucursal-opcion {
+  display: block;
+  cursor: pointer;
+}
+
+.sucursal-opcion input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.sucursal-opcion-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1.5px solid var(--c-gray-light);
+  border-radius: var(--radius-sm);
+  color: var(--c-gray);
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.sucursal-opcion-card svg {
+  flex-shrink: 0;
+}
+
+.sucursal-opcion-card strong {
+  display: block;
+  color: var(--c-ink);
+  font-family: var(--font-heading);
+  font-size: 0.94rem;
+}
+
+.sucursal-opcion-card span span {
+  font-size: 0.82rem;
+}
+
+.sucursal-opcion input:checked + .sucursal-opcion-card {
+  border-color: var(--c-green);
+  background: var(--c-green-light);
+  color: var(--c-green-dark);
+}
+
+.sucursal-opcion input:focus-visible + .sucursal-opcion-card {
+  outline: 2px solid var(--c-green);
+  outline-offset: 2px;
+}
+
+.domicilio-aviso {
+  display: none;
+  align-items: flex-start;
+  gap: 10px;
+  background: #fff6e5;
+  border: 1px solid #f0d38a;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-top: 14px;
+  font-size: 0.86rem;
+  color: #7a5b00;
+}
+
+.domicilio-aviso.is-visible {
+  display: flex;
+}
+
+.domicilio-aviso svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+#direccion-field {
+  display: none;
+  margin-top: 16px;
+}
+
+#direccion-field.is-visible {
+  display: flex;
+}
+
+/* Envío */
+
+.citas-submit-error {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #b3261e;
+  margin: 0 0 14px;
+  display: none;
+}
+
+.citas-submit-error.is-visible {
+  display: block;
+}
+
+.citas-form .btn {
+  margin-top: 24px;
+}
+
+.citas-form .btn[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.citas-legal {
+  font-size: 0.78rem;
+  color: var(--c-gray);
+  text-align: center;
+  margin: 14px 0 0;
+}
+
+/* Confirmación */
+
+.citas-confirm {
+  display: none;
+  text-align: center;
+  background: var(--c-white);
+  border: 1px solid var(--c-gray-light);
+  border-radius: var(--radius-lg);
+  padding: 36px 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.citas-confirm.is-visible {
+  display: block;
+}
+
+.citas-confirm-icon {
+  color: var(--c-green-dark);
+  margin-bottom: 10px;
+}
+
+.citas-confirm h2 {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.citas-confirm-detalle {
+  display: grid;
+  gap: 10px;
+  max-width: 320px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.citas-confirm-detalle div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--c-gray-light);
+}
+
+.citas-confirm-detalle dt {
+  color: var(--c-gray);
+  font-size: 0.88rem;
+}
+
+.citas-confirm-detalle dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--c-ink);
+  text-align: right;
+}
+
+.citas-confirm p {
+  color: var(--c-gray);
+  font-size: 0.92rem;
+  max-width: 380px;
+  margin: 0 auto 20px;
+}
+
+@media (min-width: 640px) {
+  .sucursal-opciones {
+    grid-template-columns: 1fr 1fr;
+  }
+}

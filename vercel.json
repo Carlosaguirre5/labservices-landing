@@ -1,4 +1,10 @@
 {
+  "crons": [
+    {
+      "path": "/api/recordatorios",
+      "schedule": "0 14 * * *"
+    }
+  ],
   "redirects": [
     {
       "source": "/examenes/sexo-fetal",
