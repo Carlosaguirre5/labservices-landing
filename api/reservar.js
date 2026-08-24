@@ -107,7 +107,7 @@ module.exports = async (req, res) => {
   descripcionLineas.push("Agendado desde labservicecr.com/citas");
 
   const eventoBody = {
-    summary: "🧪 Cita LabServices — " + nombre,
+    summary: "🧪 Cita: " + nombre,
     description: descripcionLineas.join("\n"),
     start: { dateTime: fecha + "T" + hora + ":00", timeZone: "America/Costa_Rica" },
     end: { dateTime: fecha + "T" + horaFin + ":00", timeZone: "America/Costa_Rica" },
