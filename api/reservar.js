@@ -134,13 +134,21 @@ module.exports = async (req, res) => {
     return;
   }
 
+  let examenesTexto = "";
+  if (examenes.length) {
+    examenesTexto = "🧪 Exámenes a realizar:\n" +
+      examenes.map(function (ex) { return "✅ " + ex.descripcion + " — " + formatColones(ex.precio); }).join("\n") +
+      "\n\n💰 Total estimado: " + formatColones(examenesTotal);
+  }
+
   try {
     await enviarCorreo(process.env.EMAILJS_TEMPLATE_CONFIRMACION, {
       to_email: email,
       to_name: nombre,
       fecha: fecha,
       hora: hora,
-      lugar: lugarTexto
+      lugar: lugarTexto,
+      examenes: examenesTexto
     });
   } catch (err) {
     // El evento ya quedó agendado en el calendario — no le devolvemos error
