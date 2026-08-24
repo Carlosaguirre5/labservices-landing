@@ -5,8 +5,8 @@
 // de depender de datos de zona horaria del runtime, restamos 6 horas a mano
 // para obtener la hora "de pared" de Costa Rica de forma confiable.
 
-const SLOT_MINUTOS = 15;
-const DURACION_CITA_MINUTOS = 15;
+const SLOT_MINUTOS = 30;
+const DURACION_CITA_MINUTOS = 30;
 
 function ahoraEnCR() {
   return new Date(Date.now() - 6 * 60 * 60 * 1000);
