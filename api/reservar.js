@@ -6,9 +6,14 @@
 const { listarEventosDelDia, crearEvento } = require("./_lib/google");
 const { horarioDelDia, generarGrillaDelDia, filtrarPasados, slotOcupado, DURACION_CITA_MINUTOS } = require("./_lib/horarios");
 const { enviarCorreo } = require("./_lib/emailjs");
+const { resolverExamenes } = require("./_lib/examenes");
 
 const FECHA_RE = /^\d{4}-\d{2}-\d{2}$/;
 const HORA_RE = /^\d{2}:\d{2}$/;
+
+function formatColones(n) {
+  return "₡" + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
 
 function leerBody(req) {
   // Vercel ya parsea JSON automáticamente si Content-Type es application/json,
@@ -78,16 +83,32 @@ module.exports = async (req, res) => {
 
   const lugarTexto = sucursal === "domicilio" ? "Servicio a domicilio — " + direccion : "Sucursal Naranjo";
 
+  const examenes = resolverExamenes(body.examenes);
+  const examenesTotal = examenes.reduce(function (suma, ex) { return suma + ex.precio; }, 0);
+
+  const descripcionLineas = [
+    "🪪 Identificación: " + identificacion,
+    "📞 Teléfono: " + telefono,
+    "✉️ Correo: " + email,
+    "📍 Lugar: " + lugarTexto
+  ];
+
+  if (examenes.length) {
+    descripcionLineas.push("");
+    descripcionLineas.push("🧪 Exámenes a realizar:");
+    examenes.forEach(function (ex) {
+      descripcionLineas.push("✅ " + ex.descripcion + " — " + formatColones(ex.precio));
+    });
+    descripcionLineas.push("");
+    descripcionLineas.push("💰 Total estimado: " + formatColones(examenesTotal));
+  }
+
+  descripcionLineas.push("");
+  descripcionLineas.push("Agendado desde labservicecr.com/citas");
+
   const eventoBody = {
     summary: "🧪 Cita LabServices — " + nombre,
-    description: [
-      "🪪 Identificación: " + identificacion,
-      "📞 Teléfono: " + telefono,
-      "✉️ Correo: " + email,
-      "📍 Lugar: " + lugarTexto,
-      "",
-      "Agendado desde labservicecr.com/citas"
-    ].join("\n"),
+    description: descripcionLineas.join("\n"),
     start: { dateTime: fecha + "T" + hora + ":00", timeZone: "America/Costa_Rica" },
     end: { dateTime: fecha + "T" + horaFin + ":00", timeZone: "America/Costa_Rica" },
     attendees: [{ email: email, displayName: nombre }],

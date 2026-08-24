@@ -29,6 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/precios/style.css">
 <link rel="stylesheet" href="/citas/style.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEQRF93HDH"></script>
@@ -149,6 +150,32 @@
           </div>
         </div>
 
+        <div class="citas-block" data-block="examenes">
+          <h2 class="citas-block-title">Exámenes a realizar (opcional)</h2>
+          <p class="citas-examenes-hint">Si ya sabés qué exámenes necesitás, agregalos acá para que lleguemos preparados. Si no estás seguro, no hay problema, lo coordinamos el día de tu cita.</p>
+
+          <div class="form-field">
+            <label for="buscador-examen">Nombre del examen</label>
+            <div class="buscador-input-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="buscador-examen" placeholder="Ej. glucosa, tiroides, prueba de embarazo..." autocomplete="off" aria-describedby="buscador-resultado-count">
+            </div>
+          </div>
+
+          <p class="buscador-resultado-count" id="buscador-resultado-count" aria-live="polite"></p>
+          <ul class="resultados-lista" id="resultados-lista"></ul>
+
+          <div class="citas-examenes-seleccion">
+            <ul class="seleccion-lista" id="seleccion-lista"></ul>
+            <p class="seleccion-vacio" id="seleccion-vacio">Todavía no agregaste ningún examen.</p>
+
+            <div class="cotizador-resumen">
+              <span class="resumen-cantidad" id="resumen-cantidad">0 exámenes</span>
+              <span class="resumen-subtotal" id="resumen-subtotal">₡0</span>
+            </div>
+          </div>
+        </div>
+
         <div class="citas-block" data-block="horario">
           <h2 class="citas-block-title">Día y hora</h2>
 
@@ -185,6 +212,7 @@
           <div><dt>Día</dt><dd id="confirm-fecha"></dd></div>
           <div><dt>Hora</dt><dd id="confirm-hora"></dd></div>
           <div><dt>Lugar</dt><dd id="confirm-lugar"></dd></div>
+          <div id="confirm-examenes-row" style="display:none"><dt>Exámenes</dt><dd id="confirm-examenes"></dd></div>
         </dl>
         <p>Te enviamos la confirmación a tu correo. Si tenés alguna duda, escribinos por WhatsApp.</p>
         <a class="btn btn-whatsapp btn-block js-wa whatsapp-cta" id="confirm-wa-btn">
@@ -255,6 +283,7 @@
 </a>
 
 <script src="/script.js"></script>
+<script src="/citas/examenes.js"></script>
 <script src="/citas/citas.js"></script>
 </body>
 </html>

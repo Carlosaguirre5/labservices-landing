@@ -135,6 +135,17 @@
       ? "Servicio a domicilio"
       : "Sucursal Naranjo";
 
+    var examenesRow = document.getElementById("confirm-examenes-row");
+    if (payload.examenesDetalle && payload.examenesDetalle.length) {
+      var subtotalTexto = window.CitasExamenes ? window.CitasExamenes.formatColones(payload.examenesTotal) : payload.examenesTotal;
+      document.getElementById("confirm-examenes").textContent =
+        payload.examenesDetalle.map(function (ex) { return ex.descripcion; }).join(", ") +
+        " — " + subtotalTexto;
+      examenesRow.style.display = "";
+    } else {
+      examenesRow.style.display = "none";
+    }
+
     var waMsg = "📅 Hola, soy " + payload.nombre + ". Agendé una cita para el " + fechaTexto + " a las " + formatearHora(payload.hora) +
       (payload.sucursal === "domicilio" ? " (servicio a domicilio)" : " (sucursal Naranjo)") + ".";
     document.getElementById("confirm-wa-btn").setAttribute("href", "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waMsg));
@@ -160,6 +171,8 @@
       return;
     }
 
+    var examenesSeleccionados = window.CitasExamenes ? window.CitasExamenes.getSeleccionados() : [];
+
     var payload = {
       nombre: nombreInput.value.trim(),
       identificacion: identificacionInput.value.trim(),
@@ -168,15 +181,32 @@
       sucursal: esDomicilio() ? "domicilio" : "naranjo",
       direccion: esDomicilio() ? direccionInput.value.trim() : "",
       fecha: fechaInput.value,
-      hora: horaSelect.value
+      hora: horaSelect.value,
+      examenes: examenesSeleccionados.map(function (ex) { return ex.codigo; })
     };
+
+    // El servidor resuelve nombre/precio de cada examen por su cuenta a
+    // partir del código — acá guardamos el detalle solo para mostrarlo en
+    // la pantalla de confirmación, no se manda en el body de la petición.
+    payload.examenesDetalle = examenesSeleccionados;
+    payload.examenesTotal = window.CitasExamenes ? window.CitasExamenes.getSubtotal() : 0;
 
     setEnviando(true);
 
     fetch("/api/reservar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
+      body: JSON.stringify({
+        nombre: payload.nombre,
+        identificacion: payload.identificacion,
+        telefono: payload.telefono,
+        email: payload.email,
+        sucursal: payload.sucursal,
+        direccion: payload.direccion,
+        fecha: payload.fecha,
+        hora: payload.hora,
+        examenes: payload.examenes
+      })
     })
       .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
       .then(function (result) {

@@ -69,6 +69,16 @@
   margin-bottom: 16px;
 }
 
+.citas-examenes-hint {
+  font-size: 0.86rem;
+  color: var(--c-gray);
+  margin: -8px 0 16px;
+}
+
+.citas-examenes-seleccion {
+  margin-top: 14px;
+}
+
 /* Select (el resto de inputs ya vienen estilados por .form-field en /style.css) */
 
 .form-field select {
