@@ -79,12 +79,14 @@ module.exports = async (req, res) => {
   const lugarTexto = sucursal === "domicilio" ? "Servicio a domicilio — " + direccion : "Sucursal Naranjo";
 
   const eventoBody = {
-    summary: "Cita LabServices — " + nombre,
+    summary: "🧪 Cita LabServices — " + nombre,
     description: [
-      "Identificación: " + identificacion,
-      "Teléfono: " + telefono,
-      "Correo: " + email,
-      "Lugar: " + lugarTexto
+      "🪪 Identificación: " + identificacion,
+      "📞 Teléfono: " + telefono,
+      "✉️ Correo: " + email,
+      "📍 Lugar: " + lugarTexto,
+      "",
+      "Agendado desde labservicecr.com/citas"
     ].join("\n"),
     start: { dateTime: fecha + "T" + hora + ":00", timeZone: "America/Costa_Rica" },
     end: { dateTime: fecha + "T" + horaFin + ":00", timeZone: "America/Costa_Rica" },
