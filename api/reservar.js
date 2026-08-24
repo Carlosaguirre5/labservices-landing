@@ -90,6 +90,7 @@ module.exports = async (req, res) => {
     ].join("\n"),
     start: { dateTime: fecha + "T" + hora + ":00", timeZone: "America/Costa_Rica" },
     end: { dateTime: fecha + "T" + horaFin + ":00", timeZone: "America/Costa_Rica" },
+    attendees: [{ email: email, displayName: nombre }],
     extendedProperties: {
       private: {
         origen: "citas-web",

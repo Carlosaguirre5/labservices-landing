@@ -99,7 +99,7 @@ async function crearEvento(evento) {
   const calendarId = getCalendarId();
 
   const res = await fetch(
-    CALENDAR_API + "/calendars/" + encodeURIComponent(calendarId) + "/events",
+    CALENDAR_API + "/calendars/" + encodeURIComponent(calendarId) + "/events?sendUpdates=all",
     {
       method: "POST",
       headers: {
